@@ -1,7 +1,7 @@
 # JavaScript Runtime (JSRT) Reference
 For your convenience, we have a list of all JSRT typedefs, constants, enumerations and APIs below. For detailed information, please refer to [chakrart.h](**Todo: add link**) directly.
 
-## JSRT Typedef References
+## JSRT Typedef Reference
 * JsBackgroundWorkItemCallback
 * JsBeforeCollectCallback
 * JsContextRef
@@ -19,12 +19,12 @@ For your convenience, we have a list of all JSRT typedefs, constants, enumeratio
 * JsThreadServiceCallback
 * JsValueRef
 
-## JSRT Const References
+## JSRT Const Reference
 * JS_INVALID_REFERENCE
 * JS_INVALID_RUNTIME_HANDLE
 * JS_SOURCE_CONTEXT_NON
  
-## JSRT Enum References
+## JSRT Enum Reference
 * JsErrorCode
 * JsMemoryEventType
 * JsPropertyIdType
@@ -33,7 +33,7 @@ For your convenience, we have a list of all JSRT typedefs, constants, enumeratio
 * JsTypedArrayType
 * JsValueType
  
-## JSRT API References
+## JSRT API Reference
 * JsAddRef
 * JsBoolToBoolean
 * JsBooleanToBool
