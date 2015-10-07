@@ -1,4 +1,4 @@
-For your convenience, we have a list of all JSRT typedefs, constants, enumerations and APIs below. For detailed information, please refer to [chakrart.h](**Todo: add link**) directly.
+For your convenience, we have a list of all JSRT typedefs, constants, enumerations and APIs below. For detailed information, please refer to [chakrart.h]() (**Todo: add link**) directly.
 
 ## JSRT Typedef Reference
 * JsBackgroundWorkItemCallback
