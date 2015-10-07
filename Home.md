@@ -2,7 +2,7 @@ There are two primary ways of developing with ChakraCore: as a user and as a con
 
 ## As a user
 
-To embed ChakraCore in your applications, you can read through the [[Embedding ChakraCore]] and the [[JavaScript Runtime (JSRT) reference]] documentation.
+To embed ChakraCore in your applications, you can read through the [[Embedding ChakraCore]] and the [[JavaScript Runtime (JSRT) APIs]] documentation.
 
 ## As a contributor
 
