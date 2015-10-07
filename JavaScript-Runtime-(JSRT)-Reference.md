@@ -21,7 +21,7 @@ For your convenience, we have a list of all JSRT typedefs, constants, enumeratio
 ## JSRT Const Reference
 * JS_INVALID_REFERENCE
 * JS_INVALID_RUNTIME_HANDLE
-* JS_SOURCE_CONTEXT_NON
+* JS_SOURCE_CONTEXT_NONE
  
 ## JSRT Enum Reference
 * JsErrorCode
