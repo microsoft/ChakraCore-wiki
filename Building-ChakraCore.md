@@ -7,7 +7,7 @@ To build ChakraCore:
 
 Alternatively, run msbuild on the command line:
 ```
-msbuild /m /p:Platform=<Platform> /p:Configuration=<Configuration> Build\Chakra.Core.sln
+msbuild /m /p:Platform=... /p:Configuration=... Build\Chakra.Core.sln
 ```
 
 ### Platform ###
