@@ -42,6 +42,7 @@ int main()
     JsRuntimeHandle runtime;
     JsContextRef context;
     JsValueRef result;
+    unsigned currentSourceContext = 0;
 
     // Your script; try replace hello-world with something else
     wstring script = L"(()=>{return \'Hello world!\';})()";
@@ -56,7 +57,7 @@ int main()
     JsSetCurrentContext(context);
 
     // Run the script.
-    JsRunScript(script.c_str(), 0, L"", &result);
+    JsRunScript(script.c_str(), currentSourceContext++, L"", &result);
 
     // Convert your script result to String in JavaScript; redundant if your script returns a String
     JsValueRef resultJSString;
