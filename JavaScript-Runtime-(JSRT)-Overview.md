@@ -81,5 +81,5 @@ All other supported ES2015 features do not require any setup to run in JSRT.
 Experimental JavaScript features that are not yet stable are hidden behind an experimental flag. You can enable these features on a runtime by specifying **JsRuntimeAttributeEnableExperimentalFeatures** flag when **JsCreateRuntime** is called. 
 
 ## Resources
-* [[JavaScript Runtime (JSRT): Reference]]
+* [[JavaScript Runtime (JSRT) Reference]]
 * [JSRT and ChakraCore Samples]() (**Todo: add link to samples**)
