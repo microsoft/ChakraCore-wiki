@@ -28,7 +28,7 @@ internal static extern JavaScriptErrorCode JsCreateRuntime(JavaScriptRuntimeAttr
 Alternatively, you can also try using a higher level [JSRT-WinRT WinRT Component](https://github.com/robpaveza/jsrt-winrt#getting-started). 
 
 ## Hello World!
-A sample to help you understand how to embed ChakraCore with JSRT APIs. For C# users, please refer to the next [section](##hello-world-c). 
+A sample to help you understand how to embed ChakraCore with JSRT APIs. For C# users, please refer to the next [section](https://github.com/Microsoft/ChakraCore/wiki/Embedding-ChakraCore#hello-world-c). 
 
 ```
 #include "chakracore.h"
