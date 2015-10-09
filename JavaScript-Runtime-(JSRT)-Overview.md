@@ -1,4 +1,4 @@
-The JavaScript Runtime (JSRT) APIs provide a way to embed ChakraCore into applications and light up JavaScript capabilities. JSRT APIs are shipped as part of the ChakraCore project. This document describes the key concepts and aspects of JSRT APIs. For API reference, please see [[JavaScript Runtime (JSRT): Reference]]. 
+The JavaScript Runtime (JSRT) APIs provide a way to embed ChakraCore into applications and light up JavaScript capabilities. JSRT APIs are shipped as part of the ChakraCore project. This document describes the key concepts and aspects of JSRT APIs. For API reference, please see [[JavaScript Runtime (JSRT) Reference]]. 
 
 ## Concepts
 
