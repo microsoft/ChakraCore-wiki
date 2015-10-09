@@ -1,4 +1,4 @@
-You can build ChakraCore with either Visual Studio 2013 or 2015, as long as C++ support is installed [*](#build_for_arm).
+You can build ChakraCore with either Visual Studio 2013 or 2015, as long as C++ support is installed[*](#build_for_arm).
 
 To build ChakraCore:
 * Open ```Build\Chakra.Core.sln``` in Visual Studio.
@@ -14,7 +14,7 @@ msbuild /m /p:Platform=... /p:Configuration=... Build\Chakra.Core.sln
 
 ChakraCore can be built for 3 Platforms: ```x86```, ```x64``` and ```arm```.
 
-<a id="build_for_arm">**Build for arm**:</a> Due to toolset dependency, you will need following to build for the ```arm``` platform:
+<a name="build_for_arm">**Build for arm**:</a> Due to toolset dependency, you will need following to build for the ```arm``` platform:
 * Visual Studio 2015
 * [Windows 10 SDK](https://dev.windows.com/en-US/downloads/windows-10-sdk)
 
