@@ -28,7 +28,6 @@ For your convenience, we have a list of all JSRT typedefs, constants, enumeratio
 * [[JsMemoryEventType]]
 * [[JsPropertyIdType]]
 * [[JsRuntimeAttributes]]
-* [[JsRuntimeVersion]]
 * [[JsTypedArrayType]]
 * [[JsValueType]]
 
