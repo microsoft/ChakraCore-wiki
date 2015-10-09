@@ -4,7 +4,7 @@ ChakraCore is split into four main parts: the JSRT embedding APIs, the parser, t
 
 ## JavaScript Runtime (JSRT)
 
-For more information on JSRT, see the [[Embedding ChakraCore]] and [[JavaScript Runtime (JSRT): Overview]] documentation.
+For more information on JSRT, see the [[Embedding ChakraCore]] and [[JavaScript Runtime (JSRT) Overview]] documentation.
 
 ## Parser
 
