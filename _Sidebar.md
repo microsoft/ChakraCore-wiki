@@ -1,6 +1,8 @@
 [[Home]]
 
 [[Architecture Overview]]
+
+[[Building ChakraCore]]
  
 [[Embedding ChakraCore]]
 * [[JavaScript Runtime (JSRT) Overview]]
