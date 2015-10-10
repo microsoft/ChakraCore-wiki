@@ -134,4 +134,4 @@ To build and run this sample,
 3. Run the sample by pressing `Ctrl+F5` or using `Debug > Start Without Debugging`.
 
 ## More on JSRT
-Learn more about JSRT in [[JavaScript Runtime (JSRT) Overview]] now that you've seen a Hello-world sample. We also have advanced samples in Chakra-Samples [repo]() (**Todo: add more ChakraCore samples in repo and add link**). 
+Learn more about JSRT in [[JavaScript Runtime (JSRT) Overview]] now that you've seen a Hello-world sample.
