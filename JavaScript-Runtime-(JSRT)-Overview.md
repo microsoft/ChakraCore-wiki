@@ -82,4 +82,4 @@ Experimental JavaScript features that are not yet stable are hidden behind an ex
 
 ## Resources
 * [[JavaScript Runtime (JSRT) Reference]]
-* [JSRT and ChakraCore Samples]() (**Todo: add link to samples**)
+* [JSRT and ChakraCore Samples](http://aka.ms/chakracoresamples)

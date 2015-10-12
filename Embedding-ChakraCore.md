@@ -19,7 +19,7 @@ To use JSRT in a **C++** project:
 To use JSRT in a **C#** project:
 
 1. Copy **ChakraCore.dll** to the proejct output directory. 
-2. In general, use [PInvoke](https://msdn.microsoft.com/en-us/library/aa288468.aspx) to call JSRT APIs. You can copy a wrapper from our [sample]() (**TODO: upload C# hello world sample and link to wrapper**). Sometimes, there may be new APIs that we have not yet added to the wrapper, but you can import from **ChakraCore.dll** like this,
+2. In general, use [PInvoke](https://msdn.microsoft.com/en-us/library/aa288468.aspx) to call JSRT APIs. You can copy a wrapper from our [sample](http://aka.ms/jsrtwrapper). Sometimes, there may be new APIs that we have not yet added to the wrapper, but you can import from **ChakraCore.dll** like this,
 ```
 [DllImport("ChakraCore.dll")] 
 internal static extern JavaScriptErrorCode JsCreateRuntime(JavaScriptRuntimeAttributes attributes, JavaScriptThreadServiceCallback threadService, out JavaScriptRuntime runtime); 
@@ -77,12 +77,12 @@ int main()
 
 To build and run this sample, 
 
-1. Create a new C++ project in Visual Studio, complete the set up JSRT steps, and add the above code to a .cpp file. Alternatively, download this sample [here]() (**TODO: upload C++ hello world sample and add link here**). 
+1. Create a new C++ project in Visual Studio, complete the set up JSRT steps, and add the above code to a .cpp file. Alternatively, download this sample [here](http://aka.ms/chakracorehelloworld). 
 2. In Visual Studio, build the sample by pressing `F6` or using `Build > Build Solution`.
 3. Run the sample by pressing `Ctrl+F5` or using `Debug > Start Without Debugging`.
 
 ## Hello World! (C#)
-C# version of the above Hello-world sample. Note that JSRT APIs are C++ APIs, this sample assumes a C# [wrapper](**TODO: upload C# hello world sample and link to wrapper**). 
+C# version of the above Hello-world sample. Note that JSRT APIs are C++ APIs, this sample assumes a C# [wrapper](http://aka.ms/jsrtwrapper). 
 
 ```
 using System;
@@ -129,7 +129,7 @@ public class HelloWorld
 ```
 To build and run this sample, 
 
-1. Create a new C# project in Visual Studio, complete the set up JSRT steps, include a C# [wrapper]() (**Todo: add link**) for JSRT and add the above code to a .cs file. Alternatively, download this sample [here]() (**TODO: upload C++ hello world sample and add link here**). 
+1. Create a new C# project in Visual Studio, complete the set up JSRT steps, include a C# [wrapper](http://aka.ms/jsrtwrapper) for JSRT and add the above code to a .cs file. Alternatively, download this sample [here](http://aka.ms/chakracorecorehelloworldcsharp). 
 2. In Visual Studio, build the sample by pressing `F6` or using `Build > Build Solution`.
 3. Run the sample by pressing `Ctrl+F5` or using `Debug > Start Without Debugging`.
 
