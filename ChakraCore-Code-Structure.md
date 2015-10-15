@@ -1,5 +1,3 @@
-# ChakraCore Architecture Overview
-
 ChakraCore is split into four main parts: the JSRT embedding APIs, the parser, the engine runtime, and the engine backend.  
 
 ## JavaScript Runtime (JSRT)
