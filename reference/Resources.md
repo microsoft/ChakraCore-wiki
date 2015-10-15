@@ -1,0 +1,1 @@
+Useful blogs, talks and other resources. 
