@@ -8,7 +8,7 @@ You should first clone and build [ChakraCore](https://github.com/Microsoft/Chakr
 
 C# users only need **ChakraCore.dll**.  
 
-## Use JSRT in Visual Studio 
+## Use JSRT with Visual Studio 
 To use JSRT in a **C++** project:
 
 1. Copy the **include** folder into your project 
