@@ -6,7 +6,7 @@ To embed ChakraCore in your applications, you can get started by reading through
 
 ## As a contributor
 
-To contribute to ChakraCore, you can read through the [[Architecture Overview]] and the [Contributor Guidelines](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md).
+To contribute to ChakraCore, first read the [[Contributor Guidelines]] and the [[Architecture Overview]]. 
 
 ## Roadmap
 
