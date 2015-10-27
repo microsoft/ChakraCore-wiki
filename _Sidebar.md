@@ -2,6 +2,8 @@
 
 [[Architecture Overview]]
 
+[[Contributor Guidance]]
+
 [[Building ChakraCore]]
 
 [[ChakraCore Code Structure]] 
