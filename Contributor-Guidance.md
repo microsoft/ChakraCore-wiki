@@ -13,7 +13,6 @@ The team rigorously reviews and tests all code submissions. The submissions must
 
 These two blogs posts on contributing code to open source projects are a good reference: Open Source Contribution Etiquette by Miguel de Icaza and Don’t “Push” Your Pull Requests by Ilya Grigorik.
 
-ChakraCore is an organically grown codebase. The consistency of style reflects this. For the most part, the team follows these coding conventions. Contributors should also follow them when making submissions. 
 
 ### Legal
 
@@ -31,6 +30,8 @@ Your pull request should:
 •Include adequate tests ◦At least one test should fail in the absence of your non-test code changes. If your PR does not match this criteria, please specify why
 ◦Tests should include reasonable permutations of the target fix/change
 ◦Include baseline changes with your change
+
+ChakraCore is an organically grown codebase. The consistency of style reflects this. For the most part, the team follows these coding conventions. Contributors should also follow them when making submissions. 
 
 •Follow the general coding conventions adhered to in the existing code
 
