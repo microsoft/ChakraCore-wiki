@@ -23,13 +23,14 @@ You can complete the CLA by going through the steps at https://cla.microsoft.com
 Housekeeping
 
 Your pull request should:
-•Include a description of what your change intends to do
-•Be a child commit of a reasonably recent commit in the master branch
-•Pass all unit tests
-•Have a clear commit message
-•Include adequate tests ◦At least one test should fail in the absence of your non-test code changes. If your PR does not match this criteria, please specify why
-◦Tests should include reasonable permutations of the target fix/change
-◦Include baseline changes with your change
+* Include a description of what your change intends to do
+* Be a child commit of a reasonably recent commit in the master branch
+* Pass all unit tests
+* Have a clear commit message
+* Include adequate tests
+* * At least one test should fail in the absence of your non-test code changes. If your PR does not match this criteria, please specify why
+* * Tests should include reasonable permutations of the target fix/change
+* * Include baseline changes with your change
 
 ChakraCore is an organically grown codebase. The consistency of style reflects this. For the most part, the team follows these coding conventions. Contributors should also follow them when making submissions. 
 
