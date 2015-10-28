@@ -28,28 +28,29 @@ Your pull request should:
 * Pass all unit tests
 * Have a clear commit message
 * Include adequate tests
-* * At least one test should fail in the absence of your non-test code changes. If your PR does not match this criteria, please specify why
-* * Tests should include reasonable permutations of the target fix/change
-* * Include baseline changes with your change
+  * At least one test should fail in the absence of your non-test code changes. If your PR does not match this criteria, please specify why
+  * Tests should include reasonable permutations of the target fix/change
+  * Include baseline changes with your change
 
 ChakraCore is an organically grown codebase. The consistency of style reflects this. For the most part, the team follows these coding conventions. Contributors should also follow them when making submissions. 
 
-•Follow the general coding conventions adhered to in the existing code
+* Follow the general coding conventions adhered to in the existing code
 
 Running the tests
 
 The unit tests can be run by:
-•Choose a build configuration to build and test, e.g. debug and x64.
-•Build that config. ◦Ensure rl.exe is built by building the all configuration or building the rl project directly.
+* Choose a build configuration to build and test, e.g. debug and x64.
+* Build that config. 
+  * Ensure rl.exe is built by building the all configuration or building the rl project directly.
 
-•Call  tools\runtests.cmd  and specify the build config
+* Call  tools\runtests.cmd  and specify the build config
 
 e.g.  tools\runtests.cmd -x64debug 
 
 For full coverage, please run unit tests against debug and test for both x86 and x64:
-• test\runtests.cmd -x64debug 
-• test\runtests.cmd -x64test 
-• test\runtests.cmd -x86debug 
-• test\runtests.cmd -x86test 
+* test\runtests.cmd -x64debug 
+* test\runtests.cmd -x64test 
+* test\runtests.cmd -x86debug 
+* test\runtests.cmd -x86test 
 
 # 
