@@ -21,7 +21,7 @@ You will need to complete a Contributor License Agreement (CLA) before your pull
 
 You can complete the CLA by going through the steps at https://cla.microsoft.com. Once we have received the signed CLA, we'll review the request. You will only need to do this once.
 
-# Housekeeping
+### Housekeeping
 
 Your pull request should:
 * Include a description of what your change intends to do
@@ -37,7 +37,7 @@ ChakraCore is an organically grown codebase. The consistency of style reflects t
 
 * Follow the general coding conventions adhered to in the existing code
 
-# Running the tests
+### Running the tests
 
 The unit tests can be run by:
 * Choose a build configuration to build and test, e.g. debug and x64.
