@@ -14,7 +14,7 @@ Submissions must meet functional and performance expectations, including scenari
 
 Pull requests that reformat the code will not be accepted.
 
-These two blogs posts on contributing code to open source projects are a good reference: Open Source Contribution Etiquette by Miguel de Icaza and Don’t “Push” Your Pull Requests by Ilya Grigorik.
+These two blogs posts on contributing code to open source projects are a good reference: [Open Source Contribution Etiquette](http://tirania.org/blog/archive/2010/Dec-31.html) by Miguel de Icaza and [Don't "Push" Your Pull Requests](https://www.igvita.com/2011/12/19/dont-push-your-pull-requests/) by Ilya Grigorik.
 
 ### Legal
 
