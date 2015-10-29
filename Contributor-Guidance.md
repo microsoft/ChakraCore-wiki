@@ -2,18 +2,19 @@
 
 ChakraCore accepts bug fix pull requests. For a bug fix PR to be accepted, it must first have a tracking issue that has been marked approved. Your PR should link to the bug you are fixing. If you've submitted a PR for a bug, please post a comment in the bug to avoid duplication of effort. 
 
-For now, the team has set the following limits on pull requests:
-* Contributions beyond the level of a bug fix must be discussed with the team first, or they will likely be declined. As our process matures and our experience grows, the team expects to take larger contributions.
-* Only contributions against the master branch will be accepted. Authors submitting pull requests that target experimental feature branches or release branches will likely be asked target their pull request at the master branch.
-* Pull requests that do not merge easily with the tip of the master branch will be declined. The author will be asked to merge with tip and update the pull request.
-* Pull requests that do not pass all checks by Jenkins will also be declined.
-* Submissions must meet functional and performance expectations, including scenarios for which the team doesn’t yet have open source tests. This means you may be asked to fix and resubmit your pull request against a new open test case if it fails one of these tests.
-* Pull requests that reformat the code will not be accepted.
+ChakraCore also accepts new feature pull requests. For a feature-level PR to be accepted, it first needs to have design discussion. Design discussion can take one of two forms a) a feature request in the issue tracker that has been marked as approved or b) the PR must be accompanied by a full design spec and this spec is later approved in the open design discussion. Features are evaluated against their complexity, impact on other features, roadmap alignment, and maintainability.
 
-The team rigorously reviews and tests all code submissions. The submissions must meet a high bar for quality, design, and roadmap appropriateness.
+Only contributions against the master branch will be accepted. Authors submitting pull requests that target experimental feature branches or release branches will likely be asked target their pull request at the master branch.
+
+Pull requests that do not merge easily with the tip of the master branch will be declined. The author will be asked to merge with tip and update the pull request.
+
+Pull requests that do not pass all checks by Jenkins will also be declined.
+
+Submissions must meet functional and performance expectations, including scenarios for which the team doesn’t yet have open source tests. This means you may be asked to fix and resubmit your pull request against a new open test case if it fails one of these tests.
+
+Pull requests that reformat the code will not be accepted.
 
 These two blogs posts on contributing code to open source projects are a good reference: Open Source Contribution Etiquette by Miguel de Icaza and Don’t “Push” Your Pull Requests by Ilya Grigorik.
-
 
 ### Legal
 
@@ -33,9 +34,7 @@ Your pull request should:
   * Tests should include reasonable permutations of the target fix/change
   * Include baseline changes with your change
 
-ChakraCore is an organically grown codebase. The consistency of style reflects this. For the most part, the team follows these coding conventions. Contributors should also follow them when making submissions. 
-
-* Follow the general coding conventions adhered to in the existing code
+ChakraCore is an organically grown codebase. The consistency of style reflects this. For the most part, the team follows these coding conventions. Contributors should also follow them when making submissions. Otherwise, follow the general coding conventions adhered to in the code surrounding your changes. 
 
 ### Running the tests
 
