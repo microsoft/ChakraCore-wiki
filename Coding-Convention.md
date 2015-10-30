@@ -22,7 +22,7 @@ And now, the ChakraCore coding guidelines:
 * Replace tabs with spaces. 
 * Indentation is 4 spaces.
 * Keep line length reasonable, but 80 character limit is not necessary.
-* Braces - use style A.
+* Braces - use style A.  
 `    Foo()
         {
             statement1;
