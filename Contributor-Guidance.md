@@ -25,7 +25,7 @@ Your pull request should:
   * Tests should include reasonable permutations of the target fix/change
   * Include baseline changes with your change
 
-Submissions must meet functional and performance expectations, including scenarios for which the team doesn’t yet have open source tests. This means you may be asked to fix and resubmit your pull request against a new open test case if it fails one of these tests.
+Submissions that have met these requirements will be assigned to a ChakraCore team member for additional testing. Submissions must meet functional and performance expectations, including meeting requirements in scenarios for which the team doesn’t yet have open source tests. This means you may be asked to fix and resubmit your pull request against a new open test case if it fails one of these tests. The ChakraCore team may be verify your change by crawling the web with your change built into Chakra. Failures discovered when testing with this technique will not be analyzed by the team, but we will do our best to communicate the issue discovered to you. This approach needs further refinement, we acknowledge.
 
 ChakraCore is an organically grown codebase. The consistency of style reflects this. For the most part, the team follows these [coding conventions](https://github.com/Microsoft/ChakraCore/wiki/Coding-Convention). Contributors should also follow them when making submissions. Otherwise, follow the general coding conventions adhered to in the code surrounding your changes. Pull requests that reformat the code will not be accepted.
 
