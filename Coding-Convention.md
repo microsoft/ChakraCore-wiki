@@ -1,4 +1,4 @@
-The following guidance was built by looking at [http://www.c-xx.com/ccc/ccc.php ](http://www.c-xx.com/ccc/ccc.php )and considering what exists today in the CharkaCore codebase. ChakraCore does not consistently follow these patterns, nor are we interested in making the entire codebase conform to them. 
+The following guidance was built by looking at [http://www.c-xx.com/ccc/ccc.php ](http://www.c-xx.com/ccc/ccc.php )and considering what exists today in the CharkaCore codebase. ChakraCore does not consistently follow these patterns, nor is the team interested in making the entire codebase conform to them. 
 
 Please,
 * DO not send PRs for style changes.
@@ -67,12 +67,12 @@ And now, the ChakraCore coding guidelines:
 * Chained assignment is OK. `x = y = z = 0;`
 * Switch statement formatting like this:
 ```
-    Switch (x)
+    switch (x)
     {
-        Case foo:
+        case foo:
         {
-            St1;
-            St2;
+            statement1;
+            statement2;
         }
     };
 ```
