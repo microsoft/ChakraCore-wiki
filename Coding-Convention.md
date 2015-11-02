@@ -1,4 +1,4 @@
-The following guidance was built by looking at [http://www.c-xx.com/ccc/ccc.php ](http://www.c-xx.com/ccc/ccc.php )and considering what exists today in the CharkaCore codebase. ChakraCore does not consistently follow these patterns, nor is the team interested in making the entire codebase conform to them. 
+The following guidance was built by looking at [http://www.c-xx.com/ccc/ccc.php ](http://www.c-xx.com/ccc/ccc.php )and considering what exists in the CharkaCore codebase. ChakraCore does not consistently follow these patterns, nor is the team interested in making the entire codebase conform to them. 
 
 Please,
 * DO not send PRs for style changes.
