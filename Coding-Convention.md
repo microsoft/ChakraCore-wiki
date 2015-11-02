@@ -10,7 +10,7 @@ And now, the ChakraCore coding guidelines:
 * Interfaces - prefix with "I" like `IFoo` as opposed to `FooInterface`
 * Typedefs - apply class naming rules.
 * Variable names - use Camel case. We like: `fileName`
-* Use "m_" to prefix member variables. We like: `m_fileName`
+* Use `m_` to prefix member variables. We like: `m_fileName`
 * Group class data members together, please.
 * It's OK to use prefix pointers with "p" but not required. Example: `void swap(int* pLeft, int* pRight)`
 * Constants - Pascal case.
@@ -43,7 +43,7 @@ And now, the ChakraCore coding guidelines:
     FooBar
     (    x,
          y,
-	 z
+         z
     );
 ```
   This is OK:
@@ -61,26 +61,28 @@ And now, the ChakraCore coding guidelines:
     Int    x;
     Double y;
 ```
-* No spaces around brackets or parenthesis. No: "invocation( argument );"
-* Add a space after a control flow keyword like "for (int i; i < 10; i++)"
-* Avoid using assignment as a vaule-producing operation. No: "if ((x = a[i]) >= '0' && x <= '9')"
-* Chained assignment is OK. "x = y = z = 0;"
+* No spaces around brackets or parenthesis. No: `invocation( argument );`
+* Add a space after a control flow keyword like `for (int i; i < 10; i++)`
+* Avoid using assignment as a vaule-producing operation. No: `if ((x = a[i]) >= '0' && x <= '9')`
+* Chained assignment is OK. `x = y = z = 0;`
 * Switch statement formatting like this:
-		Switch (x)
-		{
-			Case foo:
-			{
-				St1;
-				St2;
-			}
-		};
-* When declaring variables of pointer type group the asterisk with the variable, not the type being pointed to. Example "int *x;"
+```
+    Switch (x)
+    {
+        Case foo:
+        {
+            St1;
+            St2;
+        }
+    };
+```
+* When declaring variables of pointer type group the asterisk with the variable, not the type being pointed to. Example `int *x;`
 * Declare multiple variables on separate lines.
-* Use "nullptr"
-* Avoid "auto" except for long template names.
-* No "const_cast<>()"
+* Use `nullptr`
+* Avoid `auto` except for long template names.
+* No `const_cast<>()`
 * Avoid const objects, and declaration of const methods. We don't really like the viral nature of const.
 * Avoid the use of reference types.
 * Avoid .inl files. Put implementations in the .cpp files. On Windows, PGO can make excellent inlining decisions.
-* Do not use force_inline unless there is a proven need. Even then think twice.
+* Do not use `force_inline` unless there is a proven need. Even then think twice.
 * For methods defined in headers, like accessors for example, you can implement them on the same line as the signature. 
