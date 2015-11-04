@@ -1,8 +1,8 @@
 The following guidance was built by looking at [http://www.c-xx.com/ccc/ccc.php ](http://www.c-xx.com/ccc/ccc.php )and considering what exists in the CharkaCore codebase. ChakraCore does not consistently follow these patterns, nor is the team interested in making the entire codebase conform to them. 
 
 Please,
-* DO not send PRs for style changes.
-* DO give priority to the current style of the project or file you're changing even if it diverges from the general guidelines.
+* Do not send PRs for style changes.
+* Do give priority to the current style of the project or file you're changing even if it diverges from the general guidelines.
 
 And now, the ChakraCore coding guidelines:
 
@@ -46,7 +46,7 @@ And now, the ChakraCore coding guidelines:
          z
     );
 ```
-    This is OK:
+   This is OK:
 ```
     FooBar(
         x,
