@@ -22,7 +22,7 @@ And now, the ChakraCore coding guidelines:
 * Replace tabs with spaces. 
 * Indentation is 4 spaces.
 * Keep line length reasonable, but 80 character limit is not necessary.
-* Braces - use style A.  
+* Braces - use this style:  
 ```
     Foo()  
     {  
@@ -63,7 +63,7 @@ And now, the ChakraCore coding guidelines:
 ```
 * Do not put spaces around brackets or parenthesis. No: `invocation( argument );`
 * Do put a space after a control flow keyword like `for (int i; i < 10; i++)`
-* Avoid using assignment as a vaule-producing operation. No: `if ((x = a[i]) >= '0' && x <= '9')`
+* Avoid using assignment as a value-producing operation. No: `if ((x = a[i]) >= '0' && x <= '9')`
 * Chained assignment is OK. `x = y = z = 0;`
 * Switch statements are to be formatted like so:
 ```
@@ -84,5 +84,5 @@ And now, the ChakraCore coding guidelines:
 * Avoid const objects, and declaration of const methods. We don't really like the viral nature of const.
 * Avoid the use of reference types.
 * Avoid .inl files. Put implementations in the .cpp files. On Windows, PGO can make excellent inlining decisions.
-* Do not use `force_inline` unless there is a proven need. Even then think twice.
+* Do not use `__forceinline` unless there is a proven need. Even then think twice.
 * For methods defined in headers, like accessors for example, you can implement them on the same line as the signature. 
