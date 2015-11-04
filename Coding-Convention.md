@@ -46,7 +46,7 @@ And now, the ChakraCore coding guidelines:
          z
     );
 ```
-  This is OK:
+    This is OK:
 ```
     FooBar(
         x,
@@ -55,17 +55,17 @@ And now, the ChakraCore coding guidelines:
     ); 
 ```
 * Do not put "else" or "catch" on the same line as a bracket. No: `} else`
-* No space before ',' or ';' Do put a space after. Except for '.'
-* No "table style" variable/member declarations. No:
+* Do not put a space before ',' or ';' Do put a space after ','
+* Do not use "table style" variable/member declarations. No:
 ```
     Int    x;
     Double y;
 ```
-* No spaces around brackets or parenthesis. No: `invocation( argument );`
-* Add a space after a control flow keyword like `for (int i; i < 10; i++)`
+* Do not put spaces around brackets or parenthesis. No: `invocation( argument );`
+* Do put a space after a control flow keyword like `for (int i; i < 10; i++)`
 * Avoid using assignment as a vaule-producing operation. No: `if ((x = a[i]) >= '0' && x <= '9')`
 * Chained assignment is OK. `x = y = z = 0;`
-* Switch statement formatting like this:
+* Switch statements are to be formatted like so:
 ```
     switch (x)
     {
@@ -80,7 +80,7 @@ And now, the ChakraCore coding guidelines:
 * Declare multiple variables on separate lines.
 * Use `nullptr`
 * Avoid `auto` except for long template names.
-* No `const_cast<>()`
+* Do not use `const_cast<>()`
 * Avoid const objects, and declaration of const methods. We don't really like the viral nature of const.
 * Avoid the use of reference types.
 * Avoid .inl files. Put implementations in the .cpp files. On Windows, PGO can make excellent inlining decisions.
