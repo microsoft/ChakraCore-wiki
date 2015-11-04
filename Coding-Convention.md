@@ -73,15 +73,18 @@ And now, the ChakraCore coding guidelines:
         {
             statement1;
             statement2;
+            break;
         }
     };
 ```
+  * Braces around the case block is optional
 * When declaring variables of pointer type group the asterisk with the variable, not the type being pointed to. Example `int *x;`
 * Declare multiple variables on separate lines.
 * Use `nullptr`
-* Avoid `auto` except for long template names.
+* Avoid `auto` except for long template names. Even then, typedef of the long template names I preferred.
 * Do not use `const_cast<>()`
 * Avoid const objects, and declaration of const methods. We don't really like the viral nature of const.
+  * But please use const on read only global and static variables.
 * Avoid the use of reference types.
 * Avoid .inl files. Put implementations in the .cpp files. On Windows, PGO can make excellent inlining decisions.
 * Do not use `__forceinline` unless there is a proven need. Even then think twice.
