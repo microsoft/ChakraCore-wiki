@@ -77,7 +77,7 @@ And now, the ChakraCore coding guidelines:
         }
     };
 ```
-  * Braces around the case block is optional
+* Braces around the case block is optional
 * When declaring variables of pointer type group the asterisk with the variable, not the type being pointed to. Example `int *x;`
 * Declare multiple variables on separate lines.
 * Use `nullptr`
