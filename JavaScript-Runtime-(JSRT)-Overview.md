@@ -12,7 +12,7 @@ Runtimes represent a single thread of execution. Only one runtime can be active 
 
 [[/images/context.png]]
 
-In practice, unless a host needs to run code that is isolated from one another, a single execution context can be used. Similarly, unless a host needs to run multiple pieces of code concurrently, a single runtime is sufficient.
+In practice, unless a host needs to run code in separated environments, a single execution context can be used. Similarly, unless a host needs to run multiple pieces of code concurrently, a single runtime is sufficient.
 
 ## Memory management
 JavaScript is a garbage collected language, and thus there are several considerations that must be kept in mind when working with the JSRT APIs from another language.
