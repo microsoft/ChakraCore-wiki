@@ -2,7 +2,7 @@
 
 [[Architecture Overview]]
 
-[Contributor Guidelines](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md)
+[[Contributing Guidelines]]
 
 [[Building ChakraCore]]
 
