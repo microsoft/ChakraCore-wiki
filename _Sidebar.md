@@ -2,7 +2,7 @@
 
 [[Architecture Overview]]
 
-[[Contributing Guidelines]]
+[[Contributor Guidance]]
 
 [[Building ChakraCore]]
 
