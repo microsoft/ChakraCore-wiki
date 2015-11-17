@@ -15,3 +15,5 @@
 [[Resources]]
  
 [[Roadmap]]
+
+[[Label Glossary]]
