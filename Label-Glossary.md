@@ -31,3 +31,31 @@ Description of the GitHub labels used by ChakraCore
 **External**
 
    Issue is not directly related to ChakraCore but has to do with a related project
+
+**Fixed**
+
+   Issue has been fixed
+
+**Needs More Info**
+
+   Issue sounds legitimate but needs more information to be actionable
+
+**Needs Proposal**
+
+   Issue is a feature request or architecture design suggestion but not a formal proposal
+
+**Proposal**
+
+   Issue is a formal proposal
+
+**Question**
+
+   Issue is actually a question rather than a problem or proposal
+
+**Suggestion**
+
+   Issue is a suggested feature or change but is not a formal proposal
+
+**Won't Fix**
+
+   Issue will not be fixed
