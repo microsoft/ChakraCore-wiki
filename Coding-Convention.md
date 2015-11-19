@@ -38,16 +38,18 @@ And now, the ChakraCore coding guidelines:
         a.single.statement;
     }
 ```
-* Parenthesis and functions - please don't separate the opening paren from the function name. We don't like this:
+* Parenthesis and functions - please don't separate the opening paren from the function name.
 ```
+    // We don't like this:
     FooBar
     (    x,
          y,
          z
     );
 ```
-   This is OK:
+
 ```
+    // This is OK:
     FooBar(
         x,
         y,
@@ -75,7 +77,7 @@ And now, the ChakraCore coding guidelines:
             statement2;
             break;
         }
-    };
+    }
 ```
 * Braces around the case block is optional
 * When declaring variables of pointer type group the asterisk with the variable, not the type being pointed to. Example `int *x;`
