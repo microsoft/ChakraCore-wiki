@@ -46,20 +46,20 @@ The JSRT APIs expose a number of way to monitor and modify the way runtimes use 
 We are working on providing these functionalitiles. 
 
 ## Promises
-An embedding application needs to provide an EnqueueJob abstract operation to queue up the promise tasks before promises can be used. **JsSetPromiseContinuationCallback** allows application to provide an EnqueueJob style callback to process the promise task queue. The following sample shows how to store the promise tasks and execute them after the current execution context is finished:
+An embedding application needs to provide an EnqueueJob abstract operation to queue up the promise tasks before promises can be used. **JsSetPromiseContinuationCallback** allows application to provide an EnqueueJob style callback to process the promise task queue. The following sample shows how to store the promise tasks in a queue and execute them after the current execution context is finished:
 ```
-static void CALLBACK PromiseContinuationCallback(JsValueRef task, void *callbackState)
- {
-    // save async task in the callback.
-    *(void **)callbackState = task;
- }
+void CALLBACK PromiseContinuationCallback(JsValueRef task, void *callbackState)
+{
+    // Save promise task in taskQueue.
+    queue<JsValueRef> * q = (queue<JsValueRef> *)callbackState;
+    q->push(task);
+}
 
 void runPromiseSample()
- {
+{
+    queue<JsValueRef> taskQueue;  
     JsValueRef result;
-    JsValueRef task = JS_INVALID_REFERENCE;
-    JsValueRef callback = JS_INVALID_REFERENCE;
-    JsSetPromiseContinuationCallback(PromiseContinuationCallback, &callback);
+    JsSetPromiseContinuationCallback(PromiseContinuationCallback, &taskQueue);
     JsRunScript(
         L"//The JavaScript ES6 Promise code goes here" \
         L"new Promise(" \
@@ -67,13 +67,17 @@ void runPromiseSample()
         L").then(function () {return new Promise(" \
         L" function(resolve, reject) {resolve('second:success')}" \
         L")});", JS_SOURCE_CONTEXT_NONE, L"", &result);
-    // execute async tasks stored in callback
-    while (callback! = JS_INVALID_REFERENCE) {
-        task = callback;
-        callback = JS_INVALID_REFERENCE;
-        JsCallFunction(task, nullptr, 0, &result);
+		
+    JsValueRef global;
+    JsGetGlobalObject(&global);
+
+    // Execute promise tasks stored in taskQueue
+    while (!taskQueue.empty()) {
+        JsValueRef task = taskQueue.front();
+        taskQueue.pop();
+        JsCallFunction(task, &global, 1, &result);
     }
- }
+}
 ```
 All other supported ES2015 features do not require any setup to run in JSRT. 
 
