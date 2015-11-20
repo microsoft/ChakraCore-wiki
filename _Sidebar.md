@@ -12,8 +12,8 @@
 * [[JavaScript Runtime (JSRT) Overview]]
 * [[JavaScript Runtime (JSRT) Reference]]
 
+[[Label Glossary]]
+
 [[Resources]]
  
 [[Roadmap]]
-
-[[Label Glossary]]
