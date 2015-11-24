@@ -135,4 +135,6 @@ To build and run this sample,
 3. Run the sample by pressing `Ctrl+F5` or using `Debug > Start Without Debugging`.
 
 ## More on JSRT
-Learn more about JSRT in [[JavaScript Runtime (JSRT) Overview]].
+* [[JavaScript Runtime (JSRT) Overview]]
+* [[JavaScript Runtime (JSRT) Reference]]
+* [JSRT and ChakraCore Samples](http://aka.ms/chakracoresamples)
