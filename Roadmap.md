@@ -9,4 +9,4 @@ The Chakra team is committed to working in the open. We implement new capabiliti
 * Time travel debugging working in Node.js
 * Decode WebAssembly binaries into ASM.JS bytecode and execute using ASM.JS pipeline
 
-We have not yet established a release cadence or release criteria. 
+We have not yet established a release cadence or criteria for creating a release.
