@@ -1,3 +1,8 @@
+## ChakraCore Componentization
+ChakraCore is a fully capable JavaScript virtual machine that has the exact same set of capabilities and characteristics that are supported by Chakra, with two key differences. First, it does not expose Chakra’s private bindings to the browser or the Universal Windows Platform, both of which constrain it to a very specific use case scenario. Second, instead of exposing the COM based diagnostic APIs that are currently available in Chakra, ChakraCore will support a new set of JSON based diagnostic APIs, which are platform agnostic and could be standardized or made interoperable across different implementations in the long run. As we make progress on these new diagnostics APIs, we plan to make them available in Chakra as well. 
+
+[[/images/chakracore_componentization.png]]
+
 ## Execution Pipeline
 
 ChakraCore supports a multi-tiered architecture – one which utilizes an interpreter for very fast startup, parallel JIT compilers to generate highly optimized code for high throughput speeds, and a concurrent background GC to reduce pauses and deliver great UI responsiveness for apps and sites. Once the JavaScript source code for an app or site hits the JavaScript subsystem, ChakraCore performs a quick parse pass to check for syntax errors. After that, all other work in ChakraCore happens on an as-needed-per-function basis. Whenever possible, ChakraCore defers the parsing and generation of an abstract syntax tree (AST) for functions that are not needed for immediate execution, and pushes work, such as JIT compilation and GC, off the main thread, to harness the available power of the underlying hardware while keeping your apps and sites fast and responsive.
