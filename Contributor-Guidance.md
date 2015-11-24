@@ -46,4 +46,6 @@ For full coverage, please run unit tests against debug and test for both x86 and
 * test\runtests.cmd -x86debug 
 * test\runtests.cmd -x86test 
 
+### Code Flow into Microsoft Edge
+Changes that make it into our ChakraCore GitHub master branch have a short journey to Chakra.dll. Code flows daily from GitHub to the internal repository from which builds of Chakra.dll are produced and then it flows into Windows and Microsoft Edge. While code flows quickly on this first leg of the journey, code flow from our internal branch to a Windows flighting branch is subject to any number of delays. So it is difficult to predict when your change in our GitHub repo will make it into a particular Windows flight.
 # 
