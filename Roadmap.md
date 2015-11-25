@@ -4,6 +4,7 @@ The Chakra team is committed to working in the open. We implement new capabiliti
 * Turn support for ES2015 destructuring on by default
 * Turn support for the [exponentiation operator](https://github.com/rwaldron/exponentiation-operator) on by default
 * Modern debug APIs that can easily be bridged to the V8 debug protocol
+* Introduce C++ unit testing mechanism. Plan is to fork xUnit++
 * An implementation of ChakraCore on Linux
 * ES2015 modules behind an experimental flag
 * Time travel debugging working in Node.js
