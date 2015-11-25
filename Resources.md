@@ -1,8 +1,4 @@
-This section includes ChakraCore resources such as blog posts and talks. Some of the resources speak of Chakra, but the content applies to ChakraCore as well. 
-
-Talks
-* [Chakra: The JavaScript Engine that powers Microsoft Edge](https://channel9.msdn.com/Events/WebPlatformSummit/2015/Chakra-The-JavaScript-Engine-that-powers-Microsoft-Edge) (May 2015)
-* [Fast Apps and Sites with JavaScript](https://channel9.msdn.com/Events/Build/2013/4-313) (June 2013)
+This section includes resources such as blog posts and talks. Some of the resources speak of Chakra, but the content applies to ChakraCore as well. 
 
 Blogs
 * [Announcing ChakraCore](http://aka.ms/chakracoreannoucement) (December 2015)
@@ -13,3 +9,7 @@ Blogs
 * [Bringing Asm.js to Chakra and Microsoft Edge](http://blogs.windows.com/msedgedev/2015/05/07/bringing-asm-js-to-chakra-microsoft-edge/) (May 2015)
 * [Classes in JavaScript: Exploring the Implementation in Chakra](http://blogs.msdn.com/b/ie/archive/2014/12/15/classes-in-javascript-exploring-the-implementation-in-chakra.aspx) (December 2014)
 * [Announcing key advances to JavaScript performance in Windows 10 Technical Preview](http://blogs.msdn.com/b/ie/archive/2014/10/09/announcing-key-advances-to-javascript-performance-in-windows-10-technical-preview.aspx) (October 2014)
+
+Talks
+* [Chakra: The JavaScript Engine that powers Microsoft Edge](https://channel9.msdn.com/Events/WebPlatformSummit/2015/Chakra-The-JavaScript-Engine-that-powers-Microsoft-Edge) (May 2015)
+* [Fast Apps and Sites with JavaScript](https://channel9.msdn.com/Events/Build/2013/4-313) (June 2013)
