@@ -13,3 +13,7 @@ Blogs
 Talks
 * [Chakra: The JavaScript Engine that powers Microsoft Edge](https://channel9.msdn.com/Events/WebPlatformSummit/2015/Chakra-The-JavaScript-Engine-that-powers-Microsoft-Edge) (May 2015)
 * [Fast Apps and Sites with JavaScript](https://channel9.msdn.com/Events/Build/2013/4-313) (June 2013)
+
+Related repos
+* [Chakra\ChakraCore Samples](https://github.com/Microsoft/Chakra-Samples)
+* [Node with Chakra](https://github.com/Microsoft/node)
