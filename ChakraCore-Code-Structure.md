@@ -1,26 +1,30 @@
-ChakraCore is split into four main parts: the JSRT embedding APIs, the parser, the engine runtime, and the engine backend.  
-
-## JavaScript Runtime (JSRT)
-
-For more information on JSRT, see the [[Embedding ChakraCore]] and [[JavaScript Runtime (JSRT) Overview]] documentation.
-
-## Parser
-
-The parser handles parsing the standard JavaScript language.
-
-## Runtime
-
-Once parsed, ChakraCore creates a bytecode which is passed to the interpreter.  
-
-The runtime components also cover the JS runtime API, the standard set of JavaScript API calls (eg ```Date.now()```).
-
-## Backend
-
-The ChakraCore backend handles JIT'ing code to various architectures.
-
-
-TODO TODO TODO Questions:
-
-* Are we missing major components?
-* What are the key things to say in each major component?
-* What are key subcomponents to cover to understand the codebase? (eg, I know I'm missing lots, including things like "the garbage collector and a brief overview of how it works")
+## Summary of Directory Structure
+<pre>
+[Root]                        (Various introduction documentation, and Jenkins supporting scripts) 
+|-- Lib 
+    |-- Common 
+        |-- Codex             (UTF8 conversion utilities) 
+        |-- Core              (Core supporting utilities) 
+        |-- Exceptions        (Exceptions classes and utilities) 
+        |-- DataStructures    (Link list, Dictionary, etc.) 
+        |-- Memory            (Memory management. Arena, GC, etc.) 
+        |-- Common            (Misc. supporting utilities) 
+    |-- Runtime 
+        |-- Base              (Depended on by the rest of the Runtime. e.g. ScriptContext, ThreadContext) 
+        |-- Types             (Type system) 
+        |-- ByteCode          (Byte code definition, generator and serializer) 
+        |-- Language          (Language implementation, e.g. interpreter loop and operators supporting running of JavaScript) 
+        |-- Library           (JavaScript built in library implementation) 
+        |-- Debug             (Debugger support) 
+    |-- Parser                (JavaScript language and regex parser) 
+    |-- Backend               (JIT native code generator) 
+    |-- JSRT                  (JSRT API implementation)
+|-- Bin 
+    |-- ChakraCore            (Builds ChakraCore.dll) 
+    |-- ch                    (Chakra Host, simple host running JavaScript from a file) 
+    |-- rl                    (Unit test runner) 
+|-- Build                     (Supporting build configuration and scripts) 
+    |-- ... 
+|-- Test                      (Unit tests) 
+    |-- ...
+</pre>
