@@ -1,6 +1,6 @@
 ## Summary of Directory Structure
 <pre>
-[Root]                        (Various introduction documentation, and Jenkins supporting scripts) 
+[Root]                        (Introduction documentations, Jenkins scripts etc.) 
 |-- Lib 
     |-- Common 
         |-- Codex             (UTF8 conversion utilities) 
@@ -10,10 +10,12 @@
         |-- Memory            (Memory management. Arena, GC, etc.) 
         |-- Common            (Misc. supporting utilities) 
     |-- Runtime 
-        |-- Base              (Depended on by the rest of the Runtime. e.g. ScriptContext, ThreadContext) 
+        |-- Base              (Depended on by the rest of the Runtime. 
+                               e.g. ScriptContext, ThreadContext)
         |-- Types             (Type system) 
         |-- ByteCode          (Byte code definition, generator and serializer) 
-        |-- Language          (Language implementation, e.g. interpreter loop and operators supporting running of JavaScript) 
+        |-- Language          (Language implementation
+                               e.g. interpreter loop and operators supporting running of JavaScript) 
         |-- Library           (JavaScript built in library implementation) 
         |-- Debug             (Debugger support) 
     |-- Parser                (JavaScript language and regex parser) 
