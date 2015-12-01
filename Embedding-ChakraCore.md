@@ -3,7 +3,7 @@ ChakraCore can be embedded via JavaScript Runtime (JSRT) APIs. This document goe
 ## Before you start
 You should first clone and build [ChakraCore](https://github.com/Microsoft/ChakraCore). There are a few files that you will need,
 
-1. `include` **folder**, which contains the headers. 
+1. **CharkaCore.h** and **chakracommon.h** from `lib\jsrt\`, which are the headers. 
 2. **CharkaCore.lib** and **ChakraCore.dll** from `Build\VcBuild\bin\[platform+output]\`.
 
 C# users only need **ChakraCore.dll**.  
@@ -11,7 +11,7 @@ C# users only need **ChakraCore.dll**.
 ## Use JSRT with Visual Studio 
 To use JSRT in a **C++** project:
 
-1. Copy the **include** folder into your project 
+1. Copy the headers into your project 
 2. `#include "chakracore.h"` in your project.
 3. In Visual Studio, go to `<your project> > Properties > Configuration Properties > Linker > Input > Additional Dependencies`, and add a reference to **ChakraCore.lib**. 
 4. Copy **ChakraCore.dll** to the project output directory. 
