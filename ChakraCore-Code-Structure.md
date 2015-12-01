@@ -14,8 +14,8 @@
                                e.g. ScriptContext, ThreadContext)
         |-- Types             (Type system) 
         |-- ByteCode          (Byte code definition, generator and serializer) 
-        |-- Language          (Language implementation
-                               e.g. interpreter loop and operators supporting running of JavaScript) 
+        |-- Language          (Language implementation, e.g. interpreter loop 
+                               and operators supporting running of JavaScript) 
         |-- Library           (JavaScript built in library implementation) 
         |-- Debug             (Debugger support) 
     |-- Parser                (JavaScript language and regex parser) 
