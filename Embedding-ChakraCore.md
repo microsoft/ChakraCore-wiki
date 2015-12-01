@@ -12,7 +12,7 @@ C# users only need **ChakraCore.dll**.
 To use JSRT in a **C++** project:
 
 1. Copy the headers into your project 
-2. `#include "chakracore.h"` in your project.
+2. `#include "CharkaCore.h"` in your project.
 3. In Visual Studio, go to `<your project> > Properties > Configuration Properties > Linker > Input > Additional Dependencies`, and add a reference to **ChakraCore.lib**. 
 4. Copy **ChakraCore.dll** to the project output directory. 
 
@@ -31,7 +31,7 @@ Alternatively, you can also try using a higher level [JSRT-WinRT WinRT Component
 A sample to help you understand how to embed ChakraCore with JSRT APIs. For C# users, please refer to the next [section](https://github.com/Microsoft/ChakraCore/wiki/Embedding-ChakraCore#hello-world-c). 
 
 ```
-#include "chakracore.h"
+#include "CharkaCore.h"
 #include <string>
 #include <iostream>
 
