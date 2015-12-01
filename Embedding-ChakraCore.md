@@ -70,7 +70,8 @@ int main()
 
     wstring resultW(resultWC);
     cout << string(resultW.begin(), resultW.end()) << endl;
-    
+    system("pause");
+
     return 0;
 }
 ```
@@ -124,6 +125,7 @@ public class HelloWorld
 
         string resultString = Marshal.PtrToStringUni(resultPtr);
         Console.WriteLine(resultString);
+        Console.ReadLine();
     }
 }
 ```
