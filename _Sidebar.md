@@ -2,11 +2,11 @@
 
 [[Architecture Overview]]
 
-[[Contributor Guidance]]
-
 [[Building ChakraCore]]
 
 [[ChakraCore Code Structure]] 
+
+[[Contributor Guidance]]
 
 [[Embedding ChakraCore]]
 * [[JavaScript Runtime (JSRT) Overview]]
