@@ -6,7 +6,7 @@
 
 [[ChakraCore Code Structure]] 
 
-[[Contributor Guidance]]
+[Contributer Guidance](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md)
 
 [[Embedding ChakraCore]]
 * [[JavaScript Runtime (JSRT) Overview]]
