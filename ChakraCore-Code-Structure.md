@@ -1,4 +1,4 @@
-## Summary of Directory Structure
+### Summary of Directory Structure
 <pre>
 [Root]                        (Introduction documentations, Jenkins scripts etc.) 
 |-- Lib 
