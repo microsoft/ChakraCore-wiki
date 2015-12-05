@@ -6,11 +6,11 @@ Please,
 
 And now, the ChakraCore coding guidelines:
 
-* Class names - Pascal case. No "C" prefix or the like. We like: `FileName`
+* Class names - Pascal case. No "C" prefix or the like. We like: `ClassName`
 * Interfaces - prefix with "I" like `IFoo` as opposed to `FooInterface`
 * Typedefs - apply class naming rules.
-* Variable names - use Camel case. We like: `fileName`
-* Use `m_` to prefix member variables. We like: `m_fileName`
+* Variable names - use Camel case. We like: `variableName`
+* Use `m_` to prefix member variables. We like: `m_memberName`
 * Group class data members together, please.
 * It's OK to use prefix pointers with "p" but not required. Example: `void swap(int* pLeft, int* pRight)`
 * Constants - Pascal case.
