@@ -5,8 +5,10 @@ The Chakra team is committed to working in the open. We implement new capabiliti
 * Turn support for the [exponentiation operator](https://github.com/rwaldron/exponentiation-operator) on by default
 * Modern debug APIs that can easily be bridged to the V8 debug protocol
 * ES2015 modules behind an experimental flag
-* Introduce C++ unit testing mechanism. Plan is to fork xUnit++
+* Introduce C++ unit testing mechanism. Plan is to use moswald's xUnit++
 * An implementation of ChakraCore on Linux
+  * Produce a build configuration of ChakraCore that does not include the JIT
+  * Construct a branch that establishes the patterns that the team wants to see used in the port. We want to end up with something maintainable.
 * Time travel debugging working in Node.js
 * Decode WebAssembly binaries into ASM.JS bytecode and execute using ASM.JS pipeline
 
