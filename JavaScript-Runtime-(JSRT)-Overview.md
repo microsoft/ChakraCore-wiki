@@ -42,8 +42,8 @@ The JSRT APIs expose a number of way to monitor and modify the way runtimes use 
 
     If a host wishes to disallow generation of native code by the JIT compiler, it can specify the **JsRuntimeAttributeDisableNativeCodeGeneration** flag. A host can also disallow scripts from dynamically running scripts itself by specifying the **JsRuntimeAttributeDisableEval** flag.
 
-## Debugging and Profiling
-We are working on providing these functionalitiles. 
+## Debugging
+We are working on providing debugging functionalitiles. 
 
 ## Promises
 An embedding application needs to provide an EnqueueJob abstract operation to queue up the promise tasks before promises can be used. **JsSetPromiseContinuationCallback** allows application to provide an EnqueueJob style callback to process the promise task queue. The following sample shows how to store the promise tasks in a queue and execute them after the current execution context is finished:
