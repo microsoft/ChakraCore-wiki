@@ -25,7 +25,7 @@ To use JSRT in a **C#** project:
 internal static extern JavaScriptErrorCode JsCreateRuntime(JavaScriptRuntimeAttributes attributes, JavaScriptThreadServiceCallback threadService, out JavaScriptRuntime runtime); 
 ```
 
-Alternatively, you can also try using a higher level [JSRT-WinRT WinRT Component](https://github.com/robpaveza/jsrt-winrt#getting-started). 
+Alternatively, you can also try using a higher level [.NET wrapper](https://github.com/robpaveza/jsrt-dotnet). 
 
 ## Hello World!
 A sample to help you understand how to embed ChakraCore with JSRT APIs. For C# users, please refer to the next [section](https://github.com/Microsoft/ChakraCore/wiki/Embedding-ChakraCore#hello-world-c). 
@@ -72,6 +72,10 @@ int main()
     cout << string(resultW.begin(), resultW.end()) << endl;
     system("pause");
 
+    // Dispose runtime
+    JsSetCurrentContext(JS_INVALID_REFERENCE);
+    JsDisposeRuntime(runtime);
+    
     return 0;
 }
 ```
@@ -126,6 +130,10 @@ public class HelloWorld
         string resultString = Marshal.PtrToStringUni(resultPtr);
         Console.WriteLine(resultString);
         Console.ReadLine();
+
+        // Dispose runtime
+        Native.JsSetCurrentContext(JavaScriptContext.Invalid);
+        Native.JsDisposeRuntime(runtime);
     }
 }
 ```
