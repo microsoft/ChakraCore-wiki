@@ -82,7 +82,8 @@ int main()
 
 To build and run this sample, 
 
-1. Create a new C++ project in Visual Studio, complete the use JSRT with Visual Studio steps, and add the above code to a .cpp file. Alternatively, download this sample [here](http://aka.ms/chakracorehelloworld) and copy **ChakraCore.dll** to project output directory. 
+1. Create a new C++ project in Visual Studio and add the above code to a .cpp file. Alternatively, download this sample [here](http://aka.ms/chakracorehelloworld). 
+2. Complete the [Before you start](https://github.com/Microsoft/ChakraCore/wiki/Embedding-ChakraCore/_edit#before-you-start) and [Use JSRT with Visual Studio](https://github.com/Microsoft/ChakraCore/wiki/Embedding-ChakraCore/_edit#use-jsrt-with-visual-studio) steps. 
 2. In Visual Studio, build the sample by pressing `F6` or using `Build > Build Solution`.
 3. Run the sample by pressing `Ctrl+F5` or using `Debug > Start Without Debugging`.
 
@@ -139,8 +140,8 @@ public class HelloWorld
 ```
 To build and run this sample, 
 
-1. Create a new C# project in Visual Studio, complete the use JSRT with Visual Studio steps, include a C# [wrapper](http://aka.ms/jsrtwrapper) for JSRT and add the above code to a .cs file. Alternatively, download this sample [here](http://aka.ms/chakracorecorehelloworldcsharp) and copy **ChakraCore.dll** to project output directory. 
-. 
+1. Create a new C# project in Visual Studio, include a C# [wrapper](http://aka.ms/jsrtwrapper) for JSRT and add the above code to a .cs file. Alternatively, download this sample [here](http://aka.ms/chakracorecorehelloworldcsharp). 
+2. Complete the [Before you start](https://github.com/Microsoft/ChakraCore/wiki/Embedding-ChakraCore/_edit#before-you-start) and [Use JSRT with Visual Studio](https://github.com/Microsoft/ChakraCore/wiki/Embedding-ChakraCore/_edit#use-jsrt-with-visual-studio) steps. 
 2. In Visual Studio, build the sample by pressing `F6` or using `Build > Build Solution`.
 3. Run the sample by pressing `Ctrl+F5` or using `Debug > Start Without Debugging`.
 
