@@ -1,4 +1,4 @@
-For your convenience, we have a list of all JSRT typedefs, constants, enumerations and APIs below. 
+References of JSRT typedefs, constants, enumerations and APIs. 
 
 **JSRT Typedef References:**
 * [[JsBackgroundWorkItemCallback]]
