@@ -1,4 +1,4 @@
-You can build ChakraCore on Windows 7 SP1 or above with either Visual Studio 2013 or 2015, as long as C++ support is installed[*](#build_for_arm). ChakraCore currently only works on Windows, but support for Linux is on our [[roadmap]]. 
+You can build ChakraCore on Windows 7 SP1 or above, and Windows Server 2008 R2 or above, with either Visual Studio 2013 or 2015, as long as C++ support is installed[*](#build_for_arm). ChakraCore currently only works on Windows, but support for Linux is on our [[roadmap]]. 
 
 To build ChakraCore:
 
