@@ -33,6 +33,8 @@ For every commit we run builds of all of our build configurations on Windows 8.1
 
 ## DisableJIT Builds
 
+Once daily we run all of our usual build configurations with JIT excluded from the build.
+
 |         | __Debug__ | __Test__ | __Release__ |
 |:-------:|:---------:|:--------:|:-----------:|
 | __x86__ | [![ddjx86debug][ddjx86dbgicon]][ddjx86dbglink] | [![ddjx86test][ddjx86testicon]][ddjx86testlink] | [![ddjx86release][ddjx86relicon]][ddjx86rellink] |
