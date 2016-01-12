@@ -148,4 +148,4 @@ To build and run this sample,
 ## More on JSRT
 * [[JavaScript Runtime (JSRT) Overview]]
 * [[JavaScript Runtime (JSRT) Reference]]
-* [JSRT and ChakraCore Samples](http://aka.ms/chakracoresamples)
+* [JSRT and ChakraCore Samples](https://github.com/Microsoft/Chakra-Samples)
