@@ -13,7 +13,7 @@ Specifically, we test the following:
 
 Occasionally, a test will fail due to an intermittent issue in the Jenkins system, or for other intermittent reasons. When this occurs, you can request __@dotnet-bot__ to re-run a specific test or all of your tests.
 
-To rerun a test, copy the name of the test you want to re-run from the GitHub page or above and write a comment using the following template:
+To rerun a test, copy the name of the test you want to re-run from the list of checks at the bottom of the Pull Request, and write a comment using the following template:
 
 ```
 @dotnet-bot test [test_name] please
