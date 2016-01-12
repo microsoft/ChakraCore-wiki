@@ -2,6 +2,7 @@
 
 * [[Architecture Overview]]
 * [[Building ChakraCore]]
+  * [[Build Status]]
 * [[ChakraCore Code Structure]] 
 * [Contributer Guidance](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md)
 * [[Embedding ChakraCore]]
