@@ -5,6 +5,7 @@
   * [[Build Status]]
 * [[ChakraCore Code Structure]] 
 * [Contributor Guidance](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md)
+  * [[Jenkins CI Checks]]
 * [[Embedding ChakraCore]]
   * [[JavaScript Runtime (JSRT) Overview]]
   * [[JavaScript Runtime (JSRT) Reference]]
