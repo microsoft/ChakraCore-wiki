@@ -33,9 +33,7 @@ If you would like to re-run all of the Jenkins tests:
 
 # Making changes to the Jenkins CI configuration.
 
-If you want to change or add build configurations into Jenkins CI, you will need to update the [netci.groovy](https://github.com/Microsoft/ChakraCore/blob/master/netci.groovy) file, and create a Pull Request.
-
-After you update the file you will need to create a pull request and verify the configuration change did what you expected. You should ask __@dotnet-bot__ to test the change to the CI, like so:
+If you want to change or add build configurations into Jenkins CI, you will need to update the [netci.groovy](https://github.com/Microsoft/ChakraCore/blob/master/netci.groovy) file, and create a Pull Request. To verify the configuration change did what you expected, you should ask __@dotnet-bot__ to test the change to the CI, like so:
 
 ```
 @dotnet-bot test ci please
