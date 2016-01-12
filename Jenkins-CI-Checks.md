@@ -1,6 +1,6 @@
 We have Continuous Integration (CI) tests set up using Jenkins. Each Pull Request will be automatically built and tested in all of the configurations the code is expected to support, using the Jenkins CI system. Pull Requests must pass all CI checks before they will be merged.
 
-We also test each commit which is merged into master to ensure no breaks occur when merging. Additionally, we test some configurations which are more expensive to test on a daily basis to ensure we cover those scenarios as well, even if we can't cover them for every contribution.
+We also test each commit which is merged into master to ensure no breaks occur when merging. Additionally, on a daily schedule, we test some configurations which are more expensive to test in every change to ensure we still cover those scenarios.
 
 Specifically, we test the following:
 
