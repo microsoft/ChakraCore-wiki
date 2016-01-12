@@ -1,4 +1,7 @@
-The Chakra team is committed to working in the open. We implement new capabilities in public forks of ChakraCore that are in the Microsoft organization. Using forks keeps the repository leaner than branches. The following is a coarse version of the ChakraCore team’s backlog. The further down the list, the more speculative an item is.
+_This is a living document. It describes the priorities as they exist today but can evolve over time._
+
+The ChakraCore team is committed to working in the open. We implement new capabilities in public forks. All the changes done in the public repository flow into Chakra and Microsoft Edge on a regular basis as described in the [Contribution guidelines](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md). The following is a summary of the ChakraCore team’s backlog for the next 6 months (through June 2016). 
+
 * Acceptance of a pull request to Node.js mainline to include ChakraCore
 * Turn support for [async functions](https://github.com/tc39/ecmascript-asyncawait) on by default
 * Turn support for ES2015 destructuring on by default
