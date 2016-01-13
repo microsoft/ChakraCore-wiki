@@ -64,7 +64,7 @@ Once daily we run all of our usual build configurations with JIT excluded from t
 
 ## Legacy Builds
 
-Once daily we run builds of some configurations using Windows 7 and VS 2013.
+Once daily we run builds of some configurations using Windows 7 (Windows Server 2008 R2) and VS 2013.
 
 |         | __Debug__ | __Test__ | __Release__ |
 |:-------:|:---------------:|:--------------:|:-----------------:|
