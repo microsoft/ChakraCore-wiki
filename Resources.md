@@ -12,9 +12,10 @@ Blogs
 * [Announcing key advances to JavaScript performance in Windows 10 Technical Preview](http://blogs.msdn.com/b/ie/archive/2014/10/09/announcing-key-advances-to-javascript-performance-in-windows-10-technical-preview.aspx) (October 2014)
 
 Talks
+* [ChakraCore OSS](https://www.youtube.com/watch?v=1bfDB3YPHFI&feature=youtu.be) (January 2016)
 * [Chakra: The JavaScript Engine that powers Microsoft Edge](https://channel9.msdn.com/Events/WebPlatformSummit/2015/Chakra-The-JavaScript-Engine-that-powers-Microsoft-Edge) (May 2015)
 * [Fast Apps and Sites with JavaScript](https://channel9.msdn.com/Events/Build/2013/4-313) (June 2013)
 
 Related repos
-* [Chakra\ChakraCore Samples](https://github.com/Microsoft/Chakra-Samples)
+* [Chakra/ChakraCore Samples](https://github.com/Microsoft/Chakra-Samples)
 * [Node with Chakra](https://github.com/Microsoft/node)
