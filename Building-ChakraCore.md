@@ -2,7 +2,7 @@ You can build ChakraCore on Windows 7 SP1 or above, and Windows Server 2008 R2 o
 
 To build ChakraCore:
 
-* Clone ChakraCore thtough ```git clone https://github.com/Microsoft/ChakraCore.git```
+* Clone ChakraCore through ```git clone https://github.com/Microsoft/ChakraCore.git```
 * Open ```Build\Chakra.Core.sln``` in Visual Studio.
 * Select the target [Platform](#platform) and [Configuration](#configuration) and build the solution.
 * Build output will be under ```Build\VcBuild\bin```.
