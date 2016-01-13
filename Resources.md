@@ -1,6 +1,7 @@
 This section includes resources such as blog posts and talks. Some of the resources speak of Chakra, but the content applies to ChakraCore as well. 
 
 Blogs
+* [ChakraCore GitHub repository is now open](https://blogs.windows.com/msedgedev/2016/01/13/chakracore-now-open/) (January 2016)
 * [Microsoft Edge’s JavaScript engine to go open-source](https://blogs.windows.com/msedgedev/2015/12/05/open-source-chakra-core/) (December 2015)
 * [Supercharging JavaScript performance with asm.js](http://blogs.windows.com/msedgedev/2015/11/10/supercharging-javascript-performance-with-asm-js/) (November 2015)
 * [Asynchronous code gets easier with ES2016 Async Function support in Chakra and Microsoft Edge](http://blogs.windows.com/msedgedev/2015/09/30/asynchronous-code-gets-easier-with-es2016-async-function-support-in-chakra-and-microsoft-edge/) (September 2015)
