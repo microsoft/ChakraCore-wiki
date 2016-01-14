@@ -32,6 +32,10 @@ Description of the GitHub labels used by ChakraCore
 
    Issue is actually related to the ES specification rather than ChakraCore itself.
 
+**ES Spec Changed**
+
+   This issue came up because the ECMAScript Spec changed and the code now needs to be updated to be compliant with the Spec.
+
 **External**
 
    Issue is not directly related to ChakraCore but has to do with a related project.
@@ -59,10 +63,6 @@ Description of the GitHub labels used by ChakraCore
 **Question**
 
    Issue is actually a question rather than a problem or proposal.
-
-**Spec Change**
-
-   This issue came up because the ECMAScript Spec changed and the code now needs to be updated to be compliant with the Spec.
 
 **Suggestion**
 
