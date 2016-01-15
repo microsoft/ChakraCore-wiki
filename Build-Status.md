@@ -71,16 +71,16 @@ Once daily we run builds of some configurations using Windows 7 (Windows Server 
 | __x86__ | [![dailyx86dbg][dailyx86dbgicon]][dailyx86dbglink] | [![dailyx86test][dailyx86testicon]][dailyx86testlink] | [![dailyx86release][dailyx86relicon]][dailyx86rellink] |
 | __x64__ | [![dailyx64dbg][dailyx64dbgicon]][dailyx64dbglink] | [![dailyx64test][dailyx64testicon]][dailyx64testlink] | [![dailyx64release][dailyx64relicon]][dailyx64rellink] |
 
-[dailyx86dbgicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x86_debug_prtest/badge/icon
-[dailyx86dbglink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x86_debug_prtest/
-[dailyx86testicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x86_test_prtest/badge/icon
-[dailyx86testlink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x86_test_prtest/
-[dailyx86relicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x86_release_prtest/badge/icon
-[dailyx86rellink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x86_release_prtest/
+[dailyx86dbgicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x86_debug/badge/icon
+[dailyx86dbglink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x86_debug/
+[dailyx86testicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x86_test/badge/icon
+[dailyx86testlink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x86_test/
+[dailyx86relicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x86_release/badge/icon
+[dailyx86rellink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x86_release/
 
-[dailyx64dbgicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x64_debug_prtest/badge/icon
-[dailyx64dbglink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x64_debug_prtest/
-[dailyx64testicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x64_test_prtest/badge/icon
-[dailyx64testlink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x64_test_prtest/
-[dailyx64relicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x64_release_prtest/badge/icon
-[dailyx64rellink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x64_release_prtest/
+[dailyx64dbgicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x64_debug/badge/icon
+[dailyx64dbglink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x64_debug/
+[dailyx64testicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x64_test/badge/icon
+[dailyx64testlink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x64_test/
+[dailyx64relicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x64_release/badge/icon
+[dailyx64rellink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_x64_release/
