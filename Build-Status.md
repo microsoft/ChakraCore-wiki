@@ -1,6 +1,6 @@
 # Rolling Builds
 
-For every commit we build and test of all of our build configurations on Windows 8.1 (Windows Server 2012 R2) using VS 2015.\
+For every commit we build and test of all of our build configurations on Windows 8.1 (Windows Server 2012 R2) using VS 2015.
 
 |         | __Debug__ | __Test__ | __Release__ |
 |:-------:|:---------:|:--------:|:-----------:|
