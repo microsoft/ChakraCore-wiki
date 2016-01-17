@@ -94,6 +94,8 @@ Once daily we run all of our usual build configurations with JIT excluded from t
 [ddjarmrelicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_disablejit_arm_release/badge/icon
 [ddjarmrellink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/daily_disablejit_arm_release/
 
+DisableJIT is a work in progress as part of the cross platform effort. It may be unstable as we get it up to speed. Failing builds here do not necessarily indicate an instability in the main ChakraCore builds (which are represented by the rolling builds at the top of the page).
+
 ## Legacy Builds
 
 Once daily we run builds of some configurations using Windows 7 (Windows Server 2008 R2) and VS 2013.
