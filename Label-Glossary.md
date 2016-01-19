@@ -2,7 +2,7 @@ Description of the GitHub labels used by ChakraCore
 
 **Accepting PRs**
 
-   We will accept a 3rd party pull request for this issue.
+   We welcome a 3rd party pull request for this issue. This is a good issue for a first contribution, and is up for grabs. (Other issues are okay for 3rd party PRs, but in any case, please indicate that you're claiming an issue to reduce duplication of effort.)
 
 **Bug**
 
