@@ -1,6 +1,7 @@
 This section includes resources such as blog posts and talks. Some of the resources speak of Chakra, but the content applies to ChakraCore as well. 
 
 Blogs
+* [Submitting a Pull Request to Node.js with ChakraCore](https://blogs.windows.com/msedgedev/2016/01/19/nodejs-chakracore-mainline/) (January 2016)
 * [Running JavaScript in Azure DocumentDB with Chakra](https://azure.microsoft.com/en-us/blog/the-road-ahead-for-azure-documentdb-with-chakracore/) (January 2016)
 * [ChakraCore GitHub repository is now open](https://blogs.windows.com/msedgedev/2016/01/13/chakracore-now-open/) (January 2016)
 * [Microsoft Edge’s JavaScript engine to go open-source](https://blogs.windows.com/msedgedev/2015/12/05/open-source-chakra-core/) (December 2015)
