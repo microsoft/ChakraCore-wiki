@@ -17,4 +17,5 @@ STDAPI_(JsErrorCode)
 ### Return Value 
 The code **JsNoError** if the operation succeeded, a failure code otherwise.
 ### Remarks 
+Requires thisArg as first argument of arguments.  
 Requires an active script context.
