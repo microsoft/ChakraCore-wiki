@@ -7,8 +7,8 @@ The ChakraCore team is committed to working in the open. We implement new capabi
 * **Cross-platform**: An implementation of ChakraCore interpreter and runtime, no JIT, on Linux, targeting x64 Ubuntu 15.10 (JIT and support for more platforms to come in future iterations). This could change based on customer feedback.
   * [x] Produce a build configuration of ChakraCore that does not include the JIT compiler
   * [x] Publish a branch that establishes development environment 
-  * Get lib\common\codex to compile
-  * Get lib\common to build (solve the string problem)
+  * [x] Get lib\common\codex to compile
+  * [...] Get lib\common to build
   * Get GC host app to build and run (no concurrency and no partial collections)
   * Get lib\runtime\base directory to compile
   * Get lib\Parser to compile
