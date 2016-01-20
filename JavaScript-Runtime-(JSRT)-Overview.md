@@ -81,6 +81,8 @@ void runPromiseSample()
 ```
 All other supported ES2015 features do not require any setup to run in JSRT. 
 
+Features based on promises, such as [ES2016/ES7 Async Functions](https://blogs.windows.com/msedgedev/2015/09/30/asynchronous-code-gets-easier-with-es2016-async-function-support-in-chakra-and-microsoft-edge/), would require setting up promises before usage. 
+
 ## Experimental Features
 Experimental JavaScript features that are not yet stable are hidden behind an experimental flag. You can enable these features on a runtime by specifying **JsRuntimeAttributeEnableExperimentalFeatures** flag when **JsCreateRuntime** is called. 
 
