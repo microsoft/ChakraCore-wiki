@@ -1,6 +1,7 @@
 This section includes resources such as blog posts and talks. Some of the resources speak of Chakra, but the content applies to ChakraCore as well. 
 
 Blogs
+* [Advancing Node.js for Windows 10 IoT Core](https://blogs.windows.com/buildingapps/2016/01/20/advancing-node-js-for-windows-10-iot-core/)
 * [Submitting a Pull Request to Node.js with ChakraCore](https://blogs.windows.com/msedgedev/2016/01/19/nodejs-chakracore-mainline/) (January 2016)
 * [Running JavaScript in Azure DocumentDB with Chakra](https://azure.microsoft.com/en-us/blog/the-road-ahead-for-azure-documentdb-with-chakracore/) (January 2016)
 * [ChakraCore GitHub repository is now open](https://blogs.windows.com/msedgedev/2016/01/13/chakracore-now-open/) (January 2016)
