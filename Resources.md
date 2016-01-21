@@ -16,6 +16,7 @@ Blogs
 
 Talks
 * [ChakraCore OSS](https://www.youtube.com/watch?v=1bfDB3YPHFI&feature=youtu.be) (January 2016)
+* [Lessons Learned: Extending Node.js with Another JavaScript Engine](https://www.youtube.com/watch?v=Zbc3SwMDWf0) (NodeInteractive, December 2015)
 * [Chakra: The JavaScript Engine that powers Microsoft Edge](https://channel9.msdn.com/Events/WebPlatformSummit/2015/Chakra-The-JavaScript-Engine-that-powers-Microsoft-Edge) (May 2015)
 * [Fast Apps and Sites with JavaScript](https://channel9.msdn.com/Events/Build/2013/4-313) (June 2013)
 
