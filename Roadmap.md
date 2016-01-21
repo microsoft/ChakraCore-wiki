@@ -40,6 +40,6 @@ The ChakraCore team is committed to working in the open. We implement new capabi
 * Flesh out TTD plumbing in ChakraCore-V8 shim/Node.js to allow record in Node.js and playback in ch.exe
 
 # Engineering Improvements
-* Introduce C++ unit testing mechanism. Plan is to use moswald's xUnit++
-* Move JSRT API unit tests from internal testing mechanism to xUnit++
+* Introduce C++ unit testing mechanism. Evaluating moswald's xUnit++ and [Criterion](https://github.com/Snaipe/Criterion)
+* Move JSRT API unit tests from internal testing mechanism to new framework.
 * Establish a criteria and release cadence for creating public releases for ChakraCore
