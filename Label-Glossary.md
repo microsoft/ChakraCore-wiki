@@ -80,9 +80,9 @@ Description of the GitHub labels used by ChakraCore
 
  - Issue has a clear, actionable task.
 
-[**Test**](https://github.com/Microsoft/ChakraCore/labels/Test)
+**Test** (omitted)
 
- - Issues with tests or requests for additional tests.
+ - We are deliberately omitting this label because issues of this category generally fit into either **Task** or **Bug**. Labeling something as **Test** causes developers to de-prioritize the issues, even if they would otherwise be regarded as important.
 
 [**Won't Fix**](https://github.com/Microsoft/ChakraCore/labels/Won't%20Fix)
 
