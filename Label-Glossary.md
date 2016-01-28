@@ -2,7 +2,7 @@ Description of the GitHub labels used by ChakraCore
 
 [**Accepting PRs**](https://github.com/Microsoft/ChakraCore/labels/Accepting%20PRs)
 
- - We welcome a 3rd party pull request for this issue. It is specifically well suited for outside contributors and is up for grabs. (Other issues are okay for 3rd party PRs, but in any case, please indicate that you're claiming an issue to reduce duplication of effort.)
+ - We welcome a 3rd party pull request for this issue. It is specifically well suited for outside contributors and is up for grabs. (Other issues are okay for 3rd party PRs, but in any case, please indicate that you're claiming an issue to reduce duplication of effort.) See also: [**Your first PR**](https://github.com/Microsoft/ChakraCore/labels/Your%20first%20PR).
 
 [**Bug**](https://github.com/Microsoft/ChakraCore/labels/Bug)
 
@@ -44,6 +44,10 @@ Description of the GitHub labels used by ChakraCore
 
  - Issue has been fixed.
 
+[**Linux**](https://github.com/Microsoft/ChakraCore/labels/Linux)
+
+ - Issue related to the Linux cross-platform port.
+
 [**Merged**](https://github.com/Microsoft/ChakraCore/labels/Merged)
 
  - The change has been merged in, but for some reason was not automatically closed as merged by GitHub, so we had to close the issue manually.
@@ -76,10 +80,14 @@ Description of the GitHub labels used by ChakraCore
 
  - Issue has a clear, actionable task.
 
+[**Test**](https://github.com/Microsoft/ChakraCore/labels/Test)
+
+ - Issues with tests or requests for additional tests.
+
 [**Won't Fix**](https://github.com/Microsoft/ChakraCore/labels/Won't%20Fix)
 
  - Issue will not be fixed.
 
 [**Your first PR**](https://github.com/Microsoft/ChakraCore/labels/Your%20first%20PR)
 
- - Issue is well suited to for people new to GitHub contributions -- we're here to help you get started in OSS.  These issues are typically limited in scope and impact and thus are good starting points to become familiar with being a contributor to ChakraCore.
+ - Issue is well suited to for people new to GitHub contributions -- we're here to help you get started in OSS.  These issues are typically limited in scope and impact and thus are good starting points to become familiar with being a contributor to ChakraCore. See also: [**Accepting PRs**](https://github.com/Microsoft/ChakraCore/labels/Accepting%20PRs).
