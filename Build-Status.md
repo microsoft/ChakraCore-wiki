@@ -33,7 +33,7 @@ For every commit we build and test of all of our build configurations on Windows
 
 ## Builds with Slow Tests
 
-One daily we run all the same builds as the Rolling Builds above, but we run additional slow tests.
+Once a day, we run all the same builds as the Rolling Builds above, but we run additional slow tests.
 
 |         | __Debug__ | __Test__ | __Release__ |
 |:-------:|:---------:|:--------:|:-----------:|
@@ -65,7 +65,7 @@ One daily we run all the same builds as the Rolling Builds above, but we run add
 
 ## DisableJIT Builds
 
-Once daily we run all of our usual build configurations with JIT excluded from the build.
+Once a day, we run all of our usual build configurations with JIT excluded from the build.
 
 |         | __Debug__ | __Test__ | __Release__ |
 |:-------:|:---------:|:--------:|:-----------:|
@@ -98,7 +98,7 @@ DisableJIT is a work in progress as part of the cross platform effort. It may be
 
 ## Legacy Builds
 
-Once daily we run builds of some configurations using Windows 7 (Windows Server 2008 R2) and VS 2013.
+Once a day, we run builds of some configurations using Windows 7 (Windows Server 2008 R2) and VS 2013.
 
 |         | __Debug__ | __Test__ | __Release__ |
 |:-------:|:---------------:|:--------------:|:-----------------:|
