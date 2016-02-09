@@ -8,6 +8,8 @@ For every commit we build and test of all of our build configurations on Windows
 | __x64__ | [![x64debug][x64dbgicon]][x64dbglink] | [![x64test][x64testicon]][x64testlink] | [![x64release][x64relicon]][x64rellink] |
 | __arm__ | [![armdebug][armdbgicon]][armdbglink] | [![armtest][armtesticon]][armtestlink] | [![armrelease][armrelicon]][armrellink] |
 
+*If you see badges reading "Build: Unknown" it is likely because a build was skipped due to changes being only in files known not to affect the health of the build.*
+
 [x86dbgicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/x86_debug/badge/icon
 [x86dbglink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/x86_debug/
 [x86testicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/x86_test/badge/icon
