@@ -26,6 +26,7 @@ References of JSRT typedefs, constants, enumerations and APIs.
 **JSRT Enum References:**
 * [[JsErrorCode]]
 * [[JsMemoryEventType]]
+* [[JsParseScriptAttributes]]
 * [[JsPropertyIdType]]
 * [[JsRuntimeAttributes]]
 * [[JsTypedArrayType]]
@@ -112,6 +113,7 @@ References of JSRT typedefs, constants, enumerations and APIs.
 * [[JsNumberToDouble]]
 * [[JsNumberToInt]]
 * [[JsParseScript]]
+* [[JsParseScriptWithFlags]]
 * [[JsParseSerializedScript]]
 * [[JsParseSerializedScriptWithCallback]]
 * [[JsPointerToString]]
