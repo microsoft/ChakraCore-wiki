@@ -4,7 +4,7 @@ The ChakraCore team is committed to working in the open. We implement new capabi
 
 # Enhancing Host & Platform Support 
 * **Node.js**: Submit pull request to Node.js to include ChakraCore sources and the ChakraCore-V8 shim
-* **Cross-platform**: (See [#111: \[Discussion\] Linux / Cross-platform planning](https://github.com/Microsoft/ChakraCore/issues/111).) An implementation of ChakraCore interpreter and runtime, no JIT, on Linux, targeting x64 Ubuntu 15.10 (JIT and support for more platforms to come in future iterations). This could change based on customer feedback. 
+* **Cross-platform**: (See [#111: \[Discussion\] Linux / Cross-platform planning](https://github.com/Microsoft/ChakraCore/issues/111).) An implementation of ChakraCore interpreter and runtime, no JIT, on Linux, targeting x64 Ubuntu 15.10 and Clang 3.6.2 (JIT and support for more platforms to come in future iterations). This could change based on customer feedback. 
   * [x] Produce a build configuration of ChakraCore that does not include the JIT compiler
   * [x] Publish a branch that establishes development environment 
   * [x] Get lib\common\codex to compile
