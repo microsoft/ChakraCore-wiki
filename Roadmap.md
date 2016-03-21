@@ -8,16 +8,16 @@ The ChakraCore team is committed to working in the open. We implement new capabi
   * [x] Produce a build configuration of ChakraCore that does not include the JIT compiler
   * [x] Publish a branch that establishes development environment 
   * [x] Get lib\common\codex to compile
-  * [...] Get lib\common to build
-  * Get GC host app to build and run (no concurrency and no partial collections)
-  * Get lib\runtime\base directory to compile
-  * Get lib\Parser to compile
-  * Write simple parser host to print AST
-  * Get lib\runtime\bytecode directory to compile
-  * Get lib\runtime\library directory to compile
-  * Get lib\runtime\language directory to compile, rewrite assembly portions
-  * Make it link
-  * Make it run
+  * - [ ] [...] Get lib\common to build
+  * - [ ] Get GC host app to build and run (no concurrency and no partial collections)
+  * - [ ] Get lib\runtime\base directory to compile
+  * - [ ] Get lib\Parser to compile
+  * - [ ] Write simple parser host to print AST
+  * - [ ] Get lib\runtime\bytecode directory to compile
+  * - [ ] Get lib\runtime\library directory to compile
+  * - [ ] Get lib\runtime\language directory to compile, rewrite assembly portions
+  * - [ ] Make it link
+  * - [ ] Make it run
 
 # Language Innovation & Standards
 * Continue TC39 and WebAssembly standardization engagements
