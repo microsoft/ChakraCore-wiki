@@ -2,7 +2,7 @@
 
 * [[Architecture Overview]]
 * [[Building ChakraCore]]
-  * [[Build Status]]
+  * [[Build Status (master)]]
 * [[ChakraCore Code Structure]] 
 * [Contributor Guidance](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md)
   * [[Coding Convention]]
