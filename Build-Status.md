@@ -1,3 +1,5 @@
+Currently showing the Build Status page for the master branch. You can also view the build status for [`release/1.2`](https://github.com/Microsoft/ChakraCore/wiki/Build-Status-%28release-1.2%29).
+
 # Rolling Builds
 
 For every commit we build and test of all of our build configurations on Windows 8.1 (Windows Server 2012 R2) using VS 2015.
