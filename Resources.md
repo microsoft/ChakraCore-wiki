@@ -1,6 +1,7 @@
 This section includes resources such as blog posts and talks. Some of the resources speak of Chakra, but the content applies to ChakraCore as well. 
 
 Blogs
+* [Getting started with ChakraCore](http://eclipsesource.com/blogs/2016/04/06/getting-started-with-microsoft-chakracore/)(April 2016)
 * [Previewing WebAssembly experiments in Microsoft Edge](https://blogs.windows.com/msedgedev/2016/03/15/previewing-webassembly-experiments/) (March 2016) 
 * [Advancing Node.js for Windows 10 IoT Core](https://blogs.windows.com/buildingapps/2016/01/20/advancing-node-js-for-windows-10-iot-core/) (January 2016)
 * [Submitting a Pull Request to Node.js with ChakraCore](https://blogs.windows.com/msedgedev/2016/01/19/nodejs-chakracore-mainline/) (January 2016)
