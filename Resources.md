@@ -1,7 +1,6 @@
 This section includes resources such as blog posts and talks. Some of the resources speak of Chakra, but the content applies to ChakraCore as well. 
 
-Blogs
-* [Getting started with ChakraCore](http://eclipsesource.com/blogs/2016/04/06/getting-started-with-microsoft-chakracore/) (April 2016)
+Team Blog
 * [Previewing WebAssembly experiments in Microsoft Edge](https://blogs.windows.com/msedgedev/2016/03/15/previewing-webassembly-experiments/) (March 2016) 
 * [Advancing Node.js for Windows 10 IoT Core](https://blogs.windows.com/buildingapps/2016/01/20/advancing-node-js-for-windows-10-iot-core/) (January 2016)
 * [Submitting a Pull Request to Node.js with ChakraCore](https://blogs.windows.com/msedgedev/2016/01/19/nodejs-chakracore-mainline/) (January 2016)
@@ -17,6 +16,7 @@ Blogs
 * [Announcing key advances to JavaScript performance in Windows 10 Technical Preview](http://blogs.msdn.com/b/ie/archive/2014/10/09/announcing-key-advances-to-javascript-performance-in-windows-10-technical-preview.aspx) (October 2014)
 
 Talks
+* [A Lap Around @ChakraCore](https://channel9.msdn.com/Events/WebPlatformSummit/edgesummit2016/ES1609) (April 2016)
 * [ChakraCore OSS](https://www.youtube.com/watch?v=1bfDB3YPHFI&feature=youtu.be) (January 2016)
 * [Lessons Learned: Extending Node.js with Another JavaScript Engine](https://www.youtube.com/watch?v=Zbc3SwMDWf0) (NodeInteractive, December 2015)
 * [Chakra: The JavaScript Engine that powers Microsoft Edge](https://channel9.msdn.com/Events/WebPlatformSummit/2015/Chakra-The-JavaScript-Engine-that-powers-Microsoft-Edge) (May 2015)
@@ -25,3 +25,6 @@ Talks
 Related repos
 * [Chakra/ChakraCore Samples](https://github.com/Microsoft/Chakra-Samples)
 * [Node with Chakra](https://github.com/Microsoft/node)
+
+Community posts
+* [Getting started with ChakraCore](http://eclipsesource.com/blogs/2016/04/06/getting-started-with-microsoft-chakracore/) (April 2016)
