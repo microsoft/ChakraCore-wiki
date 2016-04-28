@@ -2,7 +2,7 @@ Parses a script and returns a function representing the script.
 ### Syntax 
 ```
 STDAPI_(JsErrorCode)
-    JsParseScriptWithFlags(
+    JsParseScriptWithAttributes(
         _In_z_ const wchar_t *script,
         _In_ JsSourceContext sourceContext,
         _In_z_ const wchar_t *sourceUrl,
