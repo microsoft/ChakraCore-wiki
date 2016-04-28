@@ -113,7 +113,7 @@ References of JSRT typedefs, constants, enumerations and APIs.
 * [[JsNumberToDouble]]
 * [[JsNumberToInt]]
 * [[JsParseScript]]
-* [[JsParseScriptWithFlags]]
+* [[JsParseScriptWithAttributes]]
 * [[JsParseSerializedScript]]
 * [[JsParseSerializedScriptWithCallback]]
 * [[JsPointerToString]]
