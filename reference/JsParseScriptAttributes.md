@@ -1,4 +1,4 @@
-Attribute mask for JsParseScriptWithFlags
+Attribute mask for JsParseScriptWithAttributes
 ### Syntax 
 ```
 enum JsParseScriptAttributes 
