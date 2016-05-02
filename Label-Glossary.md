@@ -68,6 +68,10 @@ Description of the GitHub labels used by ChakraCore
 
  - Issue is a feature request or architecture design suggestion but not a formal proposal.
 
+[**NoRepro**](https://github.com/Microsoft/ChakraCore/labels/NoRepro)
+
+ - Unable to reproduce the issue described. There is no further action to be taken.
+
 [**Pending TC39 Consensus**](https://github.com/Microsoft/ChakraCore/labels/Pending%20TC39%20Consensus)
 
  - Issue is a ECMAScript compliance bug but requires TC39 consensus before action is taken to address it in ChakraCore.
