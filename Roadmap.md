@@ -8,7 +8,7 @@ All the changes done in the public repository flow into Chakra and Microsoft Edg
   * Implement V8 debug protocol in the Node.js [ChakraShim](https://github.com/nodejs/node-chakracore/tree/chakracore-master/deps/chakrashim) to enable debugging using VS Code.
 
 * **Cross-platform**: (See [#111: \[Discussion\] Linux / Cross-platform planning](https://github.com/Microsoft/ChakraCore/issues/111).) An implementation of ChakraCore interpreter and runtime, no JIT, on Linux, targeting x64 Ubuntu 16.04 LTS and Clang 3.8+
-  * [x] [DONE!] Get GC host app to build and run (no concurrency and no partial collections)
+  * [x] Get GC host app to build and run (no concurrency and no partial collections)
   * [x] Get lib\runtime\base directory to compile
   * [x] Get lib\Parser to compile
   * ~~Write simple parser host to print AST~~
