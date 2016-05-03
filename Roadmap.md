@@ -7,16 +7,22 @@ All the changes done in the public repository flow into Chakra and Microsoft Edg
   * Update [Node.js+ChakraCore](https://github.com/nodejs/node-chakracore) to include [ChakraCore 1.2](https://github.com/Microsoft/ChakraCore/tree/release/1.2)
   * Implement V8 debug protocol in the Node.js [ChakraShim](https://github.com/nodejs/node-chakracore/tree/chakracore-master/deps/chakrashim) to enable debugging using VS Code.
 
-* **Cross-platform**: (See [#111: \[Discussion\] Linux / Cross-platform planning](https://github.com/Microsoft/ChakraCore/issues/111).) An implementation of ChakraCore interpreter and runtime, no JIT, on Linux, targeting x64 Ubuntu 15.10 and Clang 3.6.2  
+* **Cross-platform**: (See [#111: \[Discussion\] Linux / Cross-platform planning](https://github.com/Microsoft/ChakraCore/issues/111).) An implementation of ChakraCore interpreter and runtime, no JIT, on Linux, targeting x64 Ubuntu 16.04 LTS and Clang 3.8+
   * [x] [DONE!] Get GC host app to build and run (no concurrency and no partial collections)
-  * Get lib\runtime\base directory to compile
-  * Get lib\Parser to compile
-  * Write simple parser host to print AST
-  * Get lib\runtime\bytecode directory to compile
-  * Get lib\runtime\library directory to compile
-  * Get lib\runtime\language directory to compile, rewrite assembly portions
-  * Make it link
+  * [x] Get lib\runtime\base directory to compile
+  * [x] Get lib\Parser to compile
+  * ~Write simple parser host to print AST~
+  * [x] Get lib\runtime\bytecode directory to compile
+  * [x] Get lib\runtime\library directory to compile
+  * [x] Get lib\runtime\language directory to compile, rewrite assembly portions
+  * [x] Make it link
   * Make it run
+    * [x] Run hello world
+    * Run tests in the Basics directory
+    * Run Date-related unit tests
+    * Run Exception/Stack-walking related unit tests
+    * Run benchmarks
+    * Pass all unit tests
 
 # Language Innovation & Standards
 - Continue TC39 and WebAssembly standardization engagements
