@@ -11,7 +11,7 @@ All the changes done in the public repository flow into Chakra and Microsoft Edg
   * [x] [DONE!] Get GC host app to build and run (no concurrency and no partial collections)
   * [x] Get lib\runtime\base directory to compile
   * [x] Get lib\Parser to compile
-  * ~Write simple parser host to print AST~
+  * ~~Write simple parser host to print AST~~
   * [x] Get lib\runtime\bytecode directory to compile
   * [x] Get lib\runtime\library directory to compile
   * [x] Get lib\runtime\language directory to compile, rewrite assembly portions
