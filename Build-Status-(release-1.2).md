@@ -1,4 +1,4 @@
-Currently showing the Build Status page for the `release/1.2` branch. You can also view the build status for [`master`](https://github.com/Microsoft/ChakraCore/wiki/Build-Status).
+Currently showing the Build Status page for the `release/1.2` branch. You can also view the build status for other branches by clicking the links in the sidebar.
 
 # Rolling Builds
 
