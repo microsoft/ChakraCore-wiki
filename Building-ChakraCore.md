@@ -41,7 +41,7 @@ msbuild ... /p:RuntimeLib=static_library ...
 
 ## Linux ##
 
-ChakraCore on Linux is still under development. We are making progress on a first implementation of ChakraCore interpreter and runtime, no JIT, on Linux, targeting x64 Ubuntu 16.04 LTS and Clang 3.8+. You can test the current support with the following instructions. 
+ChakraCore on Linux is still under development. We are working on a first implementation of ChakraCore interpreter and runtime, no JIT, on Linux, targeting x64 Ubuntu 16.04 LTS and Clang 3.8+. We will add JIT later as we progress. You can test the current support with the following instructions. 
 
 To build ChakraCore on Linux:
 * Make sure you have Ubuntu 16.04 LTS on your machine or VM. Visit http://releases.ubuntu.com/ to download latest LTS (x64).
