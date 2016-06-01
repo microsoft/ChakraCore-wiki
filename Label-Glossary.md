@@ -94,7 +94,7 @@ Description of the GitHub labels used by ChakraCore
 
 [**Wiki**](https://github.com/Microsoft/ChakraCore/labels/Wiki)
 
- - Issues is related to Wiki content.
+ - Issue is related to Wiki content.
 
 [**Won't Fix**](https://github.com/Microsoft/ChakraCore/labels/Won't%20Fix)
 
