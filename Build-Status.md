@@ -9,6 +9,7 @@ For every commit we build and test of all of our build configurations on Windows
 | __x86__ | [![x86debug][x86dbgicon]][x86dbglink] | [![x86test][x86testicon]][x86testlink] | [![x86release][x86relicon]][x86rellink] |
 | __x64__ | [![x64debug][x64dbgicon]][x64dbglink] | [![x64test][x64testicon]][x64testlink] | [![x64release][x64relicon]][x64rellink] |
 | __arm__ | [![armdebug][armdbgicon]][armdbglink] | [![armtest][armtesticon]][armtestlink] | [![armrelease][armrelicon]][armrellink] |
+| __linux__ | [![linuxdebug][linuxdbgicon]][linuxdbglink] | N/A | [![linuxrelease][linuxrelicon]][linuxrellink] |
 
 *If you see badges reading "Build: Unknown" it is likely because a build was skipped due to changes being only in files known not to affect the health of the build.*
 
@@ -33,6 +34,11 @@ For every commit we build and test of all of our build configurations on Windows
 [armrelicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/master/job/arm_release/badge/icon
 [armrellink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/master/job/arm_release/
 
+[linuxdbgicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/master/job/ubuntu_linux_debug/badge/icon
+[linuxdbglink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/master/job/ubuntu_linux_debug
+[linuxrelicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/master/job/ubuntu_linux_release/badge/icon
+[linuxrellink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/master/job/ubuntu_linux_release/
+
 # Daily Builds
 
 ## Builds with Slow Tests
@@ -44,6 +50,7 @@ Once a day, we run all the same builds as the Rolling Builds above, but we run a
 | __x86__ | [![dslowx86debug][dslowx86dbgicon]][dslowx86dbglink] | [![dslowx86test][dslowx86testicon]][dslowx86testlink] | [![dslowx86release][dslowx86relicon]][dslowx86rellink] |
 | __x64__ | [![dslowx64debug][dslowx64dbgicon]][dslowx64dbglink] | [![dslowx64test][dslowx64testicon]][dslowx64testlink] | [![dslowx64release][dslowx64relicon]][dslowx64rellink] |
 | __arm__ | [![dslowarmdebug][dslowarmdbgicon]][dslowarmdbglink] | [![dslowarmtest][dslowarmtesticon]][dslowarmtestlink] | [![dslowarmrelease][dslowarmrelicon]][dslowarmrellink] |
+| __linux__ | [![dslowlinuxdebug][dslowlinuxdbgicon]][dslowlinuxdbglink] | N/A | [![dslowlinuxrelease][dslowlinuxrelicon]][dslowlinuxrellink] |
 
 [dslowx86dbgicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/master/job/daily_slow_x86_debug/badge/icon
 [dslowx86dbglink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/master/job/daily_slow_x86_debug/
@@ -66,6 +73,10 @@ Once a day, we run all the same builds as the Rolling Builds above, but we run a
 [dslowarmrelicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/master/job/daily_slow_arm_release/badge/icon
 [dslowarmrellink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/master/job/daily_slow_arm_release/
 
+[dslowlinuxdbgicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/master/job/daily_ubuntu_linux_debug/badge/icon
+[dslowlinuxdbglink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/master/job/daily_ubuntu_linux_debug
+[dslowlinuxrelicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/master/job/daily_ubuntu_linux_release/badge/icon
+[dslowlinuxrellink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/master/job/daily_ubuntu_linux_release
 
 ## DisableJIT Builds
 
