@@ -92,6 +92,10 @@ Description of the GitHub labels used by ChakraCore
 
  - Issue has a clear, actionable task.
 
+[**Wiki**](https://github.com/Microsoft/ChakraCore/labels/Wiki)
+
+ - Issues is related to Wiki content.
+
 [**Won't Fix**](https://github.com/Microsoft/ChakraCore/labels/Won't%20Fix)
 
  - Issue will not be fixed.
