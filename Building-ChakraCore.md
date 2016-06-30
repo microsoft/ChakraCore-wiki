@@ -59,6 +59,12 @@ To build ChakraCore on Linux:
 	* ```cd ChakraCore```
 	* ```git checkout linux```
 	* ```./build.sh``` 
+	* You can specify `--debug` or `--test-build` to `build.sh` to select Debug or Test build flavors respectively. Default is Release build.
+* If you'd like to build using `ninja` instead of `cmake`:
+	* ```sudo apt-get install -y ninja-build```
+	* Run `ninja --version` and ensure that at least version 1.3 is installed.
+	* Specify the `-n` flag to `build.sh` to build with `ninja`.
 * [Optional] Install some useful packages for better development experience.
 	* ```sudo apt-get install -y meld```
-	* Download and install [VSCode](https://code.visualstudio.com/Docs/editor/setup#_linux).	
+	* Download and install [VSCode](https://code.visualstudio.com/Docs/editor/setup#_linux).
+	
