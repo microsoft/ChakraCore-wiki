@@ -60,6 +60,7 @@ To build ChakraCore on Linux:
 	* ```git checkout linux```
 	* ```./build.sh``` 
 	* You can specify `--debug` or `--test-build` to `build.sh` to select Debug or Test build flavors respectively. Default is Release build.
+	* You can specify `--static` to build ChakraCore as a static library.
 * If you'd like to build using `ninja` instead of `cmake`:
 	* ```sudo apt-get install -y ninja-build```
 	* Run `ninja --version` and ensure that at least version 1.3 is installed.
