@@ -8,17 +8,31 @@ All the changes done in the public repository flow into Chakra and Microsoft Edg
   * Implement V8 debug protocol in the Node.js [ChakraShim](https://github.com/nodejs/node-chakracore/tree/chakracore-master/deps/chakrashim) to enable debugging using VS Code.
 
 * **Cross-platform**: (See [#111: \[Discussion\] Linux / Cross-platform planning](https://github.com/Microsoft/ChakraCore/issues/111).) An implementation of ChakraCore interpreter and runtime on Linux, targeting x64 Ubuntu 16.04 LTS and Clang 3.8+
-  * Build and pass unit tests on OS X
-  * Enable Jenkins CI support for OS X
-  * Match node-chakracore on xplat
-  * Enable Intl on xplat
-  * Match Windows-ChakraCore on test262
-  * Enable profiling interpreter on xplat
-  * Enable dynamic interpreter thunks on xplat
-  * Enable JIT on xplat
-  * Implement broader software-based write barrier support in the GC
-  * Enable concurrent GC on xplat
-  * Enable partial GC on xplat
+  * [x] Get GC host app to build and run (no concurrency and no partial collections)
+  * [x] Get lib\runtime\base directory to compile
+  * [x] Get lib\Parser to compile
+  * [x] Get lib\runtime\bytecode directory to compile
+  * [x] Get lib\runtime\library directory to compile
+  * [x] Get lib\runtime\language directory to compile, rewrite assembly portions
+  * [x] Make it link
+  * [x] Make it run
+    * Run hello world
+    * Run tests in the Basics directory
+    * Run Date-related unit tests
+    * Run Exception/Stack-walking related unit tests
+    * Run benchmarks
+    * Pass all unit tests
+  * [ ] Build and pass unit tests on OS X
+  * [ ] Enable Jenkins CI support for OS X
+  * [ ] Match node-chakracore on xplat
+  * [ ] Enable Intl on xplat
+  * [ ] Match Windows-ChakraCore on test262
+  * [ ] Enable profiling interpreter on xplat
+  * [ ] Enable dynamic interpreter thunks on xplat
+  * [ ] Enable JIT on xplat
+  * [ ] Implement broader software-based write barrier support in the GC
+  * [ ] Enable concurrent GC on xplat
+  * [ ] Enable partial GC on xplat
 
 # Language Innovation & Standards
 - Continue TC39 and WebAssembly standardization engagements
