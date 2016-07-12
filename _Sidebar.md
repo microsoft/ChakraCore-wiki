@@ -10,6 +10,8 @@
 * [Contributor Guidance](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md)
   * [[Coding Convention]]
   * [[Jenkins CI Checks]]
+  * [[Jenkins Build Triggers]]
+  * [[Jenkins Repro Steps]]
 * [[Embedding ChakraCore]]
   * [[JavaScript Runtime (JSRT) Overview]]
   * [[JavaScript Runtime (JSRT) Reference]]
