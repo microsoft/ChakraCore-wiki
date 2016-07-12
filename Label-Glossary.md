@@ -92,6 +92,10 @@ Description of the GitHub labels used by ChakraCore
 
  - Issue has a clear, actionable task.
 
+[**Waiting**](https://github.com/Microsoft/ChakraCore/labels/Waiting)
+
+- Waiting on changes from another issue or project.
+
 [**Wiki**](https://github.com/Microsoft/ChakraCore/labels/Wiki)
 
  - Issue is related to Wiki content.
