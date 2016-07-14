@@ -14,14 +14,15 @@ All the changes done in the public repository flow into Chakra and Microsoft Edg
   * [x] Get lib\runtime\bytecode directory to compile
   * [x] Get lib\runtime\library directory to compile
   * [x] Get lib\runtime\language directory to compile, rewrite assembly portions
-  * [x] Make it link
-  * [x] Make it run
+  * [x] Make it link on Linux
+  * [x] Make it run and pass unit tests on Linux
     * [x] Run hello world
     * [x] Run tests in the Basics directory
     * [x] Run Date-related unit tests
     * [x] Run Exception/Stack-walking related unit tests
     * [x] Run benchmarks
     * [x] Pass all unit tests
+  * [x] Enable Jenkins CI support for Linux
   * [ ] Build and pass unit tests on OS X
   * [ ] Enable Jenkins CI support for OS X
   * [ ] Match node-chakracore on xplat
