@@ -16,12 +16,12 @@ All the changes done in the public repository flow into Chakra and Microsoft Edg
   * [x] Get lib\runtime\language directory to compile, rewrite assembly portions
   * [x] Make it link
   * [x] Make it run
-    * Run hello world
-    * Run tests in the Basics directory
-    * Run Date-related unit tests
-    * Run Exception/Stack-walking related unit tests
-    * Run benchmarks
-    * Pass all unit tests
+    * [x] Run hello world
+    * [x] Run tests in the Basics directory
+    * [x] Run Date-related unit tests
+    * [x] Run Exception/Stack-walking related unit tests
+    * [x] Run benchmarks
+    * [x] Pass all unit tests
   * [ ] Build and pass unit tests on OS X
   * [ ] Enable Jenkins CI support for OS X
   * [ ] Match node-chakracore on xplat
