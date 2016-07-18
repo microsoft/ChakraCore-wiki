@@ -36,7 +36,9 @@ All the changes done in the public repository flow into Chakra and Microsoft Edg
   * [ ] Enable partial GC on xplat
 
 # Language Innovation & Standards
-* [ ] Begin decoding WebAssembly post-order binary format and converting to ASM.JS bytecode
+* Begin decoding WebAssembly post-order binary format and converting to ASM.JS bytecode
+    * [x] 0xB format
+    * [ ] 0xC format
 * [ ] Complete module implementation (ES6)
 * [ ] Eval support in default parameter list  (ES6)
 - Well-known symbols: (ES6)
