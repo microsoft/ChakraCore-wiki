@@ -1,6 +1,6 @@
 ## Windows ##
  
-You can build ChakraCore on Windows 7 SP1 or above, and Windows Server 2008 R2 or above, with either Visual Studio 2013 or 2015, as long as C++ support is installed[*](#build_for_arm). For Linux support, ChakraCore is making progress in the [Linux branch](https://github.com/Microsoft/ChakraCore/tree/linux). Refer to the [Linux](#linux) section for building instructions on Linux.  
+You can build ChakraCore on Windows 7 SP1 or above, and Windows Server 2008 R2 or above, with either Visual Studio 2013 or 2015, as long as C++ support is installed[*](#build_for_arm). For Linux/OS X support, ChakraCore is making progress in the [Linux branch](https://github.com/Microsoft/ChakraCore/tree/linux). Refer to the [Linux](#linux) and [OS X](#os-x) sections for building instructions on these platforms.  
 
 To build ChakraCore on Windows:
 
@@ -69,3 +69,24 @@ To build ChakraCore on Linux:
 	* ```sudo apt-get install -y meld```
 	* Download and install [VSCode](https://code.visualstudio.com/Docs/editor/setup#_linux).
 	
+## OS X ##
+
+Similar to [Linux](#Linux), we have experimental implementation of ChakraCore interpreter and runtime without JIT for OS X 10.9+. Please make sure you also have XCode and [Homebrew](http://brew.sh/). 
+
+To build ChakraCore on OS X:
+* Install dependencies. 
+	* ```xcode-select --install``` 
+	* ```brew install cmake icu4c```
+* Clone ChakraCore.
+	* ```mkdir Github && cd Github```
+	* ```git clone https://github.com/Microsoft/ChakraCore```
+* Let's build!
+	* ```cd ChakraCore```
+	* ```git checkout linux```
+	* ```./build.sh --static --icu=/usr/local/opt/icu4c/include --test-build -j=2```
+
+Some details on build script arguments used above:
+* ```--static``` embed JSRT as a static library (necessary for OS X)
+* ```--icu=..``` specify the location of ICU library
+* ```--test-build``` enable command line options and some optimizations
+* ```-j=2``` compile with 2 threads
