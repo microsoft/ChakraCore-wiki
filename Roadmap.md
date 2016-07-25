@@ -1,6 +1,6 @@
 _This is a living document. It describes the priorities as they exist today and will evolve over time._
 
-All the changes done in the public repository flow into Chakra and Microsoft Edge on a regular basis as described in the [Contribution guidelines](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md). The following is a summary of the ChakraCore team's backlog for the next 6 months. Last updated 7/6/16.
+All the changes done in the public repository flow into Chakra and Microsoft Edge on a regular basis as described in the [Contribution guidelines](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md). The following is a summary of the ChakraCore team's backlog for the next 6 months. Last updated 7/15/16.
 
 # Enhancing Host & Platform Support 
 * **Node.js**
@@ -36,36 +36,39 @@ All the changes done in the public repository flow into Chakra and Microsoft Edg
   * [ ] Enable partial GC on xplat
 
 # Language Innovation & Standards
-- Continue TC39 and WebAssembly standardization engagements
-- Begin decoding WebAssembly post-order binary format and converting to ASM.JS bytecode
-- Complete module implementation and enable it by default (ES6)
-- Eval support in default parameter list  (ES6)
+* Begin decoding WebAssembly post-order binary format and converting to ASM.JS bytecode
+    * [x] 0xB format
+    * [ ] 0xC format
+* [ ] Complete module implementation (ES6)
+* [ ] Eval support in default parameter list  (ES6)
 - Well-known symbols: (ES6)
-    * Symbol.hasInstance
-    * Symbol.toPrimitive
-    * Symbol.toStringTag
-    * Symbol.isConcatSpreadable
-- Shared memory and atomics (ESNext)
+    * [x] [Symbol.hasInstance](https://github.com/Microsoft/ChakraCore/pull/1063)
+    * [ ] Symbol.toPrimitive
+    * [ ] Symbol.toStringTag
+    * [x] [Symbol.isConcatSpreadable](https://github.com/Microsoft/ChakraCore/pull/1198)
+- Prototype shared memory and atomics (ESNext)
 - Regex Buffet (ESNext)
     * RegExp named capture groups
     * RegExp lookbehind
-- Object.getOwnPropertyDescriptors (ESNext)
-
+* [x] [Object.getOwnPropertyDescriptors (ESNext)](https://github.com/Microsoft/ChakraCore/pull/1202)
 
 # Performance - Staying Fast and Lean
 * Implement ability to "re-defer" functions and pitch byte code for already JITted functions.
-* Implement "native fields" optimization - the capability of storing some properties as unwrapped objects on objects
+    * [x] [Determine closure captures precisely in the presence of deferred functions.](https://github.com/Microsoft/ChakraCore/pull/1167)
+    * [ ] Identify legal re-deferral candidates.
+    * [ ] Put function in deferred state and change entry point.
+    * [ ] Design heuristics
 
 # Diagnostics & Tooling Enhancements
-* Merge JsRTDebugging branch to master. This branch contains an implementation of flat C debugging APIs following the existing JSRT pattern that can easily be bridged to the V8 debug protocol.
-* Integrate Time Travel Debugging implementation into master
+* [x] [Merge JsRTDebugging branch to master.](https://github.com/Microsoft/ChakraCore/pull/926) This branch contains an implementation of flat C debugging APIs following the existing JSRT pattern that can easily be bridged to the V8 debug protocol.
+* [x] [Integrate Time Travel Debugging implementation into master](https://github.com/Microsoft/ChakraCore/pull/1160)
   * Review and agree on JSRT API shape
-* Enhance the Node.js [ChakraShim](https://github.com/nodejs/node-chakracore/tree/chakracore-master/deps/chakrashim) to enable TTD recording of Node.js and playback using ch.exe.
+* [ ] Enhance the Node.js [ChakraShim](https://github.com/nodejs/node-chakracore/tree/chakracore-master/deps/chakrashim) to enable TTD recording of Node.js and playback using ch.exe.
 
 # Engineering Improvements
-* Introduce C++ unit testing mechanism using [Catch](https://github.com/philsquared/Catch)
-* Move JSRT API unit tests from internal testing mechanism to new framework.
-* Enable easier authoring of JavaScript built-ins in JavaScript.
+* [x] [Introduce C++ unit testing mechanism](https://github.com/Microsoft/ChakraCore/pull/1224) using [Catch](https://github.com/philsquared/Catch)
+* [x] [Move JSRT API unit tests from internal testing mechanism to new framework](https://github.com/Microsoft/ChakraCore/pull/1224)
+* [ ] Enable easier authoring of JavaScript built-ins in JavaScript.
 
 # Releases
 ## 1.2
