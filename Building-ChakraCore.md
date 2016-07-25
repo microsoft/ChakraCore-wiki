@@ -1,5 +1,6 @@
 ## Windows ##
- 
+
+
 You can build ChakraCore on Windows 7 SP1 or above, and Windows Server 2008 R2 or above, with either Visual Studio 2013 or 2015, as long as C++ support is installed[*](#build_for_arm). For Linux/OS X support, ChakraCore is making progress in the [Linux branch](https://github.com/Microsoft/ChakraCore/tree/linux). Refer to the [Linux](#linux) and [OS X](#os-x) sections for building instructions on these platforms.  
 
 To build ChakraCore on Windows:
@@ -71,7 +72,7 @@ To build ChakraCore on Linux:
 	
 ## OS X ##
 
-Similar to [Linux](#Linux), we have experimental implementation of ChakraCore interpreter and runtime without JIT for OS X 10.9+. Please make sure you also have XCode and [Homebrew](http://brew.sh/). 
+Similar to [Linux](#Linux), we have an experimental implementation of ChakraCore interpreter and runtime without JIT for OS X 10.9+. Please make sure you also have XCode and [Homebrew](http://brew.sh/). 
 
 To build ChakraCore on OS X:
 * Install dependencies. 
