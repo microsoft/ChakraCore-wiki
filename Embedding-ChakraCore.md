@@ -1,14 +1,16 @@
 ChakraCore can be embedded via JavaScript Runtime (JSRT) APIs. This document goes through the basics of embedding with a Hello-world sample to get you started. To learn more about JSRT, visit [[JavaScript Runtime (JSRT) Overview]]. 
 
-## Before you start
+## Windows
+
+### Before you start
 You should first clone and build [ChakraCore](https://github.com/Microsoft/ChakraCore). There are a few files that you will need,
 
-1. **ChakraCore.h**, **ChakraCommon.h** and  **ChakraDebug.h** from `lib\jsrt\`, which are the headers. 
+1. **ChakraCore.h**, **ChakraCommon.h**, **ChakraCommonWindows.h** and  **ChakraDebug.h** from `lib\jsrt\`, which are the headers. 
 2. **ChakraCore.lib** and **ChakraCore.dll** from `Build\VcBuild\bin\[platform+output]\`.
 
 C# users only need **ChakraCore.dll**.  
 
-## Use JSRT with Visual Studio 
+### Use JSRT with Visual Studio 
 To use JSRT in a **C++** project:
 
 1. Copy the headers into your project 
@@ -27,7 +29,7 @@ internal static extern JavaScriptErrorCode JsCreateRuntime(JavaScriptRuntimeAttr
 
 Alternatively, you can also try using a higher level [.NET wrapper](https://github.com/robpaveza/jsrt-dotnet). 
 
-## Hello World!
+### Hello World!
 A sample to help you understand how to embed ChakraCore with JSRT APIs. For C# users, please refer to the next [section](https://github.com/Microsoft/ChakraCore/wiki/Embedding-ChakraCore#hello-world-c). 
 
 ```
@@ -87,7 +89,7 @@ To build and run this sample,
 2. In Visual Studio, build the sample by pressing `F6` or using `Build > Build Solution`. Make sure the build targets the same platform as the ChakraCore.dll you built earlier. 
 3. Run the sample by pressing `Ctrl+F5` or using `Debug > Start Without Debugging`.
 
-## Hello World! (C#)
+### Hello World! (C#)
 C# version of the above Hello-world sample. Note that JSRT APIs are C++ APIs, this sample assumes a C# [wrapper](http://aka.ms/jsrtwrapper). 
 
 ```
@@ -145,7 +147,10 @@ To build and run this sample,
 2. In Visual Studio, build the sample by pressing `F6` or using `Build > Build Solution`. Make sure the build targets the same platform as the ChakraCore.dll you built earlier. 
 3. Run the sample by pressing `Ctrl+F5` or using `Debug > Start Without Debugging`.
 
-## More on JSRT
+## Linux/OS X
+See [[Building ChakraCore]] and the [hello-world sample](https://github.com/Microsoft/Chakra-Samples/tree/master/ChakraCore%20Samples/Hello%20World/Linux_OSX) for Linux and OS X. 
+
+# More on JSRT
 * [[JavaScript Runtime (JSRT) Overview]]
 * [[JavaScript Runtime (JSRT) Reference]]
 * [JSRT and ChakraCore Samples](https://github.com/Microsoft/Chakra-Samples)
