@@ -31,6 +31,11 @@ If you would like to re-run all of the Jenkins tests:
 @dotnet-bot test this please
 ```
 
+For more specifics on when and how to trigger specific builds, please see:
+
+* [[Jenkins Build Triggers]]
+* [[Jenkins Repro Steps]]
+
 # Making changes to the Jenkins CI configuration.
 
 If you want to change or add build configurations into Jenkins CI, you will need to update the [netci.groovy](https://github.com/Microsoft/ChakraCore/blob/master/netci.groovy) file, and create a Pull Request. To verify the configuration change did what you expected, you should ask __@dotnet-bot__ to test the change to the CI, like so:
