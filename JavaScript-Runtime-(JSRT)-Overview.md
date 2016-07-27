@@ -4,7 +4,7 @@ The JavaScript Runtime (JSRT) APIs provide a way to embed ChakraCore into applic
 
 Understanding how to host the JavaScript engine using the JSRT APIs depends on two key concepts: **runtimes** and **execution contexts**.
 
-A **runtime** represents a complete JavaScript execution environment. Each runtime that is created has its own isolated garbage collected heap and, by default, its own just-in-time (JIT) compiler thread and garbage collector (GC) thread. An execution context represents a JavaScript environment that has its own JavaScript global object distinct from all other execution contexts. One runtime may contain multiple execution contexts, and in such cases, all the execution contexts share the JIT compiler and GC thread associated with the runtime. 
+A **runtime** represents a complete JavaScript execution environment. Each runtime that is created has its own isolated garbage-collected heap and, by default, its own just-in-time (JIT) compiler thread and garbage collector (GC) thread. An execution context represents a JavaScript environment that has its own JavaScript global object distinct from all other execution contexts. One runtime may contain multiple execution contexts, and in such cases, all the execution contexts share the JIT compiler and GC thread associated with the runtime. 
 
 Runtimes represent a single thread of execution. Only one runtime can be active on a particular thread at a time, and a runtime can only be active on one thread at a time. Runtimes are rental threaded, so a runtime that is not currently active on a thread (i.e. isn’t running any JavaScript code or responding to any calls from the host) can be used on any thread that doesn’t already have an active runtime on it.
 
@@ -27,7 +27,7 @@ When a JavaScript exception occurs during script execution, the containing runti
 A host is not allowed to let its own internal exceptions to propagate across a host callback—any callback methods must catch all host exceptions before returning control to the runtime.
 
 ## Runtime resource usage
-The JSRT APIs expose a number of way to monitor and modify the way runtimes use resources. They generally break down into the following categories:
+The JSRT APIs expose a number of ways to monitor and modify the way runtimes use resources. They generally break down into the following categories:
 
 * **Thread Usage**. By default, each runtime will create a dedicated JIT compiler thread and a dedicated GC thread that service that runtime. If a runtime is created with the **JsRuntimeAttributeDisableBackgroundWork** flag, then the JIT and GC work will be performed on the runtime thread itself instead of separate background threads for each one of them. A host can also supply a thread service callback to the **JsCreateRuntime** call, which will allow the host to schedule JIT and GC work in any way it sees fit.
 
