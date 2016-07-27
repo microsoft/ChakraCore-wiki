@@ -15,11 +15,11 @@ Alternatively, run msbuild on the command line:
 msbuild /m /p:Platform=... /p:Configuration=... Build\Chakra.Core.sln
 ```
 
-### Platform ###
+### Platforms ###
 
 ChakraCore on Windows can be built for 3 Platforms: ```x86```, ```x64``` and ```arm```.
 
-<a name="build_for_arm">**Build for arm**:</a> Due to toolset dependency, you will need following to build for the ```arm``` platform:
+<a name="build_for_arm">**Building for `arm`**:</a> Due to toolset dependency, you will need following to build for the `arm` platform:
 * Visual Studio 2015
 * [Windows 10 SDK](https://dev.windows.com/en-US/downloads/windows-10-sdk)
 
