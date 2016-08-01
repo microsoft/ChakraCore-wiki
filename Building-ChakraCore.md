@@ -55,7 +55,7 @@ To build ChakraCore on Linux:
 	* ```mkdir Github && cd Github```
 	* ```git clone https://github.com/Microsoft/ChakraCore```
 * Install dependencies.
-	* ```sudo apt-get install -y build-essential cmake clang uuid-dev libunwind-dev libicu-dev liblttng-ust-dev```
+	* ```sudo apt-get install -y build-essential cmake clang libunwind-dev libicu-dev```
 * Let's build!
 	* ```cd ChakraCore```
 	* ```git checkout linux```
