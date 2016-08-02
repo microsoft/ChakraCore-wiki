@@ -23,8 +23,8 @@ All the changes done in the public repository flow into Chakra and Microsoft Edg
     * [x] Run benchmarks
     * [x] Pass all unit tests
   * [x] Enable Jenkins CI support for Linux
-  * [ ] Build and pass unit tests on OS X
-  * [ ] Enable Jenkins CI support for OS X
+  * [x] Build and pass unit tests on OS X
+  * [x] Enable Jenkins CI support for OS X
   * [ ] Match node-chakracore on xplat
   * [ ] Enable Intl on xplat
   * [ ] Match Windows-ChakraCore on test262
