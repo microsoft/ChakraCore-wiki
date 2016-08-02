@@ -133,6 +133,14 @@ You can replace `x64` with `x86` or `arm`. (Running tests on `arm` builds is not
 
 You can replace `debug` with `test` or `release`. (Running tests on `release` builds is not supported).
 
+Rolling Builds and NoJIT Daily builds of `release` configurations also perform PreFAST code analysis. Modified commands are below:
+
+```
+jenkins\buildone.cmd x64 debug "/p:runcodeanalysis=true"
+jenkins\testone.cmd x64 debug
+powershell .\Build\scripts\check_prefast_error.ps1 . CodeAnalysis.err
+```
+
 ## Linux Alternate Flags
 
 See [Building ChakraCore](https://github.com/Microsoft/ChakraCore/wiki/Building-ChakraCore#linux)
