@@ -80,6 +80,10 @@ Description of the GitHub labels used by ChakraCore
 
  - Issue is a ECMAScript compliance bug but requires TC39 consensus before action is taken to address it in ChakraCore.
 
+[**Performance**](https://github.com/Microsoft/ChakraCore/labels/Performance)
+
+ - Issue is related to run-time performance of ChakraCore.
+
 [**Proposal**](https://github.com/Microsoft/ChakraCore/labels/Proposal)
 
  - Issue is a formal proposal.
