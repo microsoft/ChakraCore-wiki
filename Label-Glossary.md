@@ -28,6 +28,10 @@ Description of the GitHub labels used by ChakraCore
 
  - We are committed to resolving this issue.
 
+[**Compatibility**](https://github.com/Microsoft/ChakraCore/labels/Compatibility)
+
+ - Issue is related to an compatibility between engines, which may or may not be formally specified by the ES spec.
+
 [**Continuous Integration**](https://github.com/Microsoft/ChakraCore/labels/Continuous%20Integration)
 
  - Involves changes to the Jenkins Continuous Integration (Jenkins CI) configuration or related files. May result in temporary CI breaks while the changes propagate. May need special attention from a project or tool maintainer.
