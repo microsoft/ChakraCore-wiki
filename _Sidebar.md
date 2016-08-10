@@ -3,8 +3,8 @@
 * [[Architecture Overview]]
 * [[Building ChakraCore]]
   * [[Build Status]]
-  * [[Build Status (release/1.2)]]
   * [[Build Status (linux)]]
+  * [[Build Status (release/1.2)]]
   * [[NuGet Packages]]
 * [[ChakraCore Code Structure]] 
 * [Contributor Guidance](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md)
