@@ -14,11 +14,11 @@ Description of the GitHub labels used by ChakraCore
 
 **Bug / [Build Bug](https://github.com/Microsoft/ChakraCore/labels/Test%20Bug)**
 
- - Issue is a bug in building ChakraCore.
+ - Issue is a bug with the ChakraCore build definitions or infrastructure (does not include compile errors).
 
 **Bug / [Test Bug](https://github.com/Microsoft/ChakraCore/labels/Test%20Bug)**
 
- - Issue is a bug in Test or Test infrastructure of ChakraCore.
+ - Issue is a bug in Test or Test infrastructure of ChakraCore (does not include test failures due to actual code defects). Bugs in tests themselves are considered [**Bug**](https://github.com/Microsoft/ChakraCore/labels/Bug)s.
 
 [**By Design**](https://github.com/Microsoft/ChakraCore/labels/By%20Design)
 
