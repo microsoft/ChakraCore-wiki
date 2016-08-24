@@ -6,7 +6,7 @@ for more info about upcoming changes.
 
 # NuGet Feed (Stable Builds)
 
-_Coming soon! (Check back when we finalize the `release/1.2` milestone.)_
+You can get our official NuGet packages from: https://www.nuget.org/packages/Microsoft.ChakraCore
 
 # MyGet Feed (Preview Builds)
 
