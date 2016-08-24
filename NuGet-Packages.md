@@ -6,13 +6,11 @@ for more info about upcoming changes.
 
 # NuGet Feed (Stable Builds)
 
-You can get our official NuGet packages from: https://www.nuget.org/packages/Microsoft.ChakraCore
+Official NuGet packages are available on the [Microsoft.ChakraCore NuGet Feed](https://www.nuget.org/packages/Microsoft.ChakraCore).
 
 # MyGet Feed (Preview Builds)
 
-For preview builds of our NuGet package, see the
-[Microsoft.ChakraCore](https://www.myget.org/feed/chakracore-preview/package/nuget/Microsoft.ChakraCore)
-MyGet Feed.
+Preview NuGet packages are available on the [Microsoft.ChakraCore MyGet Feed](https://www.myget.org/feed/chakracore-preview/package/nuget/Microsoft.ChakraCore).
 
 Currently, packages on the MyGet feed are built from the `release/1.2` branch.
 
