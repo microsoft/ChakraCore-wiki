@@ -4,11 +4,14 @@ Currently showing the Build Status page for the `release/1.3` branch. You can al
 
 For every commit we build and test of all of our build configurations on Windows 8.1 (Windows Server 2012 R2) using VS 2015.
 
-|                   | __Debug__ | __Test__ | __Release__ |
-|:-----------------:|:---------:|:--------:|:-----------:|
-| __Windows (x64)__ | [![x86debug][x86dbgicon]][x86dbglink] | [![x86test][x86testicon]][x86testlink] | [![x86release][x86relicon]][x86rellink] |
-| __Windows (x86)__ | [![x64debug][x64dbgicon]][x64dbglink] | [![x64test][x64testicon]][x64testlink] | [![x64release][x64relicon]][x64rellink] |
-| __Windows (ARM)__ | [![armdebug][armdbgicon]][armdbglink] | [![armtest][armtesticon]][armtestlink] | [![armrelease][armrelicon]][armrellink] |
+|                               | __Debug__ | __Test__ | __Release__ |
+|:-----------------------------:|:---------:|:--------:|:-----------:|
+| __Windows (x64)__             | [![x64debug][x64dbgicon]][x64dbglink] | [![x64test][x64testicon]][x64testlink] | [![x64release][x64relicon]][x64rellink] |
+| __Windows (x86)__             | [![x86debug][x86dbgicon]][x86dbglink] | [![x86test][x86testicon]][x86testlink] | [![x86release][x86relicon]][x86rellink] |
+| __Windows (ARM)__             | [![armdebug][armdbgicon]][armdbglink] | [![armtest][armtesticon]][armtestlink] | [![armrelease][armrelicon]][armrellink] |
+| __Ubuntu 16.04 (x64)__        | [![linuxdebug][linuxdbgicon]][linuxdbglink] | [![linuxtest][linuxtesticon]][linuxtestlink] | [![linuxrelease][linuxrelicon]][linuxrellink] |
+| __Ubuntu 16.04 (x64 static)__ | [![linuxsdebug][linuxsdbgicon]][linuxsdbglink] | [![linuxstest][linuxstesticon]][linuxstestlink] | [![linuxsrelease][linuxsrelicon]][linuxsrellink] |
+| __OS X 10.9 (x64 static)__    | [![osxsdebug][osxsdbgicon]][osxsdbglink] | [![osxstest][osxstesticon]][osxstestlink] | [![osxsrelease][osxsrelicon]][osxsrellink] |
 
 *If you see badges reading "Build: Unknown" it is likely because a build was skipped due to changes being only in files known not to affect the health of the build.*
 
@@ -33,17 +36,41 @@ For every commit we build and test of all of our build configurations on Windows
 [armrelicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/arm_release/badge/icon
 [armrellink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/arm_release/
 
+[linuxdbgicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/ubuntu_linux_debug/badge/icon
+[linuxdbglink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/ubuntu_linux_debug/
+[linuxtesticon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/ubuntu_linux_test/badge/icon
+[linuxtestlink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/ubuntu_linux_test/
+[linuxrelicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/ubuntu_linux_release/badge/icon
+[linuxrellink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/ubuntu_linux_release/
+
+[linuxsdbgicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/ubuntu_linux_debug_static/badge/icon
+[linuxsdbglink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/ubuntu_linux_debug_static/
+[linuxstesticon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/ubuntu_linux_test_static/badge/icon
+[linuxstestlink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/ubuntu_linux_test_static/
+[linuxsrelicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/ubuntu_linux_release_static/badge/icon
+[linuxsrellink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/ubuntu_linux_release_static/
+
+[osxsdbgicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/osx_osx_debug_static/badge/icon
+[osxsdbglink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/osx_osx_debug_static/
+[osxstesticon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/osx_osx_test_static/badge/icon
+[osxstestlink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/osx_osx_test_static/
+[osxsrelicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/osx_osx_release_static/badge/icon
+[osxsrellink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/osx_osx_release_static/
+
 # Daily Builds
 
 ## Builds with Slow Tests
 
 Once a day, we run all the same builds as the Rolling Builds above, but we run additional slow tests.
 
-|                   | __Debug__ | __Test__ | __Release__ |
-|:-----------------:|:---------:|:--------:|:-----------:|
-| __Windows (x64)__ | [![dslowx64debug][dslowx64dbgicon]][dslowx64dbglink] | [![dslowx64test][dslowx64testicon]][dslowx64testlink] | [![dslowx64release][dslowx64relicon]][dslowx64rellink] |
-| __Windows (x86)__ | [![dslowx86debug][dslowx86dbgicon]][dslowx86dbglink] | [![dslowx86test][dslowx86testicon]][dslowx86testlink] | [![dslowx86release][dslowx86relicon]][dslowx86rellink] |
-| __Windows (ARM)__ | [![dslowarmdebug][dslowarmdbgicon]][dslowarmdbglink] | [![dslowarmtest][dslowarmtesticon]][dslowarmtestlink] | [![dslowarmrelease][dslowarmrelicon]][dslowarmrellink] |
+|                               | __Debug__ | __Test__ | __Release__ |
+|:-----------------------------:|:---------:|:--------:|:-----------:|
+| __Windows (x64)__             | [![dslowx64debug][dslowx64dbgicon]][dslowx64dbglink] | [![dslowx64test][dslowx64testicon]][dslowx64testlink] | [![dslowx64release][dslowx64relicon]][dslowx64rellink] |
+| __Windows (x86)__             | [![dslowx86debug][dslowx86dbgicon]][dslowx86dbglink] | [![dslowx86test][dslowx86testicon]][dslowx86testlink] | [![dslowx86release][dslowx86relicon]][dslowx86rellink] |
+| __Windows (ARM)__             | [![dslowarmdebug][dslowarmdbgicon]][dslowarmdbglink] | [![dslowarmtest][dslowarmtesticon]][dslowarmtestlink] | [![dslowarmrelease][dslowarmrelicon]][dslowarmrellink] |
+| __Ubuntu 16.04 (x64)__        | [![dslowlinuxdebug][dslowlinuxdbgicon]][dslowlinuxdbglink] | [![dslowlinuxtest][dslowlinuxtesticon]][dslowlinuxtestlink] | [![dslowlinuxrelease][dslowlinuxrelicon]][dslowlinuxrellink] |
+| __Ubuntu 16.04 (x64 static)__ | [![dslowlinuxsdebug][dslowlinuxsdbgicon]][dslowlinuxsdbglink] | [![dslowlinuxstest][dslowlinuxstesticon]][dslowlinuxstestlink] | [![dslowlinuxsrelease][dslowlinuxsrelicon]][dslowlinuxsrellink] |
+| __OS X 10.9 (x64 static)__    | [![dslowosxsdebug][dslowosxsdbgicon]][dslowosxsdbglink] | [![dslowosxstest][dslowosxstesticon]][dslowosxstestlink] | [![dslowosxsrelease][dslowosxsrelicon]][dslowosxsrellink] |
 
 [dslowx64dbgicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_slow_x64_debug/badge/icon
 [dslowx64dbglink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_slow_x64_debug/
@@ -65,6 +92,27 @@ Once a day, we run all the same builds as the Rolling Builds above, but we run a
 [dslowarmtestlink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_slow_arm_test/
 [dslowarmrelicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_slow_arm_release/badge/icon
 [dslowarmrellink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_slow_arm_release/
+
+[dslowlinuxdbgicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_ubuntu_linux_debug/badge/icon
+[dslowlinuxdbglink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_ubuntu_linux_debug/
+[dslowlinuxtesticon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_ubuntu_linux_test/badge/icon
+[dslowlinuxtestlink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_ubuntu_linux_test/
+[dslowlinuxrelicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_ubuntu_linux_release/badge/icon
+[dslowlinuxrellink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_ubuntu_linux_release/
+
+[dslowlinuxsdbgicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_ubuntu_linux_debug_static/badge/icon
+[dslowlinuxsdbglink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_ubuntu_linux_debug_static/
+[dslowlinuxstesticon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_ubuntu_linux_test_static/badge/icon
+[dslowlinuxstestlink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_ubuntu_linux_test_static/
+[dslowlinuxsrelicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_ubuntu_linux_release_static/badge/icon
+[dslowlinuxsrellink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_ubuntu_linux_release_static/
+
+[dslowosxsdbgicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_osx_osx_debug_static/badge/icon
+[dslowosxsdbglink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_osx_osx_debug_static/
+[dslowosxstesticon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_osx_osx_test_static/badge/icon
+[dslowosxstestlink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_osx_osx_test_static/
+[dslowosxsrelicon]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_osx_osx_release_static/badge/icon
+[dslowosxsrellink]: http://dotnet-ci.cloudapp.net/job/Microsoft_ChakraCore/job/release_1.3/job/daily_osx_osx_release_static/
 
 ## DisableJIT Builds
 
