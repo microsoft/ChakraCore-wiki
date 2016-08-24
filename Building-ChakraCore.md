@@ -21,7 +21,7 @@ ChakraCore on Windows can be built for 3 Platforms: ```x86```, ```x64``` and ```
 
 <a name="build_for_arm">**Building for `arm`**:</a> Due to toolset dependency, you will need following to build for the `arm` platform:
 * Visual Studio 2015
-* [Windows 10 SDK](https://dev.windows.com/en-US/downloads/windows-10-sdk)
+* [Windows 10 SDK (July 2015)](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive)
 
 ### Configuration ###
 
