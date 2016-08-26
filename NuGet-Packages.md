@@ -46,6 +46,6 @@ x86
 _Coming soon!_
 
 Unfortunately, the **Microsoft.ChakraCore** package does not yet contain the necessary data
-to make automatic inclusion of the Microsoft.ChakraCore in a project.
+to be automatically included in a project via NuGet.
 
 We have plans to enable this as soon as it is viable.
