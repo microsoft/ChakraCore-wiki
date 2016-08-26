@@ -69,3 +69,7 @@ All the changes done in the public repository flow into Chakra and Microsoft Edg
 * [x] [Introduce C++ unit testing mechanism](https://github.com/Microsoft/ChakraCore/pull/1224) using [Catch](https://github.com/philsquared/Catch)
 * [x] [Move JSRT API unit tests from internal testing mechanism to new framework](https://github.com/Microsoft/ChakraCore/pull/1224)
 * [ ] Enable easier authoring of JavaScript built-ins in JavaScript.
+
+# Releases
+
+See [[Release Notes]] for notes on published releases.
