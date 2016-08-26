@@ -44,7 +44,7 @@ All the changes done in the public repository flow into Chakra and Microsoft Edg
 - Well-known symbols: (ES6)
     * [x] [Symbol.hasInstance](https://github.com/Microsoft/ChakraCore/pull/1063)
     * [ ] Symbol.toPrimitive
-    * [ ] Symbol.toStringTag
+    * [x] [Symbol.toStringTag](https://github.com/Microsoft/ChakraCore/pull/1383)
     * [x] [Symbol.isConcatSpreadable](https://github.com/Microsoft/ChakraCore/pull/1198)
 - Prototype shared memory and atomics (ESNext)
 - Regex Buffet (ESNext)
