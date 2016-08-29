@@ -43,7 +43,7 @@ All the changes done in the public repository flow into Chakra and Microsoft Edg
 * [ ] Eval support in default parameter list  (ES6)
 - Well-known symbols: (ES6)
     * [x] [Symbol.hasInstance](https://github.com/Microsoft/ChakraCore/pull/1063)
-    * [ ] Symbol.toPrimitive
+    * [x] [Symbol.toPrimitive](https://github.com/Microsoft/ChakraCore/pull/1319) (under experimental features)
     * [x] [Symbol.toStringTag](https://github.com/Microsoft/ChakraCore/pull/1383)
     * [x] [Symbol.isConcatSpreadable](https://github.com/Microsoft/ChakraCore/pull/1198)
 - Prototype shared memory and atomics (ESNext)
