@@ -1,11 +1,11 @@
 We welcome community submissions to this Wiki via Pull Requests on this repo!
 
-If you are adding files, please note that the title of the page is determined by
+If you are adding a page, please note that the title of the page is determined by
 the file name. Hyphens in the file names will become spaces in the titles of the
-pages. Refer to existing files as examples of a reasonable naming convention.
+pages. Refer to existing files as examples of the naming convention.
 
 
-# Chakra Maintainers' Workflow
+# ChakraCore Maintainers' Workflow
 
 Small changes are often made by the Wiki maintainers directly via the Wiki
 interface, and those changes are not automatically mirrored in this repo.
@@ -30,3 +30,6 @@ pull requests, please manually sync changes from the `wiki` remote as follows:
     git fetch --all
     git merge --ff wiki/master
     git push repo master
+
+Note: Please do not rename this file from README.txt to README.md.
+README.txt will not show up in the Wiki view, but README.md will.
