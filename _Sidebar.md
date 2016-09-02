@@ -3,7 +3,6 @@
 * [[Architecture Overview]]
 * [[Building ChakraCore]]
   * [[Build Status]]
-  * [[Build Status (linux)]]
   * [[Build Status (release/1.2)]]
   * [[Build Status (release/1.3)]]
   * [[NuGet Packages]]
