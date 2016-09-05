@@ -58,7 +58,6 @@ To build ChakraCore on Linux:
 	* ```sudo apt-get install -y build-essential cmake clang libunwind-dev libicu-dev```
 * Let's build!
 	* ```cd ChakraCore```
-	* ```git checkout linux```
 	* ```./build.sh``` 
 	* You can specify `--debug` or `--test-build` to `build.sh` to select Debug or Test build flavors respectively. Default is Release build.
 	* You can specify `--static` to build ChakraCore as a static library.
