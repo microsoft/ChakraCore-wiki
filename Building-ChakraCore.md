@@ -1,7 +1,10 @@
 ## Windows ##
 
+You can build ChakraCore on Windows 7 SP1 or above, and Windows Server 2008 R2
+or above, with either Visual Studio 2013 or 2015, as long as C++ support is
+installed[*](#build_for_arm).
 
-You can build ChakraCore on Windows 7 SP1 or above, and Windows Server 2008 R2 or above, with either Visual Studio 2013 or 2015, as long as C++ support is installed[*](#build_for_arm). For Linux/OS X support, ChakraCore is making progress in the [Linux branch](https://github.com/Microsoft/ChakraCore/tree/linux). Refer to the [Linux](#linux) and [OS X](#os-x) sections for building instructions on these platforms.  
+Refer to the [Linux](#linux) and [OS X](#os-x) sections for building instructions on these platforms.
 
 To build ChakraCore on Windows:
 
@@ -42,9 +45,12 @@ msbuild ... /p:RuntimeLib=static_library ...
 
 ## Linux ##
 
-ChakraCore on Linux is still under development. We are working on a first implementation of ChakraCore interpreter and runtime, no JIT, on Linux, targeting x64 Ubuntu 16.04 LTS and Clang 3.8+. We will add JIT later as we progress. You can test the current support with the following instructions. 
+ChakraCore on Linux is still under development. We are working on a first implementation of ChakraCore interpreter and runtime,
+no JIT, on Linux, targeting x64 Ubuntu 16.04 LTS and Clang 3.8+.
+We will add JIT later as we progress. You can test the current support with the following instructions.
 
 To build ChakraCore on Linux:
+
 * Make sure you have Ubuntu 16.04 LTS on your machine or VM. Visit http://releases.ubuntu.com/ to download latest LTS (x64).
 * Open terminal and start the update process.
 	* ```sudo apt-get update```
@@ -58,7 +64,7 @@ To build ChakraCore on Linux:
 	* ```sudo apt-get install -y build-essential cmake clang libunwind-dev libicu-dev```
 * Let's build!
 	* ```cd ChakraCore```
-	* ```./build.sh``` 
+	* ```./build.sh```
 	* You can specify `--debug` or `--test-build` to `build.sh` to select Debug or Test build flavors respectively. Default is Release build.
 	* You can specify `--static` to build ChakraCore as a static library.
 * If you'd like to build using `ninja` instead of `cmake`:
@@ -68,14 +74,16 @@ To build ChakraCore on Linux:
 * [Optional] Install some useful packages for better development experience.
 	* ```sudo apt-get install -y meld```
 	* Download and install [VSCode](https://code.visualstudio.com/Docs/editor/setup#_linux).
-	
+
 ## OS X ##
 
-Similar to [Linux](#Linux), we have an experimental implementation of ChakraCore interpreter and runtime without JIT for OS X 10.9+. Please make sure you also have XCode and [Homebrew](http://brew.sh/). 
+Similar to [Linux](#Linux), we have an experimental implementation of ChakraCore interpreter and runtime without JIT for OS X 10.9+.
+Please make sure you also have XCode and [Homebrew](http://brew.sh/).
 
 To build ChakraCore on OS X:
-* Install dependencies. 
-	* ```xcode-select --install``` 
+
+* Install dependencies.
+	* ```xcode-select --install```
 	* ```brew install cmake icu4c```
 * Clone ChakraCore.
 	* ```mkdir Github && cd Github```
@@ -86,6 +94,7 @@ To build ChakraCore on OS X:
 	* ```./build.sh --static --icu=/usr/local/opt/icu4c/include --test-build -j=2```
 
 Some details on build script arguments used above:
+
 * ```--static``` embed JSRT as a static library (necessary for OS X)
 * ```--icu=..``` specify the location of ICU library
 * ```--test-build``` enable command line options and some optimizations
