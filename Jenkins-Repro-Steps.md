@@ -133,13 +133,18 @@ You can replace `x64` with `x86` or `arm`. (Running tests on `arm` builds is not
 
 You can replace `debug` with `test` or `release`. (Running tests on `release` builds is not supported).
 
-Rolling Builds and NoJIT Daily builds of `release` configurations also perform PreFAST code analysis. Modified commands are below:
+### Windows Release Builds
+
+Rolling Builds and NoJIT Daily builds of `release` configurations also perform PreFAST code analysis. The full set of commands we run for release builds are as follows:
 
 ```
 jenkins\buildone.cmd x64 release "/p:runcodeanalysis=true"
 jenkins\testone.cmd x64 release
 powershell .\Build\scripts\check_prefast_error.ps1 . CodeAnalysis.err
 ```
+
+Reproing PreFAST code analysis only requires the build step, not the test step,
+so if you are only trying to repro PreFAST errors, you can omit the test step above.
 
 ## Linux Alternate Flags
 
