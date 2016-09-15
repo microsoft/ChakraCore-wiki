@@ -31,7 +31,9 @@ If you wish to **RE-RUN tests** due to, e.g., intermittent failures, you can req
 @dotnet-bot test this please
 ```
 
-## Linux
+## Linux and OSX
+
+### Linux Repro Steps
 
 Repro with these commands:
 
@@ -39,6 +41,17 @@ Repro with these commands:
 ./build.sh --debug
 ./test/runtests.sh -d
 ```
+
+### OSX Repro Steps
+
+Repro with these commands:
+
+```
+./build.sh --debug --static --icu=/usr/local/opt/icu4c/include -j=2
+./test/runtests.sh -d
+```
+
+### Testing Fixes to Linux and OSX
 
 When testing a fix to these builds with Jenkins **you do NOT need to request any additional tests**
 because this set of tests is automatic.
@@ -56,7 +69,7 @@ Builds with Slow Tests are used for daily builds, but are *mostly* the same as t
 **Only trigger these builds if there is an issue revealed in the dailies that does not repro in the
 rolling builds (to save build machine resources).**
 
-### Windows (Daily)
+### Windows Daily Builds with Slow Tests
 
 Repro with these commands:
 
@@ -71,14 +84,12 @@ When testing a fix please request:
 @dotnet-bot test slow tests please
 ```
 
-### Linux (Daily)
+### Linux and OSX Daily Builds
 
-Repro with these commands:
+Repro with the commands above:
 
-```
-./build.sh --debug
-./test/runtests.sh -d
-```
+* [Linux Builds](#linux-repro-steps)
+* [OSX Builds](#osx-repro-steps)
 
 When testing a fix please request:
 
@@ -86,7 +97,7 @@ When testing a fix please request:
 @dotnet-bot test linux tests please
 ```
 
-## DisableJIT Builds (Windows-only)
+## DisableJIT Daily Builds (Windows-only)
 
 Repro with these commands:
 
@@ -103,7 +114,7 @@ When testing a fix please request:
 
 (You can also replace `test nojit tests` with `test disablejit tests` if you prefer -- they are equivalent.)
 
-## Legacy Builds (Windows-only)
+## Legacy Daily Builds (Windows-only)
 
 _Note: **These tests are designed to run under VS 2013 + Windows 7.**
 In most cases, failures are related to running under msbuild 12.0 so you can most likely
