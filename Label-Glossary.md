@@ -14,7 +14,7 @@ Description of the GitHub labels used by ChakraCore
 
 **Bug / [Build Bug](https://github.com/Microsoft/ChakraCore/labels/Test%20Bug)**
 
- - Issue is a bug with the ChakraCore build definitions or infrastructure (does not include compile errors).
+ - Issue is a bug with the ChakraCore build definitions or infrastructure (does not include compile errors caused by changes to ChakraCore sources). Infrastructure can include our build scripts, Jenkins definitions, or Jenkins infrastructure itself (CC @mmitche for Jenkins infrastructure issues).
 
 **Bug / [Test Bug](https://github.com/Microsoft/ChakraCore/labels/Test%20Bug)**
 
