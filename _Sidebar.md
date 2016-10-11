@@ -12,6 +12,7 @@
   * [[Jenkins CI Checks]]
   * [[Jenkins Build Triggers]]
   * [[Jenkins Repro Steps]]
+  * [[External Issues]]
 * [[Embedding ChakraCore]]
   * [[JavaScript Runtime (JSRT) Overview]]
   * [[JavaScript Runtime (JSRT) Reference]]
