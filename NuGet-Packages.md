@@ -29,6 +29,11 @@ for your system architecture. Currently supported: `x64` and `x86`.
 The contents of the package at present (subject to change):
 
 ```
+arm
+    ch.exe
+    ch.pdb
+    ChakraCore.dll
+    ChakraCore.pdb
 x64
     ch.exe
     ch.pdb
