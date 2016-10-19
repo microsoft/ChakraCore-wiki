@@ -187,5 +187,5 @@ For purposes of shorthand the following terms are considered more or less equiva
 Compatibility testing notes:
 
 * All of our compatibility is either targeted at Windows 7 SP1 or Windows 8.1+ (which includes Windows 10).
-* Windows 7 SP1 is actually tested on Windows Server 2008 R2 (for our purposes, an equivalent Server OS).
-* Windows 8.1+ is actually tested on Windows Server 2012 R2 (for our purposes, an equivalent Server OS).
+* Windows 7 SP1 is actually tested on Windows Server 2008 R2 (which, for our purposes, is an equivalent Server OS).
+* Windows 8.1+ is actually tested on Windows Server 2012 R2 (which, for our purposes, is an equivalent Server OS).
