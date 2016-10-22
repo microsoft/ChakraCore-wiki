@@ -2,7 +2,7 @@
 
 ## [v1.2.1](https://github.com/Microsoft/ChakraCore/releases/tag/v1.2.1)
 
-Security Fixes:
+This patch release of ChakraCore 1.2 includes the following security fixes:
 
 - [PR #1530](Microsoft/ChakraCore/pulls/1530) ([`5ec2d8f`](https://github.com/Microsoft/ChakraCore/commit/5ec2d8f6dd3e67e8aa85002dbad152a614f92eeb)) Fixed Address deref issue
 - ([`24c4d7d`](https://github.com/Microsoft/ChakraCore/commit/24c4d7df8199b27d360323ce3be1d7959fd918eb)) Combined fixes for CVE-2016-3350, CVE-2016-3377 and a defense in depth change in the CustomHeap
