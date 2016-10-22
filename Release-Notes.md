@@ -1,4 +1,4 @@
-# 1.2
+# ChakraCore 1.2
 
 ## [v1.2.1](https://github.com/Microsoft/ChakraCore/releases/tag/v1.2.1)
 
