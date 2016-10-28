@@ -1,3 +1,32 @@
+# ChakraCore 1.3
+
+## [v1.3.0](https://github.com/Microsoft/ChakraCore/releases/tag/v1.3.0)
+
+Release 1.3.0 includes experimental support on x64 Linux/OSX, experimental JSRT debugging APIs, and other language and performance updates. See notable changes below.
+
+### Cross-platform
+- ChakraCore interpreter and runtime on x64 Linux (still working on JIT or concurrent/partial GC)
+- ChakraCore interpreter and runtime on x64 OSX (still working on  JIT or concurrent/partial GC) [#1134](https://github.com/Microsoft/ChakraCore/pull/1134)
+
+### Language
+- Enable [Symbol.toStringTag](http://www.ecma-international.org/ecma-262/6.0/#sec-symbol.tostringtag) by default [#1383](https://github.com/Microsoft/ChakraCore/pull/1383)
+- Enable [String.prototype.padStart](https://tc39.github.io/ecma262/#sec-string.prototype.padstart) and [String.prototype.padEnd](https://tc39.github.io/ecma262/#sec-string.prototype.padend) by default [#1257](https://github.com/Microsoft/ChakraCore/pull/1257)
+- Enable [Symbol.prototype[@@toPrimitive]](http://www.ecma-international.org/ecma-262/6.0/#sec-symbol.prototype-@@toprimitive) and [Date.prototype[@@toPrimitive]](http://www.ecma-international.org/ecma-262/6.0/#sec-date.prototype-@@toprimitive) under experimental flag [#1319](https://github.com/Microsoft/ChakraCore/pull/1319)
+- Enable [Symbol.isConcatSpreadable](http://www.ecma-international.org/ecma-262/6.0/#sec-symbol.isconcatspreadable) under experimental flag [#1198](https://github.com/Microsoft/ChakraCore/pull/1198)
+- Enable [Symbol.hasInstance](http://www.ecma-international.org/ecma-262/6.0/#sec-symbol.hasinstance) under experimental flag [#1063](https://github.com/Microsoft/ChakraCore/pull/1063)
+
+### Performance
+- Optimize creation of Heap arguments object [91e0e91](https://github.com/Microsoft/ChakraCore/commit/91e0e91288ecadcfc01a41f2f0c7e878d2f3ee1a)
+- Add fastpath for when Object.hasOwnProperty returns true [#1449](https://github.com/Microsoft/ChakraCore/pull/1449)
+- Enable script function inlining in jitted loop bodies [#1182](https://github.com/Microsoft/ChakraCore/pull/1182)
+
+### JSRT
+- JSRT Debugging APIs (experimental) [#926](https://github.com/Microsoft/ChakraCore/pull/926)
+- JSRT Module API (experimental) [#1254](https://github.com/Microsoft/ChakraCore/pull/1254)
+
+### Test
+- Introduce C++ unit testing mechanism using Catch [#1224](https://github.com/Microsoft/ChakraCore/pull/1224)
+
 # ChakraCore 1.2
 
 ## [v1.2.1](https://github.com/Microsoft/ChakraCore/releases/tag/v1.2.1)
