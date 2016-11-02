@@ -80,6 +80,10 @@ Description of the GitHub labels used by ChakraCore
 
  - Unable to reproduce the issue described. There is no further action to be taken.
 
+[**Out of Scope**](https://github.com/Microsoft/ChakraCore/labels/Out%20of%20Scope)
+
+- Issue is Out of Scope for the ChakraCore project. This may be because it is a feature better implemented in a host, among other reasons.
+
 [**Pending TC39 Consensus**](https://github.com/Microsoft/ChakraCore/labels/Pending%20TC39%20Consensus)
 
  - Issue is a ECMAScript compliance bug but requires TC39 consensus before action is taken to address it in ChakraCore.
