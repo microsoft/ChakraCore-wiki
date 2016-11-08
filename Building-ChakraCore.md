@@ -45,13 +45,11 @@ msbuild ... /p:RuntimeLib=static_library ...
 
 ## Linux ##
 
-ChakraCore on Linux is still under development. We are working on a first implementation of ChakraCore interpreter and runtime,
-no JIT, on Linux, targeting x64 Ubuntu 16.04 LTS and Clang 3.8+.
-We will add JIT later as we progress. You can test the current support with the following instructions.
+Steps below are tested on Ubuntu 16.04LTS. In order to compile ChakraCore on other Linux distrubitions,
+use distro's package manager instead of `apt-get` to install given dependencies below.
 
-To build ChakraCore on Linux:
+To build ChakraCore on Linux: (requires Clang 3.7+)
 
-* Make sure you have Ubuntu 16.04 LTS on your machine or VM. Visit http://releases.ubuntu.com/ to download latest LTS (x64).
 * Open terminal and start the update process.
 	* ```sudo apt-get update```
 	* ```sudo apt-get dist-upgrade```
@@ -77,10 +75,9 @@ To build ChakraCore on Linux:
 
 ## OS X ##
 
-Similar to [Linux](#Linux), we have an experimental implementation of ChakraCore interpreter and runtime without JIT for OS X 10.9+.
-Please make sure you also have XCode and [Homebrew](http://brew.sh/).
+You may need to setup [Homebrew](http://brew.sh/) to install additional dependencies.
 
-To build ChakraCore on OS X:
+To build ChakraCore on OS X: (requires OSX 10.8+ and XCode 7.0)
 
 * Install dependencies.
 	* ```xcode-select --install```
@@ -90,12 +87,11 @@ To build ChakraCore on OS X:
 	* ```git clone https://github.com/Microsoft/ChakraCore```
 * Let's build!
 	* ```cd ChakraCore```
-	* ```git checkout linux```
 	* ```./build.sh --static --icu=/usr/local/opt/icu4c/include --test-build -j=2```
 
 Some details on build script arguments used above:
 
-* ```--static``` embed JSRT as a static library (necessary for OS X)
-* ```--icu=..``` specify the location of ICU library
+* ```--static``` embed JSRT as a static library
+* ```--icu=..``` specify the location of ICU library (use `--no-icu` if you don't need unicode support)
 * ```--test-build``` enable command line options and some optimizations
 * ```-j=2``` compile with 2 threads
