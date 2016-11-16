@@ -40,6 +40,10 @@ To re-run individual builds:
 @dotnet-bot test Ubuntu ubuntu_linux_release_static please
 @dotnet-bot test Ubuntu ubuntu_linux_test please
 @dotnet-bot test Ubuntu ubuntu_linux_test_static please
+
+@dotnet-bot test OSX osx_osx_debug_static please
+@dotnet-bot test OSX osx_osx_release_static please
+@dotnet-bot test OSX osx_osx_test_static please
 ```
 
 # Daily Builds
@@ -47,7 +51,7 @@ To re-run individual builds:
 The following are commands which can be used to run daily build configurations on a PR,
 which can be useful for validating fixes.
 
-## Builds with Slow Tests
+## Daily Builds with Slow Tests
 
 Run the full set:
 
@@ -69,13 +73,22 @@ Run individual builds:
 @dotnet-bot test Windows daily_slow_arm_test please
 ```
 
-## Linux Builds
+## Linux and OSX Daily Builds
 
-Run the full set:
+Before running Linux or OSX Daily builds, please note the following:
+
+* OSX builds are grouped under the `linux` group because of similarity.
+* Linux and OSX builds run as part of the default test so manually
+triggering the daily builds will only be helpful if there are additional
+slow tests that only run as part of the daily configurations.
+See the section above on [Default Jenkins Builds](#default-jenkins-builds).
+
+Run the full set of Linux and OSX Daily Builds:
 
 ```
 @dotnet-bot test linux tests please
 ```
+
 
 Run individual builds:
 
@@ -86,9 +99,13 @@ Run individual builds:
 @dotnet-bot test Ubuntu daily_ubuntu_linux_release_static please
 @dotnet-bot test Ubuntu daily_ubuntu_linux_test please
 @dotnet-bot test Ubuntu daily_ubuntu_linux_test_static please
+
+@dotnet-bot test OSX daily_osx_osx_debug_static please
+@dotnet-bot test OSX daily_osx_osx_release_static please
+@dotnet-bot test OSX daily_osx_osx_test_static please
 ```
 
-## DisableJIT Builds
+## DisableJIT Daily Builds
 
 Run the full set (use either one of the following):
 
@@ -111,7 +128,7 @@ Run individual builds:
 @dotnet-bot test Windows daily_disablejit_arm_test please
 ```
 
-## Legacy Builds
+## Legacy Daily Builds
 
 Run the full set (use either one of the following):
 

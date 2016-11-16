@@ -11,3 +11,6 @@ typedef _Ret_maybenull_ JsValueRef(CALLBACK * JsNativeFunction)(_In_ JsValueRef 
 
 ### Return Value 
 The result of the call, if any.
+
+### Remarks 
+arguments[0] is always thisArg.  

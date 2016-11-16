@@ -14,7 +14,7 @@ Description of the GitHub labels used by ChakraCore
 
 **Bug / [Build Bug](https://github.com/Microsoft/ChakraCore/labels/Test%20Bug)**
 
- - Issue is a bug with the ChakraCore build definitions or infrastructure (does not include compile errors).
+ - Issue is a bug with the ChakraCore build definitions or infrastructure (does not include compile errors caused by changes to ChakraCore sources). Infrastructure can include our build scripts, Jenkins definitions, or Jenkins infrastructure itself (CC @mmitche for Jenkins infrastructure issues).
 
 **Bug / [Test Bug](https://github.com/Microsoft/ChakraCore/labels/Test%20Bug)**
 
@@ -79,6 +79,10 @@ Description of the GitHub labels used by ChakraCore
 [**NoRepro**](https://github.com/Microsoft/ChakraCore/labels/NoRepro)
 
  - Unable to reproduce the issue described. There is no further action to be taken.
+
+[**Out of Scope**](https://github.com/Microsoft/ChakraCore/labels/Out%20of%20Scope)
+
+- Issue is Out of Scope for the ChakraCore project. This may be because it is a feature better implemented in a host, among other reasons.
 
 [**Pending TC39 Consensus**](https://github.com/Microsoft/ChakraCore/labels/Pending%20TC39%20Consensus)
 

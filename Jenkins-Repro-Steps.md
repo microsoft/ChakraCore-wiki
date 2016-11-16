@@ -31,7 +31,9 @@ If you wish to **RE-RUN tests** due to, e.g., intermittent failures, you can req
 @dotnet-bot test this please
 ```
 
-## Linux
+## Linux and OSX
+
+### Linux Repro Steps
 
 Repro with these commands:
 
@@ -39,6 +41,17 @@ Repro with these commands:
 ./build.sh --debug
 ./test/runtests.sh -d
 ```
+
+### OSX Repro Steps
+
+Repro with these commands:
+
+```
+./build.sh --debug --static --icu=/usr/local/opt/icu4c/include -j=2
+./test/runtests.sh -d
+```
+
+### Testing Fixes to Linux and OSX
 
 When testing a fix to these builds with Jenkins **you do NOT need to request any additional tests**
 because this set of tests is automatic.
@@ -56,7 +69,7 @@ Builds with Slow Tests are used for daily builds, but are *mostly* the same as t
 **Only trigger these builds if there is an issue revealed in the dailies that does not repro in the
 rolling builds (to save build machine resources).**
 
-### Windows (Daily)
+### Windows Daily Builds with Slow Tests
 
 Repro with these commands:
 
@@ -71,14 +84,12 @@ When testing a fix please request:
 @dotnet-bot test slow tests please
 ```
 
-### Linux (Daily)
+### Linux and OSX Daily Builds
 
-Repro with these commands:
+Repro with the commands above:
 
-```
-./build.sh --debug
-./test/runtests.sh -d
-```
+* [Linux Builds](#linux-repro-steps)
+* [OSX Builds](#osx-repro-steps)
 
 When testing a fix please request:
 
@@ -86,7 +97,7 @@ When testing a fix please request:
 @dotnet-bot test linux tests please
 ```
 
-## DisableJIT Builds (Windows-only)
+## DisableJIT Daily Builds (Windows-only)
 
 Repro with these commands:
 
@@ -103,7 +114,7 @@ When testing a fix please request:
 
 (You can also replace `test nojit tests` with `test disablejit tests` if you prefer -- they are equivalent.)
 
-## Legacy Builds (Windows-only)
+## Legacy Daily Builds (Windows-only)
 
 _Note: **These tests are designed to run under VS 2013 + Windows 7.**
 In most cases, failures are related to running under msbuild 12.0 so you can most likely
@@ -133,13 +144,17 @@ You can replace `x64` with `x86` or `arm`. (Running tests on `arm` builds is not
 
 You can replace `debug` with `test` or `release`. (Running tests on `release` builds is not supported).
 
-Rolling Builds and NoJIT Daily builds of `release` configurations also perform PreFAST code analysis. Modified commands are below:
+### Windows Release Builds
+
+Rolling Builds and NoJIT Daily builds of `release` configurations perform PreFAST code analysis, and do not run tests.
+The set of commands we run for release builds are as follows:
 
 ```
-jenkins\buildone.cmd x64 debug "/p:runcodeanalysis=true"
-jenkins\testone.cmd x64 debug
+jenkins\buildone.cmd x64 release "/p:runcodeanalysis=true"
 powershell .\Build\scripts\check_prefast_error.ps1 . CodeAnalysis.err
 ```
+
+Note: Reproing PreFAST code analysis only requires the build step; no test step is required.
 
 ## Linux Alternate Flags
 
@@ -172,5 +187,5 @@ For purposes of shorthand the following terms are considered more or less equiva
 Compatibility testing notes:
 
 * All of our compatibility is either targeted at Windows 7 SP1 or Windows 8.1+ (which includes Windows 10).
-* Windows 7 SP1 is actually tested on Windows Server 2008 R2 (for our purposes, an equivalent Server OS).
-* Windows 8.1+ is actually tested on Windows Server 2012 R2 (for our purposes, an equivalent Server OS).
+* Windows 7 SP1 is actually tested on Windows Server 2008 R2 (which, for our purposes, is an equivalent Server OS).
+* Windows 8.1+ is actually tested on Windows Server 2012 R2 (which, for our purposes, is an equivalent Server OS).
