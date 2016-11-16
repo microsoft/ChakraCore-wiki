@@ -17,6 +17,7 @@ References of JSRT typedefs, constants, enumerations and APIs.
 * [[JsSourceContext]]
 * [[JsThreadServiceCallback]]
 * [[JsValueRef]]
+* [[JsSerializedLoadScriptCallBack]]
 
 **JSRT Const References:**
 * [[JS_INVALID_REFERENCE]]
@@ -138,3 +139,20 @@ References of JSRT typedefs, constants, enumerations and APIs.
 * [[JsSetRuntimeMemoryLimit]]
 * [[JsStrictEquals]]
 * [[JsStringToPointer]]
+
+### New string API (Only non-Windows)
+* [[JsCreateString]]
+* [[JsCreateString]]
+* [[JsCreateStringUtf8]]
+* [[JsCreateStringUtf16]]
+* [[JsCopyString]]
+* [[JsCopyStringUtf8]]
+* [[JsCopyStringUtf16]]
+* [[JsParse]]
+* [[JsRun]]
+* [[JsSerialize]]
+* [[JsParseSerialized]]
+* [[JsRunSerialized]]
+* [[JsCreatePropertyIdUtf8]]
+* [[JsCopyPropertyIdUtf8]]
+
