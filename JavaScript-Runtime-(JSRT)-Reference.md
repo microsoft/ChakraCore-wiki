@@ -142,7 +142,6 @@ References of JSRT typedefs, constants, enumerations and APIs.
 
 ### New string API (Only non-Windows)
 * [[JsCreateString]]
-* [[JsCreateString]]
 * [[JsCreateStringUtf8]]
 * [[JsCreateStringUtf16]]
 * [[JsCopyString]]
