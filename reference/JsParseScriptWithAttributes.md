@@ -1,5 +1,6 @@
 Parses a script and returns a function representing the script.
-### Syntax 
+
+### Syntax
 ```
 STDAPI_(JsErrorCode)
     JsParseScriptWithAttributes(
@@ -9,12 +10,13 @@ STDAPI_(JsErrorCode)
         _In_ JsParseScriptAttributes parseAttributes,
         _Out_ JsValueRef *result);
 ```
-### Parameters 
-* __script__: The script to parse. 
+
+### Parameters
+* __script__: The script to parse.
 * __sourceContext__: A cookie identifying the script that can be used by debuggable script contexts.
 * __sourceUrl__: The location the script came from.
 * __parseAttributes__: Attribute mask for parsing the script
 * __result__: A function representing the script code.
 
-### Return Value 
+### Return Value
 The code **JsNoError** if the operation succeeded, a failure code otherwise.
