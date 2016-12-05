@@ -29,8 +29,8 @@ All the changes done in the public repository flow into Chakra and Microsoft Edg
   * [ ] Enable Intl on xplat
   * [ ] Match Windows-ChakraCore on test262
   * [ ] Enable profiling interpreter on xplat
-  * [ ] Enable dynamic interpreter thunks on xplat
-  * [ ] Enable JIT on xplat
+  * [x] Enable dynamic interpreter thunks on xplat
+  * [x] Enable JIT on xplat
   * [ ] Implement broader software-based write barrier support in the GC
   * [ ] Enable concurrent GC on xplat
   * [ ] Enable partial GC on xplat
@@ -40,13 +40,13 @@ All the changes done in the public repository flow into Chakra and Microsoft Edg
     * [x] 0xB format
     * [ ] 0xC format
 * [ ] Complete module implementation (ES6)
-* [ ] Eval support in default parameter list  (ES6)
+* [x] Eval support in default parameter list  (ES6)
 - Well-known symbols: (ES6)
     * [x] [Symbol.hasInstance](https://github.com/Microsoft/ChakraCore/pull/1063)
     * [x] [Symbol.toPrimitive](https://github.com/Microsoft/ChakraCore/pull/1319) (under experimental features)
     * [x] [Symbol.toStringTag](https://github.com/Microsoft/ChakraCore/pull/1383)
     * [x] [Symbol.isConcatSpreadable](https://github.com/Microsoft/ChakraCore/pull/1198)
-- Prototype shared memory and atomics (ESNext)
+* [x] Prototype shared memory and atomics (ESNext)
 - Regex Buffet (ESNext)
     * RegExp named capture groups
     * RegExp lookbehind
@@ -55,15 +55,15 @@ All the changes done in the public repository flow into Chakra and Microsoft Edg
 # Performance - Staying Fast and Lean
 * Implement ability to "re-defer" functions and pitch byte code for already JITted functions.
     * [x] [Determine closure captures precisely in the presence of deferred functions.](https://github.com/Microsoft/ChakraCore/pull/1167)
-    * [ ] Identify legal re-deferral candidates.
-    * [ ] Put function in deferred state and change entry point.
-    * [ ] Design heuristics
+    * [x] Identify legal re-deferral candidates.
+    * [x] Put function in deferred state and change entry point.
+    * [x] Design heuristics
 
 # Diagnostics & Tooling Enhancements
 * [x] [Merge JsRTDebugging branch to master.](https://github.com/Microsoft/ChakraCore/pull/926) This branch contains an implementation of flat C debugging APIs following the existing JSRT pattern that can easily be bridged to the V8 debug protocol.
 * [x] [Integrate Time Travel Debugging implementation into master](https://github.com/Microsoft/ChakraCore/pull/1160)
   * Review and agree on JSRT API shape
-* [ ] Enhance the Node.js [ChakraShim](https://github.com/nodejs/node-chakracore/tree/chakracore-master/deps/chakrashim) to enable TTD recording of Node.js and playback using ch.exe.
+* [x] Enhance the Node.js [ChakraShim](https://github.com/nodejs/node-chakracore/tree/chakracore-master/deps/chakrashim) to enable TTD recording of Node.js and playback using ch.exe.
 
 # Engineering Improvements
 * [x] [Introduce C++ unit testing mechanism](https://github.com/Microsoft/ChakraCore/pull/1224) using [Catch](https://github.com/philsquared/Catch)
