@@ -1,5 +1,7 @@
 Sometimes you might find an issue in a product which embeds ChakraCore like Edge or Node. Sometimes, the issue will really be a problem with ChakraCore, but other times, the issue will actually be more applicable to the product itself. Here's how to file issues related to External projects that embed ChakraCore.
 
+So that we can more easily track external issues and close ChakraCore issues in a timely manner, when you've opened the issue on another issue tracker, please post the link to your new bug report on the GitHub issue you opened.
+
 # Edge Issues
 
 If we identify your issue as an Edge issue, we invite you to open your issue at the following link:
