@@ -154,7 +154,7 @@ Run individual builds:
 @dotnet-bot test Windows 7 daily_dev12_x86_test please
 ```
 
-# Test Jenkins CI Script Changes
+# Testing Jenkins CI Script Changes
 
 ## Locally
 
@@ -188,4 +188,4 @@ to validate the changes.
 This will tell you whether the Groovy script compiles.
 You will also be able to examine the generated jobs to make sure the changes are what you expected.
 
-It is easier to validate changes locally so that's usually the best place to start.
+It is easier to validate changes [locally](#locally) so that's usually the best place to start.
