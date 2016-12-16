@@ -51,6 +51,12 @@ To re-run individual builds:
 The following are commands which can be used to run daily build configurations on a PR,
 which can be useful for validating fixes.
 
+To run the full set of daily builds (all builds listed below):
+
+```
+@dotnet-bot test dailies please
+```
+
 ## Daily Builds with Slow Tests
 
 Run the full set:
