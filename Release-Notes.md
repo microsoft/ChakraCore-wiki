@@ -15,6 +15,13 @@ ChakraCore 1.4.0 includes cross-platform JIT support and experimental WebAssembl
 
 # ChakraCore 1.3
 
+## [v1.3.2](https://github.com/Microsoft/ChakraCore/releases/tag/v1.3.2)
+
+This patch release of ChakraCore 1.3 includes the following security fixes:
+
+- Change to address bad binding of async arrow function parameters [#2219](https://github.com/Microsoft/ChakraCore/pull/2219)
+- All fixes included in [v1.2.3](#v123)
+
 ## [v1.3.1](https://github.com/Microsoft/ChakraCore/releases/tag/v1.3.1)
 
 This patch release of ChakraCore 1.3 includes the following security fixes:
