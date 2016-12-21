@@ -65,6 +65,13 @@ under experimental flag [#1063](https://github.com/Microsoft/ChakraCore/pull/106
 
 # ChakraCore 1.2
 
+## [v1.2.3](https://github.com/Microsoft/ChakraCore/releases/tag/v1.2.3)
+
+This patch release of ChakraCore 1.2 includes the following security fixes:
+
+- Change to address CVE-2016-7287,CVE-2016-7286,CVE-2016-7288,CVE-2016-7296
+[#2230](https://github.com/Microsoft/ChakraCore/pull/2230)
+
 ## [v1.2.2](https://github.com/Microsoft/ChakraCore/releases/tag/v1.2.2)
 
 This patch release of ChakraCore 1.2 includes the following security fixes:
