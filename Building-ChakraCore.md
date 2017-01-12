@@ -59,7 +59,7 @@ To build ChakraCore on Linux: (requires Clang 3.7+)
 	* ```mkdir Github && cd Github```
 	* ```git clone https://github.com/Microsoft/ChakraCore```
 * Install dependencies.
-	* ```sudo apt-get install -y build-essential cmake clang libunwind-dev libicu-dev```
+	* ```sudo apt-get install -y build-essential cmake clang libicu-dev```
 * Let's build!
 	* ```cd ChakraCore```
 	* ```./build.sh```
