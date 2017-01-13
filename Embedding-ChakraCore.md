@@ -84,7 +84,7 @@ int main()
 
 To build and run this sample, 
 
-1. Create a new C++ project in Visual Studio and add the above code to a .cpp file. Alternatively, download this sample [here](https://github.com/Microsoft/Chakra-Samples/tree/master/ChakraCore%20Samples/Hello%20World/C%2B%2B). 
+1. Create a new C++ project in Visual Studio and add the above code to a .cpp file. Alternatively, download this sample [here](https://github.com/Microsoft/Chakra-Samples/tree/master/ChakraCore%20Samples/Hello%20World/Windows/C%2B%2B). 
 2. Complete the [Before you start](https://github.com/Microsoft/ChakraCore/wiki/Embedding-ChakraCore#before-you-start) and [Use JSRT with Visual Studio](https://github.com/Microsoft/ChakraCore/wiki/Embedding-ChakraCore#use-jsrt-with-visual-studio) steps. 
 2. In Visual Studio, build the sample by pressing `F6` or using `Build > Build Solution`. Make sure the build targets the same platform as the ChakraCore.dll you built earlier. 
 3. Run the sample by pressing `Ctrl+F5` or using `Debug > Start Without Debugging`.
@@ -142,7 +142,7 @@ public class HelloWorld
 ```
 To build and run this sample, 
 
-1. Create a new C# project in Visual Studio, include a C# [wrapper](http://aka.ms/jsrtwrapper) for JSRT and add the above code to a .cs file. Alternatively, download this sample [here](https://github.com/Microsoft/Chakra-Samples/tree/master/ChakraCore%20Samples/Hello%20World/C%23). 
+1. Create a new C# project in Visual Studio, include a C# [wrapper](http://aka.ms/jsrtwrapper) for JSRT and add the above code to a .cs file. Alternatively, download this sample [here](https://github.com/Microsoft/Chakra-Samples/tree/master/ChakraCore%20Samples/Hello%20World/Windows/C%23). 
 2. Complete the [Before you start](https://github.com/Microsoft/ChakraCore/wiki/Embedding-ChakraCore#before-you-start) and [Use JSRT with Visual Studio](https://github.com/Microsoft/ChakraCore/wiki/Embedding-ChakraCore#use-jsrt-with-visual-studio) steps. 
 2. In Visual Studio, build the sample by pressing `F6` or using `Build > Build Solution`. Make sure the build targets the same platform as the ChakraCore.dll you built earlier. 
 3. Run the sample by pressing `Ctrl+F5` or using `Debug > Start Without Debugging`.
