@@ -6,7 +6,7 @@ All the changes done in the public repository flow into Chakra and Microsoft Edg
 * **Node.js**
   * [x] Update [Node.js+ChakraCore](https://github.com/nodejs/node-chakracore) to include [ChakraCore 1.2](https://github.com/Microsoft/ChakraCore/tree/release/1.2)
   * [x] Implement V8 debug protocol in the Node.js [ChakraShim](https://github.com/nodejs/node-chakracore/tree/chakracore-master/deps/chakrashim) to enable debugging using VS Code.
-  * [x] Support Chrome Debug Protocol in Node-ChakraCore.
+  * [ ] Support Chrome Debug Protocol in Node-ChakraCore.
 
 * **Cross-platform**: (See [#111: \[Discussion\] Linux / Cross-platform planning](https://github.com/Microsoft/ChakraCore/issues/111).) An implementation of ChakraCore interpreter and runtime on Linux, targeting x64 Ubuntu 16.04 LTS and Clang 3.8+
   * [x] Get GC host app to build and run (no concurrency and no partial collections)
