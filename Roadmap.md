@@ -4,7 +4,7 @@ All the changes done in the public repository flow into Chakra and Microsoft Edg
 
 # Enhancing Host & Platform Support 
 * **Node.js**
-  * [x] Update [Node.js+ChakraCore](https://github.com/nodejs/node-chakracore) to include [ChakraCore 1.2](https://github.com/Microsoft/ChakraCore/tree/release/1.2)
+  * [x] Update [Node.js+ChakraCore](https://github.com/nodejs/node-chakracore) to include [ChakraCore 1.4](https://github.com/Microsoft/ChakraCore/tree/release/1.4)
   * [x] Implement V8 debug protocol in the Node.js [ChakraShim](https://github.com/nodejs/node-chakracore/tree/chakracore-master/deps/chakrashim) to enable debugging using VS Code.
   * [ ] Support Chrome Debug Protocol in Node-ChakraCore.
 
