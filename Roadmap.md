@@ -1,11 +1,12 @@
 _This is a living document. It describes the priorities as they exist today and will evolve over time._
 
-All the changes done in the public repository flow into Chakra and Microsoft Edge on a regular basis as described in the [Contribution guidelines](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md). The following is a summary of the ChakraCore team's backlog for the next 6 months. Last updated 8/5/16.
+All the changes done in the public repository flow into Chakra and Microsoft Edge on a regular basis as described in the [Contribution guidelines](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md). The following is a summary of the ChakraCore team's backlog for the next 6 months. Last updated 1/12/17.
 
 # Enhancing Host & Platform Support 
 * **Node.js**
   * [x] Update [Node.js+ChakraCore](https://github.com/nodejs/node-chakracore) to include [ChakraCore 1.2](https://github.com/Microsoft/ChakraCore/tree/release/1.2)
-  * [ ] Implement V8 debug protocol in the Node.js [ChakraShim](https://github.com/nodejs/node-chakracore/tree/chakracore-master/deps/chakrashim) to enable debugging using VS Code.
+  * [x] Implement V8 debug protocol in the Node.js [ChakraShim](https://github.com/nodejs/node-chakracore/tree/chakracore-master/deps/chakrashim) to enable debugging using VS Code.
+  * [x] Support Chrome Debug Protocol in Node-ChakraCore.
 
 * **Cross-platform**: (See [#111: \[Discussion\] Linux / Cross-platform planning](https://github.com/Microsoft/ChakraCore/issues/111).) An implementation of ChakraCore interpreter and runtime on Linux, targeting x64 Ubuntu 16.04 LTS and Clang 3.8+
   * [x] Get GC host app to build and run (no concurrency and no partial collections)
@@ -31,14 +32,16 @@ All the changes done in the public repository flow into Chakra and Microsoft Edg
   * [ ] Enable profiling interpreter on xplat
   * [x] Enable dynamic interpreter thunks on xplat
   * [x] Enable JIT on xplat
-  * [ ] Implement broader software-based write barrier support in the GC
-  * [ ] Enable concurrent GC on xplat
-  * [ ] Enable partial GC on xplat
+  * [x] Implement broader software-based write barrier support in the GC
+  * [x] Enable concurrent GC on xplat
+  * [x] Enable partial GC on xplat
+  * [x] Ensure xplat perf is fully on par with Windows
 
 # Language Innovation & Standards
 * Begin decoding WebAssembly post-order binary format and converting to ASM.JS bytecode
     * [x] 0xB format
-    * [ ] 0xC format
+    * [x] 0xC format
+    * [x] 0xD format
 * [ ] Complete module implementation (ES6)
 * [x] Eval support in default parameter list  (ES6)
 - Well-known symbols: (ES6)
