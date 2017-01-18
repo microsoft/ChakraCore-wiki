@@ -2,6 +2,7 @@ This section includes resources such as blog posts and talks. Some of the resour
 
 # Team Blog
 
+* [ChakraCore’s first anniversary](https://blogs.windows.com/msedgedev/2017/01/13/chakracores-first-anniversary/#xPFH71Gve16tyFjZ.97) (January 2017)
 * [Node-ChakraCore and VM Neutrality in Node.js](https://blogs.windows.com/msedgedev/2016/11/29/node-chakracore-vm-neutrality/#zIEZw9H5IXmYXjQ1.97) (November 2016)
 * [A peek into the WebAssembly Browser Preview](https://blogs.windows.com/msedgedev/2016/10/31/webassembly-browser-preview/) (October 2016)
 * [Bringing ChakraCore to Linux and OS X](https://blogs.windows.com/msedgedev/2016/07/27/chakracore-on-linux-osx/#hCbe1e2pHPyglbbB.97) (July 2016)
