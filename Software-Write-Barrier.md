@@ -18,7 +18,7 @@ The key to make the software write barrier work correctly and stably is to make 
             Field(int*)             intArray;
             Field(Var)              aVar;
             Field(Field(Var)*)      varArray;
-            FieldNoBarrier(char*)   buffer; // e.g: buffer is heap allocated
+            FieldNoBarrier(Recycler*)   recycler; // e.g: recycler is heap allocated
         }
     ```
 
@@ -30,7 +30,7 @@ The key to make the software write barrier work correctly and stably is to make 
         }
     ```
 
-3. Use PointerValue() to cast a Field(T*) to T*, PointerValue() retrieves the pointer from "Field(T*)" type, no matter it is wrapped in smart pointer or not.
+3. Use PointerValue() to cast a Field(T\*) to T\*, PointerValue() retrieves the pointer from "Field(T\*)" type, no matter it is wrapped in smart pointer or not.
 
 4. Try the best to avoid 'plus Array' at the end of structure, if that's really necessary make sure #2 above is applied, also make sure the 'plus Array is annotated as Field(T*) [], eg:
     ```c++
