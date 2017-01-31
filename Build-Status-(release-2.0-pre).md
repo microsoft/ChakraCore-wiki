@@ -1,3 +1,5 @@
+**NOTE: `release/2.0-pre` is now strictly behind `master` and will be retired. Please use [`master`](https://github.com/Microsoft/ChakraCore/wiki/Build-Status) instead.**
+
 Currently showing the Build Status page for the `release/2.0-pre` branch. You can also view the build status for other branches by clicking the links in the sidebar.
 
 # Rolling Builds
