@@ -10,14 +10,9 @@ Official NuGet packages are available on the [Microsoft.ChakraCore NuGet Feed](h
 
 # MyGet Feed (Preview Builds)
 
-Preview NuGet packages are available on the [Microsoft.ChakraCore MyGet Feed](https://www.myget.org/feed/chakracore-preview/package/nuget/Microsoft.ChakraCore).
+Preview NuGet packages will be available on the [Microsoft.ChakraCore MyGet Feed](https://www.myget.org/feed/chakracore-preview/package/nuget/Microsoft.ChakraCore).
 
-Currently, packages on the MyGet feed are built from the `release/1.2` branch.
-
-We have plans to expand our preview packages to include any branches under active development
-(such as `master`). Builds will be published daily, or as needed for slow-moving branches.
-
-_**Disclaimer:** Packages published to the MyGet feed are for preview purposes only. For these packages, we make no guarantees (other than best-effort) about quality, performance, or otherwise. Additionally, these packages may expire and be deleted without notice, so we do not recommend taking a dependency on any particular version of these packages as you develop your application (although it should be reasonably safe to always develop against the latest preview version of the package)._
+_**Disclaimer:** Packages published to the MyGet feed are for preview purposes only. For these packages, we make no guarantees (other than best-effort) about quality, performance, or otherwise. Additionally, these packages may expire and be deleted without notice; therefore, we do not recommend taking a dependency on these packages as you develop your application._
 
 # Grabbing Preview Binaries from NuGet Packages
 
