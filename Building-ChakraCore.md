@@ -45,32 +45,44 @@ msbuild ... /p:RuntimeLib=static_library ...
 
 ## Linux ##
 
-Steps below are tested on Ubuntu 16.04LTS. In order to compile ChakraCore on other Linux distrubitions,
-use distro's package manager instead of `apt-get` to install given dependencies below.
+Steps below are tested on Ubuntu 16.04LTS and Fedora 24. In order to compile ChakraCore on other Linux distrubitions,
+use distro's package manager instead of `apt-get` / `dnf` to install given dependencies below.
 
 To build ChakraCore on Linux: (requires Clang 3.7+)
 
-* Open terminal and start the update process.
-	* ```sudo apt-get update```
-	* ```sudo apt-get dist-upgrade```
-* Install git.
-	* ```sudo apt-get install -y git```
+#### Installing build dependencies ####
+
+##### Dependencies - Centos / Fedora (or similar) #####
+```
+su
+dnf group install -y "Development Tools" "C Development Tools and Libraries"
+dnf install -y git cmake clang gcc gcc-c++ kernel-devel python llvm
+dnf install -y libuuid-devel lttng-ust-devel.x86_64 libicu-devel.x86_64
+dnf install -y libstdc++-static.x86_64
+```
+
+##### Dependencies - Debian/Ubuntu (or similar) #####
+```
+su
+apt-get update
+apt-get dist-upgrade
+apt-get install -y git build-essential cmake clang libicu-dev
+```
+
+#### Clone and Build ####
 * Clone ChakraCore.
 	* ```mkdir Github && cd Github```
 	* ```git clone https://github.com/Microsoft/ChakraCore```
-* Install dependencies.
-	* ```sudo apt-get install -y build-essential cmake clang libunwind-dev libicu-dev```
 * Let's build!
 	* ```cd ChakraCore```
 	* ```./build.sh```
 	* You can specify `--debug` or `--test-build` to `build.sh` to select Debug or Test build flavors respectively. Default is Release build.
 	* You can specify `--static` to build ChakraCore as a static library.
 * If you'd like to build using `ninja` instead of `cmake`:
-	* ```sudo apt-get install -y ninja-build```
+	* ```sudo apt-get install -y ninja-build``` (for Debian/Ubuntu) ```dnf install -y ....``` (for Centos/Fedora)
 	* Run `ninja --version` and ensure that at least version 1.3 is installed.
 	* Specify the `-n` flag to `build.sh` to build with `ninja`.
-* [Optional] Install some useful packages for better development experience.
-	* ```sudo apt-get install -y meld```
+   * [Optional] Install some useful packages for better development experience.
 	* Download and install [VSCode](https://code.visualstudio.com/Docs/editor/setup#_linux).
 
 ## OS X ##
