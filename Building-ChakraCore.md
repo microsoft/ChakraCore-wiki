@@ -48,7 +48,7 @@ msbuild ... /p:RuntimeLib=static_library ...
 Steps below are tested on Ubuntu 16.04LTS and Fedora 24. In order to compile ChakraCore on other Linux distrubitions,
 use distro's package manager instead of `apt-get` / `dnf` to install given dependencies below.
 
-To build ChakraCore on Linux: (requires Clang 3.7+)
+To build ChakraCore on Linux: (requires Clang 3.7+ and Python 2)
 
 #### Installing build dependencies ####
 
@@ -89,7 +89,7 @@ apt-get install -y git build-essential cmake clang libicu-dev
 
 You may need to setup [Homebrew](http://brew.sh/) to install additional dependencies.
 
-To build ChakraCore on OS X: (requires OSX 10.8+ and XCode 7.0)
+To build ChakraCore on OS X: (requires OSX 10.8+, XCode 7.0, and Python 2)
 
 * Install dependencies.
 	* ```xcode-select --install```
