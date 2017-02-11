@@ -4,12 +4,16 @@ These packages enable the community to preview our binaries as well as to easily
 
 # NuGet Feed (Stable Builds)
 
-Official NuGet packages are available on the [Microsoft.ChakraCore NuGet Feed](https://www.nuget.org/packages/Microsoft.ChakraCore).
+Official NuGet packages are available on NuGet.org:
+* [Microsoft.ChakraCore](https://www.nuget.org/packages/Microsoft.ChakraCore) for .NET projects.
+* [Microsoft.ChakraCore.vc140](https://www.nuget.org/packages/Microsoft.ChakraCore.vc140) for Native projects.
 
 
 # MyGet Feed (Preview Builds)
 
-Preview NuGet packages will be available on the [Microsoft.ChakraCore MyGet Feed](https://www.myget.org/feed/chakracore-preview/package/nuget/Microsoft.ChakraCore).
+Preview NuGet packages are available on MyGet.org:
+* [Microsoft.ChakraCore](https://www.myget.org/feed/chakracore-preview/package/nuget/Microsoft.ChakraCore) for .NET projects.
+* [Microsoft.ChakraCore.vc140](https://www.myget.org/feed/chakracore-preview/package/nuget/Microsoft.ChakraCore.vc140) for Native projects.
 
 _**Disclaimer:** Packages published to the MyGet feed are for preview purposes only. For these packages, we make no guarantees (other than best-effort) about quality, performance, or otherwise. Additionally, these packages may expire and be deleted without notice; therefore, we do not recommend taking a dependency on these packages as you develop your application._
 
