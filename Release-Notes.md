@@ -1,5 +1,9 @@
 # ChakraCore 1.4
 
+## [v1.4.1](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.1)
+
+This patch release of ChakraCore 1.4 enables using ChakraCore [NuGet packages](https://github.com/Microsoft/ChakraCore/wiki/NuGet-Packages) for developing .NET and native applications ([#2266](https://github.com/Microsoft/ChakraCore/pull/2266), [#85](https://github.com/Microsoft/ChakraCore/issues/85)) and includes other bug fixes.
+
 ## [v1.4.0](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.0)
 
 ChakraCore 1.4.0 includes cross-platform JIT support and experimental WebAssembly support along with other language, performance and JSRT updates. See notable changes below.
