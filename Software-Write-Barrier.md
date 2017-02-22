@@ -30,7 +30,7 @@ The key to make the software write barrier work correctly and stably is to make 
         }
     ```
 
-3. Use PointerValue() to cast a Field(T\*) to T\*, PointerValue() retrieves the pointer from "Field(T\*)" type, no matter it is wrapped in smart pointer or not.
+3. Use PointerValue() to cast a Field(T\*) to T\*. PointerValue() retrieves the pointer from "Field(T\*)" type, no matter it is wrapped in smart pointer or not.
 
 4. Try the best to avoid 'plus Array' at the end of structure, if that's really necessary make sure #2 above is applied, also make sure the 'plus Array is annotated as Field(T*) [], eg:
     ```c++
@@ -48,11 +48,32 @@ The key to make the software write barrier work correctly and stably is to make 
 
 
 ## Clang Plugin
-In linux build, there is a clang plugin to help preventing missing annotations, if you hit build error in CI please do following
 
-- TBD
+We have a clang plugin (running in linux-debug CI build) to
+help prevent missing write barrier annotations. The plugin
+has one extra dependency:
+
+```
+apt-get install libclang-dev
+```
+
+When building ChakraCore one can optionally run the write
+barrier checker plugin by:
+
+```
+build.sh ... --wb-check
+```
+
+To understand more details why the plugin requires a
+certain type/field be annotated, run it on one cpp file
+in verbose mode:
+
+```
+build.sh ... --wb-check ONE_CPP_FILE --wb-args=-verbose
+```
 
 ## Test Utilities
+
 Other than the plugin, there's runtime flags to help check if there's missing barrier. 
 - You can run test with -VerifyBarrierBit switch. This records every write barrier pointer update, and do the verification during marking or verifying mark
 - You can additionally add "-RecyclerConcurrentStress -RecyclerVerifyMark" switches to make the issue easier to appear.
