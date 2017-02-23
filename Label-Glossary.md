@@ -60,6 +60,10 @@ Description of the GitHub labels used by ChakraCore
 
  - Issue is not directly related to ChakraCore but has to do with a related project.
 
+[**External Contributor**](
+
+ - Pull Request is from an External Contributor and should be assigned to a team member.
+
 [**Fixed**](https://github.com/Microsoft/ChakraCore/labels/Fixed)
 
  - Issue has been fixed.
