@@ -64,7 +64,6 @@ References of JSRT typedefs, constants, enumerations and APIs.
 * [[JsCreateReferenceError]]
 * [[JsCreateRuntime]]
 * [[JsCreateString]]
-* [[JsCreateStringUtf8]]
 * [[JsCreateStringUtf16]]
 * [[JsCreateSymbol]]
 * [[JsCreateSyntaxError]]
