@@ -1,4 +1,4 @@
-Create JavascriptString variable from C string
+Create JavascriptString variable from ASCII or Utf8 string
 ### Syntax 
 ```
 CHAKRA_API
@@ -16,4 +16,4 @@ CHAKRA_API
 ### Return Value 
 The code **JsNoError** if the operation succeeded, a failure code otherwise.
 ### Remarks 
-C string is expected to be ASCII
+Input string can be either ASCII or Utf8
