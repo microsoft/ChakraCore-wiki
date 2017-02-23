@@ -46,7 +46,6 @@ References of JSRT typedefs, constants, enumerations and APIs.
 * [[JsConvertValueToObject]]
 * [[JsConvertValueToString]]
 * [[JsCopyString]]
-* [[JsCopyStringUtf8]]
 * [[JsCopyStringUtf16]]
 * [[JsCopyPropertyIdUtf8]]
 * [[JsCreateArray]]
