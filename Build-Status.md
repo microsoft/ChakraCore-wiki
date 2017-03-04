@@ -15,8 +15,8 @@ For every commit we build and test of all of our build configurations on Windows
 | __OS X 10.9 (x64)<sup>[a]</sup>__        | [![osx_a_debug][osx_a_dbgicon]][osx_a_dbglink] | [![osx_a_test][osx_a_testicon]][osx_a_testlink] | [![osx_a_release][osx_a_relicon]][osx_a_rellink] |
 | __OS X 10.9 (x64)<sup>[s][n]</sup>__     | * | [![osx_sn_test][osx_sn_testicon]][osx_sn_testlink] | * |
 
-* <sup>[a]</sup> Static
-* <sup>[s]</sup> Shared
+* <sup>[a]</sup> Static (as applies to Linux / OSX)
+* <sup>[s]</sup> Shared (as applies to Linux / OSX)
 * <sup>[n]</sup> NoJIT: Compiled without JIT support
 * \* We do not run these builds because we believe the builds we do run are sufficient for coverage.
 
@@ -91,9 +91,7 @@ Once a day, we run all the same builds as the Rolling Builds above, but we run a
 | __Windows (ARM)__             | [![dslowarmdebug][dslowarmdbgicon]][dslowarmdbglink] | [![dslowarmtest][dslowarmtesticon]][dslowarmtestlink] | [![dslowarmrelease][dslowarmrelicon]][dslowarmrellink] |
 | __Ubuntu 16.04 (x64)<sup>[a]</sup>__     | [![dslow_linux_a_debug][dslow_linux_a_dbgicon]][dslow_linux_a_dbglink] | [![dslow_linux_a_test][dslow_linux_a_testicon]][dslow_linux_a_testlink] | [![dslow_linux_a_release][dslow_linux_a_relicon]][dslow_linux_a_rellink] |
 | __Ubuntu 16.04 (x64)<sup>[s]</sup>__     | [![dslow_linux_s_debug][dslow_linux_s_dbgicon]][dslow_linux_s_dbglink] | [![dslow_linux_s_test][dslow_linux_s_testicon]][dslow_linux_s_testlink] | [![dslow_linux_s_release][dslow_linux_s_relicon]][dslow_linux_s_rellink] |
-| __Ubuntu 16.04 (x64)<sup>[s][n]</sup>__  | * | [![dslow_linux_sn_test][dslow_linux_sn_testicon]][dslow_linux_sn_testlink] | * |
 | __OS X 10.9 (x64)<sup>[a]</sup>__        | [![dslow_osx_a_debug][dslow_osx_a_dbgicon]][dslow_osx_a_dbglink] | [![dslow_osx_a_test][dslow_osx_a_testicon]][dslow_osx_a_testlink] | [![dslow_osx_a_release][dslow_osx_a_relicon]][dslow_osx_a_rellink] |
-| __OS X 10.9 (x64)<sup>[s][n]</sup>__     | * | [![dslow_osx_sn_test][dslow_osx_sn_testicon]][dslow_osx_sn_testlink] | * |
 
 [dslowx64dbgicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/daily_slow_x64_debug/badge/icon
 [dslowx64dbglink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/daily_slow_x64_debug/
@@ -130,13 +128,6 @@ Once a day, we run all the same builds as the Rolling Builds above, but we run a
 [dslow_linux_s_relicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/shared_ubuntu_linux_release/badge/icon
 [dslow_linux_s_rellink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/shared_ubuntu_linux_release/
 
-[dslow_linux_sn_dbgicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_ubuntu_linux_debug/badge/icon
-[dslow_linux_sn_dbglink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_ubuntu_linux_debug/
-[dslow_linux_sn_testicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_ubuntu_linux_test/badge/icon
-[dslow_linux_sn_testlink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_ubuntu_linux_test/
-[dslow_linux_sn_relicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_ubuntu_linux_release/badge/icon
-[dslow_linux_sn_rellink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_ubuntu_linux_release/
-
 [dslow_osx_a_dbgicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/static_osx_osx_debug/badge/icon
 [dslow_osx_a_dbglink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/static_osx_osx_debug/
 [dslow_osx_a_testicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/static_osx_osx_test/badge/icon
@@ -144,22 +135,17 @@ Once a day, we run all the same builds as the Rolling Builds above, but we run a
 [dslow_osx_a_relicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/static_osx_osx_release/badge/icon
 [dslow_osx_a_rellink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/static_osx_osx_release/
 
-[dslow_osx_sn_dbgicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_osx_osx_debug/badge/icon
-[dslow_osx_sn_dbglink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_osx_osx_debug/
-[dslow_osx_sn_testicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_osx_osx_test/badge/icon
-[dslow_osx_sn_testlink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_osx_osx_test/
-[dslow_osx_sn_relicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_osx_osx_release/badge/icon
-[dslow_osx_sn_rellink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_osx_osx_release/
-
 ## DisableJIT Builds
 
 Once a day, we run all of our usual build configurations with JIT excluded from the build.
 
 |                   | __Debug__ | __Test__ | __Release__ |
 |:-----------------:|:---------:|:--------:|:-----------:|
-| __Windows (x64)__ | [![ddjx64debug][ddjx64dbgicon]][ddjx64dbglink] | [![ddjx64test][ddjx64testicon]][ddjx64testlink] | [![ddjx64release][ddjx64relicon]][ddjx64rellink] |
-| __Windows (x86)__ | [![ddjx86debug][ddjx86dbgicon]][ddjx86dbglink] | [![ddjx86test][ddjx86testicon]][ddjx86testlink] | [![ddjx86release][ddjx86relicon]][ddjx86rellink] |
-| __Windows (ARM)__ | [![ddjarmdebug][ddjarmdbgicon]][ddjarmdbglink] | [![ddjarmtest][ddjarmtesticon]][ddjarmtestlink] | [![ddjarmrelease][ddjarmrelicon]][ddjarmrellink] |
+| __Windows (x64)<sup>[n]</sup>__ | [![ddjx64debug][ddjx64dbgicon]][ddjx64dbglink] | [![ddjx64test][ddjx64testicon]][ddjx64testlink] | [![ddjx64release][ddjx64relicon]][ddjx64rellink] |
+| __Windows (x86)<sup>[n]</sup>__ | [![ddjx86debug][ddjx86dbgicon]][ddjx86dbglink] | [![ddjx86test][ddjx86testicon]][ddjx86testlink] | [![ddjx86release][ddjx86relicon]][ddjx86rellink] |
+| __Windows (ARM)<sup>[n]</sup>__ | [![ddjarmdebug][ddjarmdbgicon]][ddjarmdbglink] | [![ddjarmtest][ddjarmtesticon]][ddjarmtestlink] | [![ddjarmrelease][ddjarmrelicon]][ddjarmrellink] |
+| __Ubuntu 16.04 (x64)<sup>[s][n]</sup>__  | * | [![dslow_linux_sn_test][dslow_linux_sn_testicon]][dslow_linux_sn_testlink] | * |
+| __OS X 10.9 (x64)<sup>[s][n]</sup>__     | * | [![dslow_osx_sn_test][dslow_osx_sn_testicon]][dslow_osx_sn_testlink] | * |
 
 [ddjx64dbgicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/daily_disablejit_x64_debug/badge/icon
 [ddjx64dbglink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/daily_disablejit_x64_debug/
@@ -181,6 +167,20 @@ Once a day, we run all of our usual build configurations with JIT excluded from 
 [ddjarmtestlink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/daily_disablejit_arm_test/
 [ddjarmrelicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/daily_disablejit_arm_release/badge/icon
 [ddjarmrellink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/daily_disablejit_arm_release/
+
+[dslow_linux_sn_dbgicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_ubuntu_linux_debug/badge/icon
+[dslow_linux_sn_dbglink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_ubuntu_linux_debug/
+[dslow_linux_sn_testicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_ubuntu_linux_test/badge/icon
+[dslow_linux_sn_testlink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_ubuntu_linux_test/
+[dslow_linux_sn_relicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_ubuntu_linux_release/badge/icon
+[dslow_linux_sn_rellink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_ubuntu_linux_release/
+
+[dslow_osx_sn_dbgicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_osx_osx_debug/badge/icon
+[dslow_osx_sn_dbglink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_osx_osx_debug/
+[dslow_osx_sn_testicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_osx_osx_test/badge/icon
+[dslow_osx_sn_testlink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_osx_osx_test/
+[dslow_osx_sn_relicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_osx_osx_release/badge/icon
+[dslow_osx_sn_rellink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/_no_jit_shared_osx_osx_release/
 
 ## Legacy Builds
 
