@@ -53,6 +53,7 @@ void CALLBACK PromiseContinuationCallback(JsValueRef task, void *callbackState)
     // Save promise task in taskQueue.
     queue<JsValueRef> * q = (queue<JsValueRef> *)callbackState;
     q->push(task);
+    JsAddRef(task, nullptr);
 }
 
 void runPromiseSample()
@@ -76,6 +77,7 @@ void runPromiseSample()
         JsValueRef task = taskQueue.front();
         taskQueue.pop();
         JsCallFunction(task, &global, 1, &result);
+        JsRelease(task, nullptr);
     }
 }
 ```
