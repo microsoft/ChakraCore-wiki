@@ -18,7 +18,9 @@ STDAPI_(JsErrorCode)
 
 ### Return Value 
 The code **JsNoError** if the operation succeeded, a failure code otherwise.
+
 ### Remarks 
+This API is Windows-only (see [[JsParseSerialized]] for cross-platform equivalent).
 Requires an active script context.
 The runtime will hold on to the buffer until all instances of any functions created from
 the buffer are garbage collected.
