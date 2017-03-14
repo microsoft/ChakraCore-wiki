@@ -16,5 +16,7 @@ STDAPI_(JsErrorCode)
 
 ### Return Value 
 The code **JsNoError** if the operation succeeded, a failure code otherwise.
+
 ### Remarks 
 Requires an active script context.
+This API is Windows-only.
