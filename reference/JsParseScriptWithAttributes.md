@@ -22,4 +22,4 @@ STDAPI_(JsErrorCode)
 The code **JsNoError** if the operation succeeded, a failure code otherwise.
 
 ### Remarks 
-This API is Windows-only.
+This API is Windows-only (see [[JsParse]] for cross-platform equivalent).
