@@ -14,5 +14,7 @@ STDAPI_(JsErrorCode)
 
 ### Return Value 
 The code **JsNoError** if the operation succeeded, a failure code otherwise.
+
 ### Remarks 
+This API is Windows-only (see [[JsCreateString]]/[[JsCreateStringUtf16]] for cross-platform equivalent).
 Requires an active script context.
