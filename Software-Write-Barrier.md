@@ -1,5 +1,5 @@
-
 ## Introduction
+
 The chakra implementation of concurrent GC do rescan the dirty pages to determine the newly added rooted objects during initial scan/mark. 
 - On windows, the OS kernel provides a feature called Write Watch( we also call it hardware write barrier), which the system keeps track of the pages that are written to in the committed memory region. ChakraCore GC use this information to determine which pages are dirty and do rescan/mark on them. 
 - On non-Windows platform the hardware write barrier is not available, so we use software write barrier to track the dirty pages. 
@@ -18,6 +18,7 @@ The key to make the software write barrier work correctly and stably is to make 
             Field(int*)             intArray;
             Field(Var)              aVar;
             Field(Field(Var)*)      varArray;
+            Field(Field(B*)*)       pointerArray;
             FieldNoBarrier(Recycler*)   recycler; // e.g: recycler is heap allocated
         }
     ```
@@ -80,5 +81,13 @@ Other than the plugin, there's runtime flags to help check if there's missing ba
 - You can also additionally add -KeepRecyclerTrackData, which saves more tracking info to help the debugging.
 But to be noticed both -VerifyBarrierBit and -RecyclerVerifyMark can report false positives.
 
-If would like to test this with windows, run "jenkens\buildone.cmd x64 debug swb" to build the bits, the result will be under Build\VcBuild.SWB\
+If would like to test this with windows, run "jenkens\buildone.cmd x64 debug swb"
+to build the bits. Build binaries will be under Build\VcBuild.SWB\.
 
+E.g.,
+```
+jenkins\buildone.cmd x64 debug swb
+python test\runtests.py -d --swb --x64
+  --flags "-recyclerconcurrentstress -recyclerverifymark -verifybarrierbit -keeprecyclertrackdata -dumponcrash"
+  --not-tag exclude_xplat
+```
