@@ -14,5 +14,6 @@ CHAKRA_API
 
 ### Return Value 
 The code **JsNoError** if the operation succeeded, a failure code otherwise.
+
 ### Remarks 
-Expects Utf16 string
+**This API is experimental and may have breaking change later.** Expects Utf16 string.
