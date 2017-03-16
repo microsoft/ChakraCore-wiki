@@ -57,6 +57,7 @@ References of JSRT typedefs, constants, enumerations and APIs.
 * [[JsCreateFunction]]
 * [[JsCreateNamedFunction]]
 * [[JsCreateObject]]
+* [[JsCreatePromise]]
 * [[JsCreatePropertyIdUtf8]]
 * [[JsCreateRangeError]]
 * [[JsCreateReferenceError]]
