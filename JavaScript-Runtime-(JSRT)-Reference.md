@@ -18,7 +18,6 @@ References of JSRT typedefs, constants, enumerations and APIs.
 * [[JsSourceContext]]
 * [[JsThreadServiceCallback]]
 * [[JsValueRef]]
-* [[JsSerializedLoadScriptCallBack]]
 
 **JSRT Const References:**
 * [[JS_INVALID_REFERENCE]]
