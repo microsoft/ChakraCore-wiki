@@ -18,7 +18,10 @@ CHAKRA_API
 * __sourceUrl__: The location the script came from.
 * __result__: A function representing the script code.
 
-### Return Value 
+### Return Value
 The code **JsNoError** if the operation succeeded, a failure code otherwise.
-### Remarks 
+
+### Remarks
+**This API is experimental and may have breaking change later.**
+
 Requires an active script context.
