@@ -5,14 +5,14 @@ Provides the ability to lazy load the script source only if/when it is needed.
 ```
 CHAKRA_API
        JsParseSerialized(
-        _In_ BYTE *buffer,
+        _In_ JsValueRef buffer,
         _In_ JsSerializedLoadScriptCallback scriptLoadCallback,
         _In_ JsSourceContext sourceContext,
         _In_ JsValueRef sourceUrl,
         _Out_ JsValueRef *result);
 ```
 ### Parameters 
-* __buffer__: The serialized script
+* __buffer__: The serialized script as an ArrayBuffer (preferably ExternalArrayBuffer)
 * __scriptLoadCallback__: Callback called when the source code of the script needs to be loaded. This is an optional parameter, set to null if not needed.
 * __sourceContext__: A cookie identifying the script that can be used by debuggable script contexts. This context will passed into scriptLoadCallback.
 * __sourceUrl__: The location the script came from.
