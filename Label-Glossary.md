@@ -2,7 +2,7 @@ Description of the GitHub labels used by ChakraCore
 
 [**Accepting PRs**](https://github.com/Microsoft/ChakraCore/labels/Accepting%20PRs)
 
- - We welcome a 3rd party pull request for this issue. It is specifically well suited for outside contributors and is up for grabs. (Other issues are okay for 3rd party PRs, but in any case, please indicate that you're claiming an issue to reduce duplication of effort.) See also: [**Your first PR**](https://github.com/Microsoft/ChakraCore/labels/Your%20first%20PR).
+ - We welcome a 3rd party pull request for this issue. It is specifically well suited for outside contributors and is [up for grabs](http://up-for-grabs.net/#/tags/chakra). (Other issues are okay for 3rd party PRs, but in any case, please indicate that you're claiming an issue to reduce duplication of effort.) See also: [**Your first PR**](https://github.com/Microsoft/ChakraCore/labels/Your%20first%20PR).
 
 [**APIs**](https://github.com/Microsoft/ChakraCore/labels/APIs)
 
