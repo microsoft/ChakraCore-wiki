@@ -2,6 +2,8 @@ This section includes resources such as blog posts and talks. Some of the resour
 
 # Team Blog
 
+* [Improved JavaScript performance, WebAssembly, and Shared Memory in Microsoft Edge](https://blogs.windows.com/msedgedev/2017/04/20/improved-javascript-performance-webassembly-shared-memory/#g5tzBkkeXLgeoc6p.97) (April 2017)
+* [Notes from the Node.js VM Summit](https://blogs.windows.com/msedgedev/2017/03/13/notes-from-nodejs-vm-summit/#XMPkGQuG4GlzhZ8m.97) (March 2017)
 * [ChakraCore’s first anniversary](https://blogs.windows.com/msedgedev/2017/01/13/chakracores-first-anniversary/#xPFH71Gve16tyFjZ.97) (January 2017)
 * [Node-ChakraCore and VM Neutrality in Node.js](https://blogs.windows.com/msedgedev/2016/11/29/node-chakracore-vm-neutrality/#zIEZw9H5IXmYXjQ1.97) (November 2016)
 * [A peek into the WebAssembly Browser Preview](https://blogs.windows.com/msedgedev/2016/10/31/webassembly-browser-preview/) (October 2016)
