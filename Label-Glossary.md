@@ -28,6 +28,10 @@ Description of the GitHub labels used by ChakraCore
 
  - Issue raised is actually by design.
 
+[**Codebase Quality**](https://github.com/Microsoft/ChakraCore/labels/Codebase%20Quality)
+
+ - Issue is not a Bug but is something that might be worth improving. For example: code hygiene, maintainability issues, poor error messages.
+
 [**Committed**](https://github.com/Microsoft/ChakraCore/labels/Committed)
 
  - We are committed to resolving this issue.
