@@ -30,7 +30,7 @@ Description of the GitHub labels used by ChakraCore
 
 [**Codebase Quality**](https://github.com/Microsoft/ChakraCore/labels/Codebase%20Quality)
 
- - Issue is not a Bug but is something that might be worth improving. For example: code hygiene, maintainability issues, poor error messages.
+ - Issue is not a Bug but is something that might be worth improving. For example: code hygiene, maintainability issues, poor error messages, warnings or errors that do not affect a primary build configuration.
 
 [**Committed**](https://github.com/Microsoft/ChakraCore/labels/Committed)
 
