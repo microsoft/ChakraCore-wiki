@@ -1,5 +1,11 @@
 # ChakraCore 1.4
 
+## [v1.4.3](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.3)
+ 
+This patch release of ChakraCore 1.4 includes the following fixes:
+- Change to address CVE-2017-0093 and CVE-2017-0208 [#2834](https://github.com/Microsoft/ChakraCore/pull/2834)
+- Internal fixes in Windows 10 Creators Update [#2826](https://github.com/Microsoft/ChakraCore/pull/2826)
+
 ## [v1.4.2](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.2)
 
 This patch release of ChakraCore 1.4 includes the following security fixes:
