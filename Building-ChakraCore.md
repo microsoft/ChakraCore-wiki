@@ -66,7 +66,11 @@ dnf install -y libstdc++-static.x86_64
 su
 apt-get update
 apt-get dist-upgrade
-apt-get install -y git build-essential cmake clang libicu-dev libunwind8-dev
+apt-get install -y git build-essential cmake clang libicu-dev
+```
+For version 1.X also need to install the `libunwind8-dev` package:
+```
+sudo apt-get install -y libunwind8-dev
 ```
 
 #### Clone and Build ####
