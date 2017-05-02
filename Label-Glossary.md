@@ -6,7 +6,7 @@ Description of the GitHub labels used by ChakraCore
 
 [**APIs**](https://github.com/Microsoft/ChakraCore/labels/APIs)
 
-- Issue is related to JSRT APIs (the APIs used to embed ChakraCore in other applications).
+ - Issue is related to JSRT APIs (the APIs used to embed ChakraCore in other applications).
 
 [**Build Break**](https://github.com/Microsoft/ChakraCore/labels/Build%20Break)
 
@@ -42,7 +42,11 @@ Description of the GitHub labels used by ChakraCore
 
 [**Continuous Integration**](https://github.com/Microsoft/ChakraCore/labels/Continuous%20Integration)
 
- - Involves changes to the Jenkins Continuous Integration (Jenkins CI) configuration or related files. May result in temporary CI breaks while the changes propagate. May need special attention from a project or tool maintainer.
+ - Involves changes to our Continuous Integration (CI) configuration (i.e. Jenkins, VSO, etc.) or related files. May result in temporary CI breaks while the changes propagate. May need special attention from a project or tool maintainer. Testing these changes may be dependent on the environment in which the CI runs, and not self-contained to a single commit or branch of the source code.
+
+[**Dev Experience**](https://github.com/Microsoft/ChakraCore/labels/Dev%20Experience)
+
+ - Issue is related to the Javascript Developer Experience we ship (e.g. poor or misleading error messages, poor discoverability of problems).
 
 [**Discussion**](https://github.com/Microsoft/ChakraCore/labels/Discussion)
 
