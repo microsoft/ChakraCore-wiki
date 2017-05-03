@@ -1,5 +1,5 @@
 ### ChakraCore Componentization
-ChakraCore is a fully capable JavaScript virtual machine that has the exact same set of capabilities and characteristics that are supported by Chakra, with two key differences. First, it does not expose Chakra’s private bindings to the browser or the Universal Windows Platform, both of which constrain it to a very specific use case scenario. Second, instead of exposing the COM based diagnostic APIs that are currently available in Chakra, ChakraCore supports a new set of JSON based diagnostic APIs, which are platform agnostic and could be standardized or made interoperable across different implementations in the long run.
+ChakraCore is a fully capable JavaScript virtual machine that has the exact same set of capabilities and characteristics that are supported by Chakra, with two key differences. First, it does not expose Chakra’s private bindings to the browser or the Universal Windows Platform, both of which constrain it to a very specific use case scenario. Second, instead of exposing the COM based diagnostic APIs that are currently available in Chakra, ChakraCore supports a new set of JSON based diagnostic APIs, which are platform agnostic and could be standardized or made interoperable across different implementations.
 
 <p align="center">
 [[/images/chakracore_componentization.png]]
