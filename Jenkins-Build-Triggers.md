@@ -12,13 +12,13 @@ The specific comments needed to trigger the builds are listed below.
 This is the set of builds that should be triggered by default on a pull request. (Linux builds will
 only be triggered for branches that support Linux builds.)
 
-To re-run the full set of builds:
+## Re-run the full set of builds
 
 ```
 @dotnet-bot test this please
 ```
 
-To re-run individual builds:
+## Re-run individual builds
 
 ```
 @dotnet-bot test Copyright Check please
@@ -44,6 +44,17 @@ To re-run individual builds:
 @dotnet-bot test OSX osx_osx_debug_static please
 @dotnet-bot test OSX osx_osx_release_static please
 @dotnet-bot test OSX osx_osx_test_static please
+```
+
+## Re-run multiple individual builds
+
+You can do this in a single comment, one per line. Note: calling out @dotnet-bot is not required but is to remind humans that you're talking to a bot; also, "please" is not required but is just for politeness; "test" is required.
+
+```
+@dotnet-bot
+test Windows x64_debug
+test Windows x86_test
+test Windows arm_release
 ```
 
 # Daily Builds
