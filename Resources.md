@@ -26,6 +26,7 @@ This section includes resources such as blog posts and talks. Some of the resour
 
 # Talks
 
+* [What's new in ChakraCore](https://channel9.msdn.com/Events/Build/2017/P4103) (May 2017)
 * [A Lap Around @ChakraCore](https://channel9.msdn.com/Events/WebPlatformSummit/edgesummit2016/ES1609) (April 2016)
 * [ChakraCore OSS](https://www.youtube.com/watch?v=1bfDB3YPHFI&feature=youtu.be) (January 2016)
 * [Lessons Learned: Extending Node.js with Another JavaScript Engine](https://www.youtube.com/watch?v=Zbc3SwMDWf0) (NodeInteractive, December 2015)
