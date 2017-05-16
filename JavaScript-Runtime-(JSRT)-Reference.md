@@ -18,6 +18,7 @@ References of JSRT typedefs, constants, enumerations and APIs.
 * [[JsSourceContext]]
 * [[JsThreadServiceCallback]]
 * [[JsValueRef]]
+* [[JsWeakRef]]
 
 **JSRT Const References:**
 * [[JS_INVALID_REFERENCE]]
@@ -69,6 +70,7 @@ References of JSRT typedefs, constants, enumerations and APIs.
 * [[JsCreateTypeError]]
 * [[JsCreateTypedArray]]
 * [[JsCreateURIError]]
+* [[JsCreateWeakReference]]
 * [[JsDefineProperty]]
 * [[JsDeleteIndexedProperty]]
 * [[JsDeleteProperty]]
@@ -78,6 +80,7 @@ References of JSRT typedefs, constants, enumerations and APIs.
 * [[JsEnableRuntimeExecution]]
 * [[JsEquals]]
 * [[JsGetAndClearException]]
+* [[JsGetAndClearExceptionWithMetadata]]
 * [[JsGetArrayBufferStorage]]
 * [[JsGetContextData]]
 * [[JsGetContextOfObject]]
@@ -109,6 +112,7 @@ References of JSRT typedefs, constants, enumerations and APIs.
 * [[JsGetTypedArrayStorage]]
 * [[JsGetUndefinedValue]]
 * [[JsGetValueType]]
+* [[JsGetWeakReferenceValue]]
 * [[JsHasException]]
 * [[JsHasExternalData]]
 * [[JsHasIndexedPropertiesExternalData]]
