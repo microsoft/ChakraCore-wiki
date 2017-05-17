@@ -148,7 +148,10 @@ To build and run this sample,
 3. Run the sample by pressing `Ctrl+F5` or using `Debug > Start Without Debugging`.
 
 ## Linux/OS X
-See [[Building ChakraCore]] and the [hello-world sample](https://github.com/Microsoft/Chakra-Samples/tree/master/ChakraCore%20Samples/Hello%20World/Linux_OSX) for Linux and OS X. 
+For Linux/OSX, see [[Building ChakraCore]] and 
+
+* [Hello-world sample](https://github.com/Microsoft/Chakra-Samples/tree/master/ChakraCore%20Samples/Hello%20World/Linux_OSX) for embedding ChakraCore as a **static** library.
+* [Hello-world sample](https://github.com/Microsoft/Chakra-Samples/tree/master/ChakraCore%20Samples/Hello%20World/Linux_OSX_Shared) for embedding ChakraCore as a **shared** library. 
 
 # More on JSRT
 * [[JavaScript Runtime (JSRT) Overview]]

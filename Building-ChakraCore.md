@@ -1,3 +1,5 @@
+Visit [[Getting ChakraCore binaies]] if you would simply like to download pre-compiled binaries.
+
 ## Windows ##
 
 You can build ChakraCore on Windows 7 SP1 or above, and Windows Server 2008 R2
