@@ -40,4 +40,5 @@ This section includes resources such as blog posts and talks. Some of the resour
 
 # Community posts
 
+* [Calling JavaScript functions from TSQL](https://blogs.msdn.microsoft.com/dgorti/2017/05/11/calling-javascript-functions-from-tsql/) (May 2017)
 * [Getting started with ChakraCore](http://eclipsesource.com/blogs/2016/04/06/getting-started-with-microsoft-chakracore/) (April 2016)
