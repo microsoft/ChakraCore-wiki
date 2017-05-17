@@ -1,4 +1,4 @@
-Visit [[Getting ChakraCore binaies]] if you would simply like to download pre-compiled binaries.
+Visit [[Getting ChakraCore binaries]] if you would simply like to download pre-compiled binaries.
 
 ## Windows ##
 
