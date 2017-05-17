@@ -1,4 +1,4 @@
-When Jenkins builds or tests fail it is helpful to be able to reproduce the errors locally.
+* When Jenkins builds or tests fail it is helpful to be able to reproduce the errors locally.
 
 It is possible to run builds and tests locally using the same scripts that the Jenkins checks use.
 To run these commands, please follow the instructions below.
@@ -181,6 +181,7 @@ We currently support systems with Windows 7 or VS 2013 as Legacy configurations.
 
 For purposes of shorthand the following terms are considered more or less equivalent here:
 
+* VS 2017 = Visual Studio 2017 = Dev15 = msbuild 15.0
 * VS 2015 = Visual Studio 2015 = Dev14 = msbuild 14.0
 * VS 2013 = Visual Studio 2013 = Dev12 = msbuild 12.0
 

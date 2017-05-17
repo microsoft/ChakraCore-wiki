@@ -15,5 +15,8 @@ CHAKRA_API
 
 ### Return Value 
 The code **JsNoError** if the operation succeeded, a failure code otherwise.
+
 ### Remarks 
-Input string can be either ASCII or Utf8
+**This API is experimental and may have breaking change later.** 
+
+Input string can be either ASCII or Utf8.

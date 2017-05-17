@@ -6,12 +6,14 @@ STDAPI_(JsErrorCode)
     _In_z_ const wchar_t *name,
     _Out_ JsPropertyIdRef *propertyId);
 ```
-### Parameters 
+### Parameters
 * __name__:  The name of the property ID to get or create. The name may consist of only digits.
 * __propertyId__: The property ID in this runtime for the given name.
 
-### Return Value 
+### Return Value
 The code **JsNoError** if the operation succeeded, a failure code otherwise.
-### Remarks 
+
+### Remarks
+This API is Windows-only (see [[JsCreatePropertyIdUtf8]] for cross-platform equivalent).
 Property IDs are specific to a context and cannot be used across contexts.
 Requires an active script context.

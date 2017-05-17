@@ -16,7 +16,10 @@ CHAKRA_API
 
 ### Return Value 
 The code **JsNoError** if the operation succeeded, a failure code otherwise.
+
 ### Remarks 
+**This API is experimental and may have breaking change later.**
+
 `JsSerializeScript` parses a script and then stores the parsed form of the script in a
 runtime-independent format. The serialized script then can be deserialized in any
 runtime without requiring the script to be re-parsed.

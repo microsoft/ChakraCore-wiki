@@ -14,7 +14,9 @@ STDAPI_(JsErrorCode)
 
 ### Return Value 
 The code **JsNoError** if the operation succeeded, a failure code otherwise.
+
 ### Remarks 
+This API is Windows-only (see [[JsCopyString]]/[[JsCopyStringUtf16]] for cross-platform equivalent).
 This function retrieves the string pointer of a string value. It will fail with
 **JsErrorInvalidArgument** if the type of the value is not string. The lifetime
 of the string returned will be the same as the lifetime of the value it came from, however

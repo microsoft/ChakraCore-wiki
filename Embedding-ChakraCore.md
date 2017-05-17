@@ -3,7 +3,7 @@ ChakraCore can be embedded via JavaScript Runtime (JSRT) APIs. This document goe
 ## Windows
 
 ### Before you start
-You should first clone and build [ChakraCore](https://github.com/Microsoft/ChakraCore). There are a few files that you will need,
+You should first [clone](https://github.com/Microsoft/ChakraCore) and [build](https://github.com/Microsoft/ChakraCore/wiki/Building-ChakraCore) ChakraCore. There are a few files that you will need,
 
 1. **ChakraCore.h**, **ChakraCommon.h**, **ChakraCommonWindows.h** and  **ChakraDebug.h** from `lib\jsrt\`, which are the headers. 
 2. **ChakraCore.lib** and **ChakraCore.dll** from `Build\VcBuild\bin\[platform+output]\`.

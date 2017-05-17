@@ -1,5 +1,17 @@
 # ChakraCore 1.4
 
+## [v1.4.3](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.3)
+ 
+This patch release of ChakraCore 1.4 includes the following fixes:
+- Change to address CVE-2017-0093 and CVE-2017-0208 [#2834](https://github.com/Microsoft/ChakraCore/pull/2834)
+- Internal fixes in Windows 10 Creators Update [#2826](https://github.com/Microsoft/ChakraCore/pull/2826)
+
+## [v1.4.2](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.2)
+
+This patch release of ChakraCore 1.4 includes the following security fixes:
+- Change to address CVE-2017-0067, CVE-2017-0150, CVE-2017-0138, CVE-2017-0094, CVE-2017-0132, CVE-2017-0133, CVE-2017-0134, CVE-2017-0137, CVE-2017-0071, CVE-2017-0151, CVE-2017-0141, CVE-2017-0196, CVE-2017-0136, CVE-2017-0152, CVE-2017-0010, CVE-2017-0035, CVE-2017-0015, CVE-2017-0028
+[#2697](https://github.com/Microsoft/ChakraCore/pull/2697)
+
 ## [v1.4.1](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.1)
 
 This patch release of ChakraCore 1.4 enables using ChakraCore [NuGet packages](https://github.com/Microsoft/ChakraCore/wiki/NuGet-Packages) for developing .NET and native applications ([#2266](https://github.com/Microsoft/ChakraCore/pull/2266), [#85](https://github.com/Microsoft/ChakraCore/issues/85)) and includes other bug fixes.

@@ -2,11 +2,11 @@ Description of the GitHub labels used by ChakraCore
 
 [**Accepting PRs**](https://github.com/Microsoft/ChakraCore/labels/Accepting%20PRs)
 
- - We welcome a 3rd party pull request for this issue. It is specifically well suited for outside contributors and is up for grabs. (Other issues are okay for 3rd party PRs, but in any case, please indicate that you're claiming an issue to reduce duplication of effort.) See also: [**Your first PR**](https://github.com/Microsoft/ChakraCore/labels/Your%20first%20PR).
+ - We welcome a 3rd party pull request for this issue. It is specifically well suited for outside contributors and is [up for grabs](http://up-for-grabs.net/#/tags/chakra). (Other issues are okay for 3rd party PRs, but in any case, please indicate that you're claiming an issue to reduce duplication of effort.) See also: [**Your first PR**](https://github.com/Microsoft/ChakraCore/labels/Your%20first%20PR).
 
 [**APIs**](https://github.com/Microsoft/ChakraCore/labels/APIs)
 
-- Issue is related to JSRT APIs (the APIs used to embed ChakraCore in other applications).
+ - Issue is related to JSRT APIs (the APIs used to embed ChakraCore in other applications).
 
 [**Build Break**](https://github.com/Microsoft/ChakraCore/labels/Build%20Break)
 
@@ -28,6 +28,10 @@ Description of the GitHub labels used by ChakraCore
 
  - Issue raised is actually by design.
 
+[**Codebase Quality**](https://github.com/Microsoft/ChakraCore/labels/Codebase%20Quality)
+
+ - Issue is not a Bug but is something that might be worth improving. For example: code hygiene, maintainability issues, poor error messages, warnings or errors that do not affect a primary build configuration.
+
 [**Committed**](https://github.com/Microsoft/ChakraCore/labels/Committed)
 
  - We are committed to resolving this issue.
@@ -38,7 +42,11 @@ Description of the GitHub labels used by ChakraCore
 
 [**Continuous Integration**](https://github.com/Microsoft/ChakraCore/labels/Continuous%20Integration)
 
- - Involves changes to the Jenkins Continuous Integration (Jenkins CI) configuration or related files. May result in temporary CI breaks while the changes propagate. May need special attention from a project or tool maintainer.
+ - Involves changes to our Continuous Integration (CI) configuration (i.e. Jenkins, VSO, etc.) or related files. May result in temporary CI breaks while the changes propagate. May need special attention from a project or tool maintainer. Testing these changes may be dependent on the environment in which the CI runs, and not self-contained to a single commit or branch of the source code.
+
+[**Dev Experience**](https://github.com/Microsoft/ChakraCore/labels/Dev%20Experience)
+
+ - Issue is related to the Javascript Developer Experience we ship (e.g. poor or misleading error messages, poor discoverability of problems).
 
 [**Discussion**](https://github.com/Microsoft/ChakraCore/labels/Discussion)
 

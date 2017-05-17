@@ -12,7 +12,9 @@ STDAPI_(JsErrorCode)
 
 ### Return Value 
 The code **JsNoError** if the operation succeeded, a failure code otherwise.
-### Remarks 
+
+### Remarks
+This API is Windows-only (see [[JsCopyPropertyIdUtf8]] for cross-platform equivalent).
 Requires an active script context.
 The returned buffer is valid as long as the runtime is alive and cannot be used
 once the runtime has been disposed.

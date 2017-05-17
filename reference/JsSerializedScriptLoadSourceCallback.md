@@ -9,3 +9,6 @@ typedef bool (CALLBACK * JsSerializedScriptLoadSourceCallback)(_In_ JsSourceCont
 
 ### Return Value 
 true if the operation succeeded, false otherwise.
+
+### Remarks 
+This callback is Windows-only.

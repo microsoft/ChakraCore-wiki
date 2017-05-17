@@ -10,8 +10,9 @@ typedef bool (CHAKRA_CALLBACK * JsSerializedLoadScriptCallback) (JsSourceContext
 
 ### Return Value 
 The code **JsNoError** if the operation succeeded, a failure code otherwise.
+
 ### Remarks 
-The callback is invoked on the current runtime execution thread, therefore execution is
+**This API is experimental and may have breaking change later.** The callback is invoked on the current runtime execution thread, therefore execution is
 blocked until the callback completes.
 The callback can be used by hosts to prepare for garbage collection. For example, by
 releasing unnecessary references on Chakra objects.

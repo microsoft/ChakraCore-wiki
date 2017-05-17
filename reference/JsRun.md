@@ -19,7 +19,10 @@ CHAKRA_API
 
 ### Return Value 
 The code **JsNoError** if the operation succeeded, a failure code otherwise.
+
 ### Remarks 
+**This API is experimental and may have breaking change later.**
+
 Requires an active script context.
 
 Script source can be either JavascriptString or JavascriptExternalArrayBuffer.
