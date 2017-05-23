@@ -1,5 +1,12 @@
 # ChakraCore 1.4
 
+## [v1.4.4](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.4)
+
+This patch release of ChakraCore 1.4 includes the following security fixes:
+
+- Change to address CVE-2017-0229, CVE-2017-0223, CVE-2017-0224, CVE-2017-0252, CVE-2017-0230, CVE-2017-0234, CVE-2017-0235, CVE-2017-0236, CVE-2017-0228, CVE-2017-0238, CVE-2017-0266
+[#2959](https://github.com/Microsoft/ChakraCore/pull/2959)
+
 ## [v1.4.3](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.3)
  
 This patch release of ChakraCore 1.4 includes the following fixes:
