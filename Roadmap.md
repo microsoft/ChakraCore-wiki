@@ -9,7 +9,7 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 ## Enhancing Host & Platform Support 
 * **Node.js**
   * [x] Update [Node.js+ChakraCore](https://github.com/nodejs/node-chakracore) to include [ChakraCore 1.4](https://github.com/Microsoft/ChakraCore/tree/release/1.4)
-  * [X] Enable Node-ChakraCore on Mac and Linux.
+  * [x] Enable Node-ChakraCore on Mac and Linux.
   * [ ] Support Chrome Debug Protocol in Node-ChakraCore.
   * [ ] Enable Time Travel Debugging over Chrome Debug Protocol using VSCode
   * [ ] Support N-API
@@ -48,6 +48,8 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 
 ## Engineering Improvements
 * [ ] Enable easier authoring of JavaScript built-ins in JavaScript.
+
+# Release Notes
 
 # ChakraCore 1.4
 
