@@ -92,6 +92,10 @@ Description of the GitHub labels used by ChakraCore
 
  - Issue is a feature request or architecture design suggestion but not a formal proposal.
 
+[**Needs Triage**](https://github.com/Microsoft/ChakraCore/labels/Needs%20Triage)
+
+ - Issue needs triage to a Milestone and Assignee.
+
 [**NoRepro**](https://github.com/Microsoft/ChakraCore/labels/NoRepro)
 
  - Unable to reproduce the issue described. There is no further action to be taken.
