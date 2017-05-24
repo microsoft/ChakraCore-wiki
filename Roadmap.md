@@ -9,7 +9,7 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 ## Enhancing Host & Platform Support 
 * **Node.js**
   * [x] Update [Node.js+ChakraCore](https://github.com/nodejs/node-chakracore) to include [ChakraCore 1.4](https://github.com/Microsoft/ChakraCore/tree/release/1.4)
-  * [X] Enable Node-ChakraCore on Mac and Linux.
+  * [x] Enable Node-ChakraCore on Mac and Linux.
   * [ ] Support Chrome Debug Protocol in Node-ChakraCore.
   * [ ] Enable Time Travel Debugging over Chrome Debug Protocol using VSCode
   * [ ] Support N-API
@@ -49,32 +49,34 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 ## Engineering Improvements
 * [ ] Enable easier authoring of JavaScript built-ins in JavaScript.
 
-# ChakraCore 1.4
+# Release Notes
 
-## [v1.4.4](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.4)
+## ChakraCore 1.4
+
+### [v1.4.4](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.4)
 
 This patch release of ChakraCore 1.4 includes the following security fixes:
 
 - Change to address CVE-2017-0229, CVE-2017-0223, CVE-2017-0224, CVE-2017-0252, CVE-2017-0230, CVE-2017-0234, CVE-2017-0235, CVE-2017-0236, CVE-2017-0228, CVE-2017-0238, CVE-2017-0266
 [#2959](https://github.com/Microsoft/ChakraCore/pull/2959)
 
-## [v1.4.3](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.3)
+### [v1.4.3](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.3)
  
 This patch release of ChakraCore 1.4 includes the following fixes:
 - Change to address CVE-2017-0093 and CVE-2017-0208 [#2834](https://github.com/Microsoft/ChakraCore/pull/2834)
 - Internal fixes in Windows 10 Creators Update [#2826](https://github.com/Microsoft/ChakraCore/pull/2826)
 
-## [v1.4.2](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.2)
+### [v1.4.2](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.2)
 
 This patch release of ChakraCore 1.4 includes the following security fixes:
 - Change to address CVE-2017-0067, CVE-2017-0150, CVE-2017-0138, CVE-2017-0094, CVE-2017-0132, CVE-2017-0133, CVE-2017-0134, CVE-2017-0137, CVE-2017-0071, CVE-2017-0151, CVE-2017-0141, CVE-2017-0196, CVE-2017-0136, CVE-2017-0152, CVE-2017-0010, CVE-2017-0035, CVE-2017-0015, CVE-2017-0028
 [#2697](https://github.com/Microsoft/ChakraCore/pull/2697)
 
-## [v1.4.1](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.1)
+### [v1.4.1](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.1)
 
 This patch release of ChakraCore 1.4 enables using ChakraCore [NuGet packages](https://github.com/Microsoft/ChakraCore/wiki/NuGet-Packages) for developing .NET and native applications ([#2266](https://github.com/Microsoft/ChakraCore/pull/2266), [#85](https://github.com/Microsoft/ChakraCore/issues/85)) and includes other bug fixes.
 
-## [v1.4.0](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.0)
+### [v1.4.0](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.0)
 
 ChakraCore 1.4.0 includes cross-platform JIT support and experimental WebAssembly support along with other language, performance and JSRT updates. See notable changes below.
  
@@ -87,33 +89,33 @@ ChakraCore 1.4.0 includes cross-platform JIT support and experimental WebAssembl
 - Memory reduction through function body redeferral [#1585](https://github.com/Microsoft/ChakraCore/pull/1585)
 - Add out-of-process JIT support in Microsoft Edge [#1561](https://github.com/Microsoft/ChakraCore/pull/1561)
 
-# ChakraCore 1.3
+## ChakraCore 1.3
 
-## [v1.3.2](https://github.com/Microsoft/ChakraCore/releases/tag/v1.3.2)
+### [v1.3.2](https://github.com/Microsoft/ChakraCore/releases/tag/v1.3.2)
 
 This patch release of ChakraCore 1.3 includes the following security fixes:
 
 - Change to address bad binding of async arrow function parameters [#2219](https://github.com/Microsoft/ChakraCore/pull/2219)
 - All fixes included in [v1.2.3](#v123)
 
-## [v1.3.1](https://github.com/Microsoft/ChakraCore/releases/tag/v1.3.1)
+### [v1.3.1](https://github.com/Microsoft/ChakraCore/releases/tag/v1.3.1)
 
 This patch release of ChakraCore 1.3 includes the following security fixes:
 
 - Change to address CVE-2016-7207 [#1979](https://github.com/Microsoft/ChakraCore/pull/1979)
 - All fixes included in [v1.2.2](#v122)
 
-## [v1.3.0](https://github.com/Microsoft/ChakraCore/releases/tag/v1.3.0)
+### [v1.3.0](https://github.com/Microsoft/ChakraCore/releases/tag/v1.3.0)
 
 Release 1.3.0 includes experimental support on x64 Linux/OSX, experimental JSRT debugging APIs,
 and other language and performance updates. See notable changes below.
 
-### Cross-platform
+#### Cross-platform
 - ChakraCore interpreter and runtime on x64 Linux (still working on JIT or concurrent/partial GC)
 - ChakraCore interpreter and runtime on x64 OSX (still working on  JIT or concurrent/partial GC)
 [#1134](https://github.com/Microsoft/ChakraCore/pull/1134)
 
-### Language
+#### Language
 - Enable [Symbol.toStringTag](http://www.ecma-international.org/ecma-262/6.0/#sec-symbol.tostringtag)
 by default [#1383](https://github.com/Microsoft/ChakraCore/pull/1383)
 - Enable [String.prototype.padStart](https://tc39.github.io/ecma262/#sec-string.prototype.padstart)
@@ -126,7 +128,7 @@ under experimental flag [#1198](https://github.com/Microsoft/ChakraCore/pull/119
 - Enable [Symbol.hasInstance](http://www.ecma-international.org/ecma-262/6.0/#sec-symbol.hasinstance)
 under experimental flag [#1063](https://github.com/Microsoft/ChakraCore/pull/1063)
 
-### Performance
+#### Performance
 - Optimize creation of Heap arguments object
 ([`91e0e91`](https://github.com/Microsoft/ChakraCore/commit/91e0e91288ecadcfc01a41f2f0c7e878d2f3ee1a))
 - Add fastpath for when Object.hasOwnProperty returns true
@@ -134,26 +136,26 @@ under experimental flag [#1063](https://github.com/Microsoft/ChakraCore/pull/106
 - Enable script function inlining in jitted loop bodies
 [#1182](https://github.com/Microsoft/ChakraCore/pull/1182)
 
-### JSRT
+#### JSRT
 - JSRT Debugging APIs (experimental)
 [#926](https://github.com/Microsoft/ChakraCore/pull/926)
 - JSRT Module API (experimental)
 [#1254](https://github.com/Microsoft/ChakraCore/pull/1254)
 
-### Test
+#### Test
 - Introduce C++ unit testing mechanism using Catch
 [#1224](https://github.com/Microsoft/ChakraCore/pull/1224)
 
-# ChakraCore 1.2
+## ChakraCore 1.2
 
-## [v1.2.3](https://github.com/Microsoft/ChakraCore/releases/tag/v1.2.3)
+### [v1.2.3](https://github.com/Microsoft/ChakraCore/releases/tag/v1.2.3)
 
 This patch release of ChakraCore 1.2 includes the following security fixes:
 
 - Change to address CVE-2016-7287,CVE-2016-7286,CVE-2016-7288,CVE-2016-7296
 [#2230](https://github.com/Microsoft/ChakraCore/pull/2230)
 
-## [v1.2.2](https://github.com/Microsoft/ChakraCore/releases/tag/v1.2.2)
+### [v1.2.2](https://github.com/Microsoft/ChakraCore/releases/tag/v1.2.2)
 
 This patch release of ChakraCore 1.2 includes the following security fixes:
 
@@ -161,7 +163,7 @@ This patch release of ChakraCore 1.2 includes the following security fixes:
 CVE-2016-7208, CVE-2016-7240, CVE-2016-7241, CVE-2016-7242, CVE-2016-7243
 [#1942](https://github.com/Microsoft/ChakraCore/pull/1982)
 
-## [v1.2.1](https://github.com/Microsoft/ChakraCore/releases/tag/v1.2.1)
+### [v1.2.1](https://github.com/Microsoft/ChakraCore/releases/tag/v1.2.1)
 
 This patch release of ChakraCore 1.2 includes the following security fixes:
 
@@ -173,7 +175,7 @@ This patch release of ChakraCore 1.2 includes the following security fixes:
 CVE-2016-7189, and a mitigation of a CFG bypass.
 ([`f05c42e`](https://github.com/Microsoft/ChakraCore/commit/f05c42e64c3b2d057ae1a52fe1917af26c9f2737))
 
-## [v1.2.0](https://github.com/Microsoft/ChakraCore/releases/tag/v1.2.0.0)
+### [v1.2.0](https://github.com/Microsoft/ChakraCore/releases/tag/v1.2.0.0)
 
 - Turn support for [ES2015 Destructuring Assignment](http://www.ecma-international.org/ecma-262/6.0/index.html) on by default
 - Turn support for [ES2015 Default Parameters](http://www.ecma-international.org/ecma-262/6.0/index.html) on by default
