@@ -21,7 +21,6 @@
   * [[JavaScript Runtime (JSRT) Reference]]
 * [[Getting ChakraCore binaries]]
 * [[Label Glossary]]
-* [[Release Notes]]
 * [[Resources]]
 * [[Roadmap]]
 
