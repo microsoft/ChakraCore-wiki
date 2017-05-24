@@ -4,6 +4,10 @@ Description of the GitHub labels used by ChakraCore
 
  - We welcome a 3rd party pull request for this issue. It is specifically well suited for outside contributors and is [up for grabs](http://up-for-grabs.net/#/tags/chakra). (Other issues are okay for 3rd party PRs, but in any case, please indicate that you're claiming an issue to reduce duplication of effort.) See also: [**Your first PR**](https://github.com/Microsoft/ChakraCore/labels/Your%20first%20PR).
 
+[**Answered**](https://github.com/Microsoft/ChakraCore/labels/Answered)
+
+ - Question has been answered. There may still be follow-up items.
+
 [**APIs**](https://github.com/Microsoft/ChakraCore/labels/APIs)
 
  - Issue is related to JSRT APIs (the APIs used to embed ChakraCore in other applications).
