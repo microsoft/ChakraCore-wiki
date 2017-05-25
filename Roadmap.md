@@ -49,7 +49,7 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 ## Engineering Improvements
 * [ ] Enable easier authoring of JavaScript built-ins in JavaScript.
 
-# Release Notes
+# <a name="release-notes"></a>Release Notes
 
 ## ChakraCore 1.4
 
