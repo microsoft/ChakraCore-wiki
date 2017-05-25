@@ -49,7 +49,20 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 ## Engineering Improvements
 * [ ] Enable easier authoring of JavaScript built-ins in JavaScript.
 
-# <a name="release-notes"></a>Release Notes
+# Release Notes
+
+## ChakraCore 1.5
+
+### [v1.5.0](https://github.com/Microsoft/ChakraCore/releases/tag/v1.5.0)
+
+ChakraCore 1.5.0 includes cross-platform concurrent/partial GC support and a set of new JSRT APIs among other changes. See notable changes below.
+
+- Enable broader software-based write barrier support in ChakraCore GC [#2372](https://github.com/Microsoft/ChakraCore/pull/2372)
+- Turn on ChakraCore concurrent/partial GC for Linux/OSX
+- New experimental JSRT APIs
+    * [JsCreatePromise](https://github.com/Microsoft/ChakraCore/wiki/JsCreatePromise) - add API to create promise [#2594](https://github.com/Microsoft/ChakraCore/pull/2594)
+    * [JsGetAndClearExceptionWithMetadata](https://github.com/Microsoft/ChakraCore/wiki/JsGetAndClearExceptionWithMetadata) - add API to clear exception and expose additional information [#2936](https://github.com/Microsoft/ChakraCore/pull/2936)
+    * [JsWeakRef](https://github.com/Microsoft/ChakraCore/wiki/JsWeakRef)/[JsCreateWeakReference](https://github.com/Microsoft/ChakraCore/wiki/JsCreateWeakReference)/[JsGetWeakReferenceValue](https://github.com/Microsoft/ChakraCore/wiki/JsGetWeakReferenceValue) - add weak reference APIs [#2948](https://github.com/Microsoft/ChakraCore/pull/2948)
 
 ## ChakraCore 1.4
 
