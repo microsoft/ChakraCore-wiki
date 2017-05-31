@@ -1,4 +1,4 @@
-_This is a living document containing ChakraCore team's current priorities as well as release notes for previous releases. Last updated 5/23/17._ 
+_This is a living document containing ChakraCore team's current priorities as well as release notes for previous releases. Last updated 5/31/17._ 
 
 All the changes done in the public repository flow into Chakra and Microsoft Edge on a regular basis as described in the [Contribution guidelines](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md).
 
@@ -10,9 +10,9 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 * **Node.js**
   * [x] Update [Node.js+ChakraCore](https://github.com/nodejs/node-chakracore) to include [ChakraCore 1.4](https://github.com/Microsoft/ChakraCore/tree/release/1.4)
   * [x] Enable Node-ChakraCore on Mac and Linux.
-  * [ ] Support Chrome Debug Protocol in Node-ChakraCore.
-  * [ ] Enable Time Travel Debugging over Chrome Debug Protocol using VSCode
-  * [ ] Support N-API
+  * [x] Support Chrome Debug Protocol in Node-ChakraCore.
+  * [x] Enable Time Travel Debugging over Chrome Debug Protocol using VSCode
+  * [x] Support N-API
   * [ ] Improve Node-ChakraCore performance based on benchmarks and real-world scenarios
 
 * **Cross-platform**
