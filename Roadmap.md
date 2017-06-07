@@ -53,6 +53,10 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 
 ## ChakraCore 1.5
 
+### [v1.5.1](https://github.com/Microsoft/ChakraCore/releases/tag/v1.5.1)
+
+This patch release of ChakraCore 1.5 includes a fix for a handle leak when creating multiple runtimes.
+
 ### [v1.5.0](https://github.com/Microsoft/ChakraCore/releases/tag/v1.5.0)
 
 ChakraCore 1.5.0 includes cross-platform concurrent/partial GC support and a set of new JSRT APIs among other changes. See notable changes below.
@@ -65,6 +69,10 @@ ChakraCore 1.5.0 includes cross-platform concurrent/partial GC support and a set
     * [JsWeakRef](https://github.com/Microsoft/ChakraCore/wiki/JsWeakRef)/[JsCreateWeakReference](https://github.com/Microsoft/ChakraCore/wiki/JsCreateWeakReference)/[JsGetWeakReferenceValue](https://github.com/Microsoft/ChakraCore/wiki/JsGetWeakReferenceValue) - add weak reference APIs [#2948](https://github.com/Microsoft/ChakraCore/pull/2948)
 
 ## ChakraCore 1.4
+
+### [v1.4.5](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.5)
+
+This patch release of ChakraCore 1.4 includes a fix for a handle leak when creating multiple runtimes.
 
 ### [v1.4.4](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.4)
 
