@@ -55,7 +55,7 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 
 ### [v1.5.1](https://github.com/Microsoft/ChakraCore/releases/tag/v1.5.1)
 
-This patch release of ChakraCore 1.5 includes a fix for a handle leak when creating multiple runtimes.
+This patch release of ChakraCore 1.5 includes a fix for a handle leak when creating multiple runtimes [#3092](https://github.com/Microsoft/ChakraCore/pull/3092)
 
 ### [v1.5.0](https://github.com/Microsoft/ChakraCore/releases/tag/v1.5.0)
 
@@ -72,7 +72,7 @@ ChakraCore 1.5.0 includes cross-platform concurrent/partial GC support and a set
 
 ### [v1.4.5](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.5)
 
-This patch release of ChakraCore 1.4 includes a fix for a handle leak when creating multiple runtimes.
+This patch release of ChakraCore 1.4 includes a fix for a handle leak when creating multiple runtimes [#3092](https://github.com/Microsoft/ChakraCore/pull/3092)
 
 ### [v1.4.4](https://github.com/Microsoft/ChakraCore/releases/tag/v1.4.4)
 
