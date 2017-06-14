@@ -2,6 +2,8 @@ _This is a living document containing ChakraCore team's current priorities as we
 
 All the changes done in the public repository flow into Chakra and Microsoft Edge on a regular basis as described in the [Contribution guidelines](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md).
 
+(Scroll to [Release Notes](#release-notes))
+
 # Future
 
 The following is a summary of the ChakraCore team's backlog for the next 6 months. Some completed items (either in a release or master branch) are included to provide the context and progress of the work.
