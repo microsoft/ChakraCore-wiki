@@ -22,6 +22,6 @@
 * [[Getting ChakraCore binaries]]
 * [[Label Glossary]]
 * [[Resources]]
-* [[Roadmap]]
+* [Roadmap / Release Notes](https://github.com/Microsoft/ChakraCore/wiki/Roadmap)
 
 Want to contribute to this Wiki? [Fork it and send a pull request!](https://github.com/Microsoft/ChakraCore-wiki)
