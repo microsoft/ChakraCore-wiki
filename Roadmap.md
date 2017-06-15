@@ -55,7 +55,7 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 
 ## ChakraCore 1.5
 
-### [v1.5.2](https://github.com/Microsoft/ChakraCore/releases/tag/v1.5.1)
+### [v1.5.2](https://github.com/Microsoft/ChakraCore/releases/tag/v1.5.2)
 
 This patch release of ChakraCore 1.5 includes the following security fixes:
 
