@@ -2,6 +2,7 @@ This section includes resources such as blog posts and talks. Some of the resour
 
 # Team Blog
 
+* [N-API: Next generation Node.js APIs for native modules](https://medium.com/the-node-js-collection/n-api-next-generation-node-js-apis-for-native-modules-169af5235b06) (May 2017)
 * [Improved JavaScript performance, WebAssembly, and Shared Memory in Microsoft Edge](https://blogs.windows.com/msedgedev/2017/04/20/improved-javascript-performance-webassembly-shared-memory/#g5tzBkkeXLgeoc6p.97) (April 2017)
 * [Notes from the Node.js VM Summit](https://blogs.windows.com/msedgedev/2017/03/13/notes-from-nodejs-vm-summit/#XMPkGQuG4GlzhZ8m.97) (March 2017)
 * [ChakraCore’s first anniversary](https://blogs.windows.com/msedgedev/2017/01/13/chakracores-first-anniversary/#xPFH71Gve16tyFjZ.97) (January 2017)
