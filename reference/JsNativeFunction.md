@@ -6,7 +6,7 @@ typedef _Ret_maybenull_ JsValueRef(CALLBACK * JsNativeFunction)(_In_ JsValueRef 
 ### Parameters 
 * __callee__: The JavaScript callee.
 * __isConstructCall__: Indicates whether this is a regular call or a 'new' call.
-* __arguments__: The arguments to the call. arguments[0] is `this` or `undefined` if the function is called plainly. 
+* __arguments__: The arguments to the call. `arguments[0]` is `this` or `undefined` if the function is called plainly. 
 * __argumentCount__: The number of arguments.
 * __callbackState__: The state passed to **JsCreateFunction**.
 
