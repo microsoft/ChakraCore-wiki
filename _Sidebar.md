@@ -8,6 +8,7 @@
   * [[Build Status (release/1.4)]]
   * [[Build Status (release/1.5)]]
   * [[Build Status (release/1.6)]]
+  * [[Build Status (release/1.7)]]
   * [[NuGet Packages]]
 * [[ChakraCore Code Structure]] 
 * [Contributor Guidance](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md)
