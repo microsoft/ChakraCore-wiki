@@ -10,7 +10,7 @@ STDAPI_(JsErrorCode)
 ### Parameters 
 * __object__: The object that may contain the property.
 * __propertyId__: The ID of the property.
-* __hasProperty__: Whether the object has the non-inherited property.
+* __hasOwnProperty__: Whether the object has the non-inherited property.
 ### Return Value 
 The code **JsNoError** if the operation succeeded, a failure code otherwise.
 ### Remarks 
