@@ -117,6 +117,7 @@ References of JSRT typedefs, constants, enumerations and APIs.
 * [[JsHasExternalData]]
 * [[JsHasIndexedPropertiesExternalData]]
 * [[JsHasIndexedProperty]]
+* [[JsHasOwnProperty]]
 * [[JsHasProperty]]
 * [[JsIdle]]
 * [[JsInstanceOf]]
