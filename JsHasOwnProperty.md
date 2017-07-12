@@ -13,5 +13,7 @@ STDAPI_(JsErrorCode)
 * __hasOwnProperty__: Whether the object has the non-inherited property.
 ### Return Value 
 The code **JsNoError** if the operation succeeded, a failure code otherwise.
-### Remarks 
+### Remarks
+**This API is experimental and may have breaking change later.**
+
 Requires an active script context.
