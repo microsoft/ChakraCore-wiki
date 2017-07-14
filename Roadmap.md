@@ -55,6 +55,12 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 
 ## ChakraCore 1.5
 
+### [v1.5.3](https://github.com/Microsoft/ChakraCore/releases/tag/v1.5.3)
+
+This patch release of ChakraCore 1.5 includes the following security fixes:
+
+- Change to address CVE-2017-8598, CVE-2017-8601, CVE-2017-8603, CVE-2017-8604, CVE-2017-8606, CVE-2017-8607, CVE-2017-8608, CVE-2017-8609, CVE-2017-8610, CVE-2017-8619 [#3166](https://github.com/Microsoft/ChakraCore/pull/3341)
+
 ### [v1.5.2](https://github.com/Microsoft/ChakraCore/releases/tag/v1.5.2)
 
 This patch release of ChakraCore 1.5 includes the following security fixes:
