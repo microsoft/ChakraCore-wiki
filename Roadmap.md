@@ -53,6 +53,24 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 
 # Release Notes
 
+## ChakraCore 1.6
+
+### [v1.6.0](https://github.com/Microsoft/ChakraCore/releases/tag/v1.6.0)
+
+ChakraCore 1.6.0 includes more JavaScript and WebAssembly feature updates and performance enhancements. See notable changes below.
+
+#### Language
+- Enable WebAssembly MVP on by default [#2447](https://github.com/Microsoft/ChakraCore/pull/2447)
+- Enable SharedArrayBuffer on by default [#2939](https://github.com/Microsoft/ChakraCore/pull/2939)
+- Enable [dynamic module import](https://github.com/tc39/proposal-dynamic-import) [#2913](https://github.com/Microsoft/ChakraCore/pull/2913)
+- Support ES6 iterators for DOM objects [58ac5aeb7](https://github.com/Microsoft/ChakraCore/commit/58ac5aeb79063bec71aef310e46863001d926410)
+- Remove SIMD support in JavaScript [#3296](https://github.com/Microsoft/ChakraCore/pull/3296)
+
+#### Performance
+- Support function body (re-)deferral in lexical scopes and parameter scopes [#2666](https://github.com/Microsoft/ChakraCore/pull/2666)
+- Use PolymorphicInlineCache for obj[string] pattern [#2883](https://github.com/Microsoft/ChakraCore/pull/2883)
+- Enable optimizer on functions with try/finally [#2954](https://github.com/Microsoft/ChakraCore/pull/2954)
+
 ## ChakraCore 1.5
 
 ### [v1.5.3](https://github.com/Microsoft/ChakraCore/releases/tag/v1.5.3)
