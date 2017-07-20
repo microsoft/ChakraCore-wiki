@@ -35,7 +35,7 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 * [ ] Support WebAssembly MVP
   * [x] Support MVP features behind experimental flag
   * [ ] Enable MVP on by default
-* [ ] Enable post-MVP WebAssembly feautures
+* [ ] Enable post-MVP WebAssembly features
   * [ ] Threads
 * [ ] Enable WebAssembly debugging
 * [ ] Complete module implementation (ES6)
