@@ -53,6 +53,12 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 
 # Release Notes
 
+## ChakraCore 1.7
+
+### [v1.7.0](https://github.com/Microsoft/ChakraCore/releases/tag/v1.7.0)
+
+ChakraCore 1.7.0 includes performance improvements and support for building Node-ChakraCore with link-time optimizations. It adds new JSRT API [JsHasOwnProperty](https://github.com/Microsoft/ChakraCore/wiki/JsHasOwnProperty).
+
 ## ChakraCore 1.6
 
 ### [v1.6.0](https://github.com/Microsoft/ChakraCore/releases/tag/v1.6.0)
