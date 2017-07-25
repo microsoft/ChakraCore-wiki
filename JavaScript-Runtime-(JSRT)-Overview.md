@@ -43,7 +43,7 @@ The JSRT APIs expose a number of ways to monitor and modify the way runtimes use
     If a host wishes to disallow generation of native code by the JIT compiler, it can specify the **JsRuntimeAttributeDisableNativeCodeGeneration** flag. A host can also disallow scripts from dynamically running scripts itself by specifying the **JsRuntimeAttributeDisableEval** flag.
 
 ## Debugging
-We are working on providing debugging functionalitiles. See progress in [JsRTDebugging branch](https://github.com/Microsoft/ChakraCore/tree/JsRTDebugging).
+To debug scripts with ChakraCore, we expose a set of experimental JSON-based diagnostic [APIs](https://github.com/Microsoft/ChakraCore/blob/master/lib/Jsrt/ChakraDebug.h) for embedders to implement their own debuggers.
 
 ## Promises
 An embedding application needs to provide an EnqueueJob abstract operation to queue up the promise tasks before promises can be used. **JsSetPromiseContinuationCallback** allows application to provide an EnqueueJob style callback to process the promise task queue. The following sample shows how to store the promise tasks in a queue and execute them after the current execution context is finished:
