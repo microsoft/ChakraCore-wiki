@@ -50,7 +50,7 @@ Description of the GitHub labels used by ChakraCore
 
 [**Dev Experience**](https://github.com/Microsoft/ChakraCore/labels/Dev%20Experience)
 
- - Issue is related to the Javascript Developer Experience we ship (e.g. poor or misleading error messages, poor discoverability of problems).
+ - Issue is related to the Javascript Developer Experience or the ChakraCore Host Developer Experience that we ship (e.g. poor or misleading error messages, poor discoverability of problems, ergonomic issues when embedding ChakraCore).
 
 [**Discussion**](https://github.com/Microsoft/ChakraCore/labels/Discussion)
 
