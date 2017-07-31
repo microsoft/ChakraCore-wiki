@@ -85,6 +85,7 @@ References of JSRT typedefs, constants, enumerations and APIs.
 * [[JsGetContextData]]
 * [[JsGetContextOfObject]]
 * [[JsGetCurrentContext]]
+* [[JsGetDataViewInfo]]
 * [[JsGetDataViewStorage]]
 * [[JsGetExtensionAllowed]]
 * [[JsGetExternalData]]
