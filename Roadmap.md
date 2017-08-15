@@ -63,7 +63,10 @@ This patch release of ChakraCore 1.7 includes the following security fixes:
 
 ### [v1.7.0](https://github.com/Microsoft/ChakraCore/releases/tag/v1.7.0)
 
-ChakraCore 1.7.0 includes performance improvements and support for building Node-ChakraCore with link-time optimizations. It adds new JSRT API [JsHasOwnProperty](https://github.com/Microsoft/ChakraCore/wiki/JsHasOwnProperty).
+ChakraCore 1.7.0 includes performance improvements and support for building Node-ChakraCore with link-time optimizations. It adds the following new JSRT APIs:
+
+- [JsHasOwnProperty](https://github.com/Microsoft/ChakraCore/wiki/JsHasOwnProperty) [#3316](https://github.com/Microsoft/ChakraCore/pull/3316).
+- [JsCopyStringOneByte](https://github.com/Microsoft/ChakraCore/wiki/JsCopyStringOneByte) [#3408](https://github.com/Microsoft/ChakraCore/pull/3408).
 
 ## ChakraCore 1.6
 
