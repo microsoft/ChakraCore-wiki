@@ -1,4 +1,4 @@
-_This is a living document containing ChakraCore team's current priorities as well as release notes for previous releases. Roadmap last updated 5/31/17._ 
+_This is a living document containing ChakraCore team's current priorities as well as release notes for previous releases. Future roadmap last updated 5/31/17._ 
 
 All the changes done in the public repository flow into Chakra and Microsoft Edge on a regular basis as described in the [Contribution guidelines](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md).
 
