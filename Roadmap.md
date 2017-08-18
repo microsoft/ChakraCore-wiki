@@ -1,4 +1,4 @@
-_This is a living document containing ChakraCore team's current priorities as well as release notes for previous releases. Future roadmap last updated 5/31/17._ 
+_This is a living document containing ChakraCore team's current priorities as well as release notes for previous releases. Future roadmap last updated 8/18/17._ 
 
 All the changes done in the public repository flow into Chakra and Microsoft Edge on a regular basis as described in the [Contribution guidelines](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md).
 
@@ -32,20 +32,20 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
   * [ ] Enable profiling
 
 ## Language Innovation & Standards
-* [ ] Support WebAssembly MVP
+* [x] Support WebAssembly MVP
   * [x] Support MVP features behind experimental flag
-  * [ ] Enable MVP on by default
+  * [x] Enable MVP on by default
 * [ ] Enable post-MVP WebAssembly features
   * [ ] Threads
 * [ ] Enable WebAssembly debugging
-* [ ] Complete module implementation (ES6)
-* [ ] Complete Shared Memory and Atomics implementation
+* [x] Complete module implementation (ES6)
+* [x] Complete Shared Memory and Atomics implementation
 
 ## Performance - Staying Fast and Lean
-* [ ] Optimize obj[propertyString] style references
-* [ ] Optimize hasOwnProperties calls within for…in
-* [ ] Optimize Array.isArray
-* [ ] Optimize try/finally
+* [x] Optimize obj[propertyString] style references
+* [x] Optimize hasOwnProperties calls within for…in
+* [x] Optimize Array.isArray
+* [x] Optimize try/finally
 * [ ] Optimize code generation for string[index] uses
 
 ## Engineering Improvements
