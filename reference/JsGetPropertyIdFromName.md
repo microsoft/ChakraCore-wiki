@@ -14,6 +14,6 @@ STDAPI_(JsErrorCode)
 The code **JsNoError** if the operation succeeded, a failure code otherwise.
 
 ### Remarks
-This API is Windows-only (see [[JsCreatePropertyIdUtf8]] for cross-platform equivalent).
+This API is Windows-only (see [[JsCreatePropertyId]] for cross-platform equivalent).
 Property IDs are specific to a context and cannot be used across contexts.
 Requires an active script context.

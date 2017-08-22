@@ -2,7 +2,7 @@ Creates the property ID associated with the name.
 ### Syntax 
 ```
 CHAKRA_API
-       JsCreatePropertyIdUtf8(
+       JsCreatePropertyId(
         _In_z_ const char *name,
         _In_ size_t length,
         _Out_ JsPropertyIdRef *propertyId);

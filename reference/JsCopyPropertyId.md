@@ -2,9 +2,9 @@ Copies the name associated with the property ID into a buffer.
 ### Syntax 
 ```
 CHAKRA_API
-       JsCopyPropertyIdUtf8(
+       JsCopyPropertyId(
         _In_ JsPropertyIdRef propertyId,
-        _Out_ uint8_t* buffer,
+        _Out_ char* buffer,
         _In_ size_t bufferSize,
         _Out_ size_t* length);
 ```
