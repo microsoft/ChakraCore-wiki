@@ -1,149 +1,161 @@
 Description of the GitHub labels used by ChakraCore
 
-[**Accepting PRs**](https://github.com/Microsoft/ChakraCore/labels/Accepting%20PRs)
+### [**Accepting PRs**](https://github.com/Microsoft/ChakraCore/labels/Accepting%20PRs)
 
- - We welcome a 3rd party pull request for this issue. It is specifically well suited for outside contributors and is [up for grabs](http://up-for-grabs.net/#/tags/chakra). (Other issues are okay for 3rd party PRs, but in any case, please indicate that you're claiming an issue to reduce duplication of effort.) See also: [**Your first PR**](https://github.com/Microsoft/ChakraCore/labels/Your%20first%20PR).
+- We welcome a 3rd party pull request for this issue. It is specifically well suited for outside contributors and is [up for grabs](http://up-for-grabs.net/#/tags/chakra). (Other issues are okay for 3rd party PRs, but in any case, please indicate that you're claiming an issue to reduce duplication of effort.) See also: [**Your first PR**](https://github.com/Microsoft/ChakraCore/labels/Your%20first%20PR).
 
-[**Answered**](https://github.com/Microsoft/ChakraCore/labels/Answered)
+### [**Answered**](https://github.com/Microsoft/ChakraCore/labels/Answered)
 
- - Question has been answered. There may still be follow-up items.
+- Question has been answered. There may still be follow-up items.
 
-[**APIs**](https://github.com/Microsoft/ChakraCore/labels/APIs)
+### [**APIs**](https://github.com/Microsoft/ChakraCore/labels/APIs)
 
- - Issue is related to JSRT APIs (the APIs used to embed ChakraCore in other applications).
+- Issue is related to JSRT APIs (the APIs used to embed ChakraCore in other applications).
 
-[**Build Break**](https://github.com/Microsoft/ChakraCore/labels/Build%20Break)
+### [**Build Break**](https://github.com/Microsoft/ChakraCore/labels/Build%20Break)
 
- - Issue is related to a broken build (e.g. compile errors, failing tests).
+- Issue is related to a broken build (e.g. compile errors, failing tests).
 
-[**Bug**](https://github.com/Microsoft/ChakraCore/labels/Bug)
+### [**Bug**](https://github.com/Microsoft/ChakraCore/labels/Bug)
 
- - Issue is a bug in ChakraCore.
+- Issue is a bug in ChakraCore.
 
-**Bug / [Build Bug](https://github.com/Microsoft/ChakraCore/labels/Test%20Bug)**
+### **Bug / [Build Bug](https://github.com/Microsoft/ChakraCore/labels/Test%20Bug)**
 
- - Issue is a bug with the ChakraCore build definitions or infrastructure (does not include compile errors caused by changes to ChakraCore sources). Infrastructure can include our build scripts, Jenkins definitions, or Jenkins infrastructure itself (CC @mmitche for Jenkins infrastructure issues).
+- Issue is a bug with the ChakraCore build definitions or infrastructure (does not include compile errors caused by changes to ChakraCore sources). Infrastructure can include our build scripts, Jenkins definitions, or Jenkins infrastructure itself (CC @mmitche for Jenkins infrastructure issues).
 
-**Bug / [Test Bug](https://github.com/Microsoft/ChakraCore/labels/Test%20Bug)**
+### **Bug / [Test Bug](https://github.com/Microsoft/ChakraCore/labels/Test%20Bug)**
 
- - Issue is a bug in Test or Test infrastructure of ChakraCore (does not include test failures due to actual code defects). Bugs in tests themselves are considered [**Bug**](https://github.com/Microsoft/ChakraCore/labels/Bug)s.
+- Issue is a bug in Test or Test infrastructure of ChakraCore (does not include test failures due to actual code defects). Bugs in tests themselves are considered [**Bug**](https://github.com/Microsoft/ChakraCore/labels/Bug)s.
 
-[**By Design**](https://github.com/Microsoft/ChakraCore/labels/By%20Design)
+### [**By Design**](https://github.com/Microsoft/ChakraCore/labels/By%20Design)
 
- - Issue raised is actually by design.
+- Issue raised is actually by design.
 
-[**Codebase Quality**](https://github.com/Microsoft/ChakraCore/labels/Codebase%20Quality)
+### [**Codebase Quality**](https://github.com/Microsoft/ChakraCore/labels/Codebase%20Quality)
 
- - Issue is not a Bug but is something that might be worth improving. For example: code hygiene, maintainability issues, poor error messages, warnings or errors that do not affect a primary build configuration.
+- Issue is not a Bug but is something that might be worth improving. For example: code hygiene, maintainability issues, poor error messages, warnings or errors that do not affect a primary build configuration.
 
-[**Committed**](https://github.com/Microsoft/ChakraCore/labels/Committed)
+### [**Committed**](https://github.com/Microsoft/ChakraCore/labels/Committed)
 
- - We are committed to resolving this issue.
+- We are committed to resolving this issue.
 
-[**Compatibility**](https://github.com/Microsoft/ChakraCore/labels/Compatibility)
+### [**Compatibility**](https://github.com/Microsoft/ChakraCore/labels/Compatibility)
 
- - Issue is related to an compatibility between engines, which may or may not be formally specified by the ES spec.
+- Issue is related to an compatibility between engines, which may or may not be formally specified by the ES spec.
 
-[**Continuous Integration**](https://github.com/Microsoft/ChakraCore/labels/Continuous%20Integration)
+### [**Continuous Integration**](https://github.com/Microsoft/ChakraCore/labels/Continuous%20Integration)
 
- - Involves changes to our Continuous Integration (CI) configuration (i.e. Jenkins, VSO, etc.) or related files. May result in temporary CI breaks while the changes propagate. May need special attention from a project or tool maintainer. Testing these changes may be dependent on the environment in which the CI runs, and not self-contained to a single commit or branch of the source code.
+- Involves changes to our Continuous Integration (CI) configuration (i.e. Jenkins, VSO, etc.) or related files. May result in temporary CI breaks while the changes propagate. May need special attention from a project or tool maintainer. Testing these changes may be dependent on the environment in which the CI runs, and not self-contained to a single commit or branch of the source code.
 
-[**Dev Experience**](https://github.com/Microsoft/ChakraCore/labels/Dev%20Experience)
+### [**Dev Experience**](https://github.com/Microsoft/ChakraCore/labels/Dev%20Experience)
 
- - Issue is related to the Javascript Developer Experience or the ChakraCore Host Developer Experience that we ship (e.g. poor or misleading error messages, poor discoverability of problems, ergonomic issues when embedding ChakraCore).
+- Issue is related to the Javascript Developer Experience or the ChakraCore Host Developer Experience that we ship (e.g. poor or misleading error messages, poor discoverability of problems, ergonomic issues when embedding ChakraCore).
 
-[**Discussion**](https://github.com/Microsoft/ChakraCore/labels/Discussion)
+### [**Discussion**](https://github.com/Microsoft/ChakraCore/labels/Discussion)
 
- - Issue is a conversation without a clear, actionable problem or proposal.
+- Issue is a conversation without a clear, actionable problem or proposal.
 
-[**Duplicate**](https://github.com/Microsoft/ChakraCore/labels/Duplicate)
+### [**Duplicate**](https://github.com/Microsoft/ChakraCore/labels/Duplicate)
 
- - Issue has already been reported in another issue.
+- Issue has already been reported in another issue.
 
-[**ECMAScript Spec**](https://github.com/Microsoft/ChakraCore/labels/ECMAScript%20Spec)
+### [**ECMAScript Spec**](https://github.com/Microsoft/ChakraCore/labels/ECMAScript%20Spec)
 
- - Issue is actually related to the ES specification rather than ChakraCore itself.
+- Issue is actually related to the ES specification rather than ChakraCore itself.
 
-[**ES Spec Changed**](https://github.com/Microsoft/ChakraCore/labels/ES%20Spec%20Changed)
+### [**ES Spec Changed**](https://github.com/Microsoft/ChakraCore/labels/ES%20Spec%20Changed)
 
- - This issue came up because the ECMAScript Spec changed and the code now needs to be updated to be compliant with the Spec.
+- This issue came up because the ECMAScript Spec changed and the code now needs to be updated to be compliant with the Spec.
 
-[**External**](https://github.com/Microsoft/ChakraCore/labels/External)
+### [**ES Spec Conformance**](https://github.com/Microsoft/ChakraCore/labels/ES%20Spec%20Conformance)
 
- - Issue is not directly related to ChakraCore but has to do with a related project.
+- Issue describes a violation of the ECMAScript Spec.
 
-[**External Contributor**](https://github.com/Microsoft/ChakraCore/labels/External%20Contributor)
+### [**External**](https://github.com/Microsoft/ChakraCore/labels/External)
 
- - Pull Request is from an External Contributor and should be assigned to a team member.
+- Issue is not directly related to ChakraCore but has to do with a related project.
 
-[**Fixed**](https://github.com/Microsoft/ChakraCore/labels/Fixed)
+### [**External Contributor**](https://github.com/Microsoft/ChakraCore/labels/External%20Contributor)
 
- - Issue has been fixed.
+- Pull Request is from an External Contributor and should be assigned to a team member.
 
-[**Linux**](https://github.com/Microsoft/ChakraCore/labels/Linux)
+### [**Fixed**](https://github.com/Microsoft/ChakraCore/labels/Fixed)
 
- - Issue related to the Linux cross-platform port.
+- Issue has been fixed.
 
-[**Merged**](https://github.com/Microsoft/ChakraCore/labels/Merged)
+### [**Linux**](https://github.com/Microsoft/ChakraCore/labels/Linux)
 
- - The change has been merged in, but for some reason was not automatically closed as merged by GitHub, so we had to close the issue manually.
+- Issue is related to the Linux port.
 
-[**Needs More Info**](https://github.com/Microsoft/ChakraCore/labels/Needs%20More%20Info)
+### [**Merged**](https://github.com/Microsoft/ChakraCore/labels/Merged)
 
- - Issue sounds legitimate but needs more information to be actionable.
+- The change has been merged in, but for some reason was not automatically closed as merged by GitHub, so we had to close the issue manually.
 
-[**Needs Proposal**](https://github.com/Microsoft/ChakraCore/labels/Needs%20Proposal)
+### [**Needs More Info**](https://github.com/Microsoft/ChakraCore/labels/Needs%20More%20Info)
 
- - Issue is a feature request or architecture design suggestion but not a formal proposal.
+- Issue sounds legitimate but needs more information to be actionable.
 
-[**Needs Triage**](https://github.com/Microsoft/ChakraCore/labels/Needs%20Triage)
+### [**Needs Proposal**](https://github.com/Microsoft/ChakraCore/labels/Needs%20Proposal)
 
- - Issue needs triage to a Milestone and Assignee.
+- Issue is a feature request or architecture design suggestion but not a formal proposal.
 
-[**NoRepro**](https://github.com/Microsoft/ChakraCore/labels/NoRepro)
+### [**Needs Triage**](https://github.com/Microsoft/ChakraCore/labels/Needs%20Triage)
 
- - Unable to reproduce the issue described. There is no further action to be taken.
+- Issue needs triage to a Milestone and Assignee.
 
-[**Out of Scope**](https://github.com/Microsoft/ChakraCore/labels/Out%20of%20Scope)
+### [**No Repro**](https://github.com/Microsoft/ChakraCore/labels/No%20Repro)
+
+- Unable to reproduce the issue described. There is no further action to be taken, unless repro steps or a test case are given which allow us to repro the issue.
+
+### [**Out of Scope**](https://github.com/Microsoft/ChakraCore/labels/Out%20of%20Scope)
 
 - Issue is Out of Scope for the ChakraCore project. This may be because it is a feature better implemented in a host, among other reasons.
 
-[**Pending TC39 Consensus**](https://github.com/Microsoft/ChakraCore/labels/Pending%20TC39%20Consensus)
+### [**OSX**](https://github.com/Microsoft/ChakraCore/labels/OSX)
 
- - Issue is a ECMAScript compliance bug but requires TC39 consensus before action is taken to address it in ChakraCore.
+- Issue is related to the OSX port.
 
-[**Performance**](https://github.com/Microsoft/ChakraCore/labels/Performance)
+### [**Pending TC39 Consensus**](https://github.com/Microsoft/ChakraCore/labels/Pending%20TC39%20Consensus)
 
- - Issue is related to run-time performance of ChakraCore.
+- Issue is a ECMAScript compliance bug but requires TC39 consensus before action is taken to address it in ChakraCore.
 
-[**Proposal**](https://github.com/Microsoft/ChakraCore/labels/Proposal)
+### [**Performance**](https://github.com/Microsoft/ChakraCore/labels/Performance)
 
- - Issue is a formal proposal.
+- Issue is related to run-time performance of ChakraCore.
 
-[**Question**](https://github.com/Microsoft/ChakraCore/labels/Question)
+### [**Proposal**](https://github.com/Microsoft/ChakraCore/labels/Proposal)
 
- - Issue is actually a question rather than a problem or proposal.
+- Issue is a formal proposal.
 
-[**Suggestion**](https://github.com/Microsoft/ChakraCore/labels/Suggestion)
+### [**Question**](https://github.com/Microsoft/ChakraCore/labels/Question)
 
- - Issue is a suggested feature or change but is not a formal proposal.
+- Issue is actually a question rather than a problem or proposal.
 
-[**Task**](https://github.com/Microsoft/ChakraCore/labels/Task)
+### [**Suggestion**](https://github.com/Microsoft/ChakraCore/labels/Suggestion)
 
- - Issue has a clear, actionable task.
+- Issue is a suggested feature or change but is not a formal proposal.
 
-[**Waiting**](https://github.com/Microsoft/ChakraCore/labels/Waiting)
+### [**Task**](https://github.com/Microsoft/ChakraCore/labels/Task)
+
+- Issue has a clear, actionable task.
+
+### [**Waiting**](https://github.com/Microsoft/ChakraCore/labels/Waiting)
 
 - Waiting on changes from another issue or project.
 
-[**Wiki**](https://github.com/Microsoft/ChakraCore/labels/Wiki)
+### [**Wiki**](https://github.com/Microsoft/ChakraCore/labels/Wiki)
 
- - Issue is related to Wiki content.
+- Issue is related to Wiki content.
 
-[**Won't Fix**](https://github.com/Microsoft/ChakraCore/labels/Won't%20Fix)
+### [**Windows**](https://github.com/Microsoft/ChakraCore/labels/Windows)
 
- - Issue will not be fixed.
+- Issue is specific to Windows.
 
-[**Your first PR**](https://github.com/Microsoft/ChakraCore/labels/Your%20first%20PR)
+### [**Won't Fix**](https://github.com/Microsoft/ChakraCore/labels/Won't%20Fix)
 
- - Issue is well suited to for people new to GitHub contributions -- we're here to help you get started in OSS.  These issues are typically limited in scope and impact and thus are good starting points to become familiar with being a contributor to ChakraCore. See also: [**Accepting PRs**](https://github.com/Microsoft/ChakraCore/labels/Accepting%20PRs).
+- Issue will not be fixed.
+
+### [**Your first PR**](https://github.com/Microsoft/ChakraCore/labels/Your%20first%20PR)
+
+- Issue is well suited to for people new to GitHub contributions -- we're here to help you get started in OSS.  These issues are typically limited in scope and impact and thus are good starting points to become familiar with being a contributor to ChakraCore. See also: [**Accepting PRs**](https://github.com/Microsoft/ChakraCore/labels/Accepting%20PRs).
