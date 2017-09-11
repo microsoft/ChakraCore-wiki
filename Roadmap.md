@@ -81,7 +81,7 @@ ChakraCore 1.7.0 includes performance improvements and support for building Node
 
 ### [v1.6.1](https://github.com/Microsoft/ChakraCore/releases/tag/v1.6.1)
 
-This patch release of ChakraCore 1.6 includes security fixes. See notable changes below.
+This patch release of ChakraCore 1.6 includes security fixes and bug fixes.. See notable changes below.
 
 #### Security
 - Change to address CVE-2017-0228, CVE-2017-8634, CVE-2017-8635, CVE-2017-8636, CVE-2017-8637, CVE-2017-8638, CVE-2017-8640, CVE-2017-8641, CVE-2017-8645, CVE-2017-8646, CVE-2017-8647, CVE-2017-8655, CVE-2017-8656, CVE-2017-8657, CVE-2017-8658, CVE-2017-8659, CVE-2017-8670, CVE-2017-8671, CVE-2017-8672, CVE-2017-8674 [#3509](https://github.com/Microsoft/ChakraCore/pull/3509)
