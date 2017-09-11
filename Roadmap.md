@@ -24,7 +24,7 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
   * [x] Enable partial GC on Linux/OSX
   * [ ] Enable Intl on Linux/OSX
   * [ ] Match Windows-ChakraCore on test262
-  * [ ] Ensure Linux/OSX perf is fully on par with Windows
+  * [x] Ensure Linux/OSX perf is fully on par with Windows
 
 * **Embedding**
   * [ ] Provide better debugging experience for ChakraCore embedders
