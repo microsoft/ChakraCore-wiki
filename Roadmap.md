@@ -55,6 +55,13 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 
 ## ChakraCore 1.7
 
+### [v1.7.2](https://github.com/Microsoft/ChakraCore/releases/tag/v1.7.2)
+
+This patch release of ChakraCore 1.7 includes security fixes, performance improvements, and bugfixes.
+
+#### Security
+- Change to address CVE-2017-8741, CVE-2017-8748, CVE-2017-11767, CVE-2017-8756, CVE-2017-8753, CVE-2017-8729, CVE-2017-8739, CVE-2017-8751, CVE-2017-8757, CVE-2017-11764, CVE-2017-8660, CVE-2017-8755, CVE-2017-8649, CVE-2017-8740, CVE-2017-8752 [#3729] (https://github.com/Microsoft/ChakraCore/pull/3729)
+
 ### [v1.7.1](https://github.com/Microsoft/ChakraCore/releases/tag/v1.7.1)
 
 This patch release of ChakraCore 1.7 includes security fixes, performance improvements and JSRT API changes. See notable changes below.
@@ -78,6 +85,13 @@ ChakraCore 1.7.0 includes performance improvements and support for building Node
 - [JsCopyStringOneByte](https://github.com/Microsoft/ChakraCore/wiki/JsCopyStringOneByte) [#3408](https://github.com/Microsoft/ChakraCore/pull/3408).
 
 ## ChakraCore 1.6
+
+### [v1.6.2](https://github.com/Microsoft/ChakraCore/releases/tag/v1.6.2)
+
+This patch release of ChakraCore 1.6 includes the following security fixes:
+
+#### Security
+- Change to address CVE-2017-8741, CVE-2017-8748, CVE-2017-11767, CVE-2017-8756, CVE-2017-8753, CVE-2017-8729, CVE-2017-8739, CVE-2017-8751, CVE-2017-8757, CVE-2017-11764, CVE-2017-8660, CVE-2017-8755, CVE-2017-8649, CVE-2017-8740, CVE-2017-8752 [#3729] (https://github.com/Microsoft/ChakraCore/pull/3729)
 
 ### [v1.6.1](https://github.com/Microsoft/ChakraCore/releases/tag/v1.6.1)
 
