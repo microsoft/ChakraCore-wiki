@@ -184,7 +184,7 @@ Once a day, we run all of our usual build configurations with JIT excluded from 
 
 ## Legacy Builds
 
-Once a day, we run builds of some configurations using Windows 7 (Windows Server 2008 R2) and VS 2013.
+Once a day, we run builds of some configurations using Windows 7 (Windows Server 2008 R2) and VS 2015.
 
 |                   | __Debug__ | __Test__ | __Release__ |
 |:-----------------:|:---------------:|:--------------:|:-----------------:|
