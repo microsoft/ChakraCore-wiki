@@ -1,9 +1,5 @@
 Description of the GitHub labels used by ChakraCore
 
-### [**Accepting PRs**](https://github.com/Microsoft/ChakraCore/labels/Accepting%20PRs)
-
-- We welcome a 3rd party pull request for this issue. It is specifically well suited for outside contributors and is [up for grabs](http://up-for-grabs.net/#/tags/chakra). (Other issues are okay for 3rd party PRs, but in any case, please indicate that you're claiming an issue to reduce duplication of effort.) See also: [**Your first PR**](https://github.com/Microsoft/ChakraCore/labels/Your%20first%20PR).
-
 ### [**Answered**](https://github.com/Microsoft/ChakraCore/labels/Answered)
 
 - Question has been answered. There may still be follow-up items.
@@ -83,6 +79,10 @@ Description of the GitHub labels used by ChakraCore
 ### [**Fixed**](https://github.com/Microsoft/ChakraCore/labels/Fixed)
 
 - Issue has been fixed.
+
+### [**help wanted**](https://github.com/Microsoft/ChakraCore/labels/help%20wanted)
+
+- We welcome a 3rd party pull request for this issue. It is specifically well suited for outside contributors and is [up for grabs](http://up-for-grabs.net/#/tags/chakra). (Other issues are okay for 3rd party PRs, but in any case, please indicate that you're claiming an issue to reduce duplication of effort.) See also: [**Your first PR**](https://github.com/Microsoft/ChakraCore/labels/Your%20first%20PR).
 
 ### [**Linux**](https://github.com/Microsoft/ChakraCore/labels/Linux)
 
