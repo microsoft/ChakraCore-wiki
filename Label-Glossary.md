@@ -82,7 +82,7 @@ Description of the GitHub labels used by ChakraCore
 
 ### [**help wanted**](https://github.com/Microsoft/ChakraCore/labels/help%20wanted)
 
-- We welcome a 3rd party pull request for this issue. It is specifically well suited for outside contributors and is [up for grabs](http://up-for-grabs.net/#/tags/chakra). (Other issues are okay for 3rd party PRs, but in any case, please indicate that you're claiming an issue to reduce duplication of effort.) See also: [**Your first PR**](https://github.com/Microsoft/ChakraCore/labels/Your%20first%20PR).
+- We welcome a 3rd party pull request for this issue. It is specifically well suited for outside contributors and is [up for grabs](http://up-for-grabs.net/#/tags/chakra). (Other issues are okay for 3rd party PRs, but in any case, please indicate that you're claiming an issue to reduce duplication of effort.) See also: [**Your first PR**](https://github.com/Microsoft/ChakraCore/labels/Your%20first%20PR) ([#](#your-first-pr)).
 
 ### [**Linux**](https://github.com/Microsoft/ChakraCore/labels/Linux)
 
@@ -158,4 +158,4 @@ Description of the GitHub labels used by ChakraCore
 
 ### [**Your first PR**](https://github.com/Microsoft/ChakraCore/labels/Your%20first%20PR)
 
-- Issue is well suited to for people new to GitHub contributions -- we're here to help you get started in OSS.  These issues are typically limited in scope and impact and thus are good starting points to become familiar with being a contributor to ChakraCore. See also: [**Accepting PRs**](https://github.com/Microsoft/ChakraCore/labels/Accepting%20PRs).
+- Issue is well suited to for people new to GitHub contributions -- we're here to help you get started in OSS.  These issues are typically limited in scope and impact and thus are good starting points to become familiar with being a contributor to ChakraCore. See also: [**help wanted**](https://github.com/Microsoft/ChakraCore/labels/help%20wanted) ([#](#help-wanted)).
