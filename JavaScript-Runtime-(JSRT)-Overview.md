@@ -63,7 +63,7 @@ void runPromiseSample()
     JsSetPromiseContinuationCallback(PromiseContinuationCallback, &taskQueue);
     JsRunScript(
 	L"//The JavaScript ES6 Promise code goes here\n" \
-	L"new Promise((resolve, reject) => {resolve('basic:success');})" \
+	L"new Promise((resolve, reject) => resolve('basic:success'))" \
 	L".then(() => {return 'second:success'});", 
 	JS_SOURCE_CONTEXT_NONE, L"", &result);
 		
