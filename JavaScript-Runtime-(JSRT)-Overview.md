@@ -62,12 +62,10 @@ void runPromiseSample()
     JsValueRef result;
     JsSetPromiseContinuationCallback(PromiseContinuationCallback, &taskQueue);
     JsRunScript(
-        L"//The JavaScript ES6 Promise code goes here\n" \
-        L"new Promise(" \
-        L" function(resolve, reject) {resolve('basic:success');}" \
-        L").then(function () {return new Promise(" \
-        L" function(resolve, reject) {resolve('second:success')}" \
-        L")});", JS_SOURCE_CONTEXT_NONE, L"", &result);
+	L"//The JavaScript ES6 Promise code goes here\n" \
+	L"new Promise((resolve, reject) => {resolve('basic:success');})" \
+	L".then(() => {return 'second:success'});", 
+	JS_SOURCE_CONTEXT_NONE, L"", &result);
 		
     JsValueRef global;
     JsGetGlobalObject(&global);
