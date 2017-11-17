@@ -85,8 +85,146 @@ All other supported ES2015 features do not require any setup to run in JSRT.
 
 Features based on promises, such as [ES2016/ES7 Async Functions](https://blogs.windows.com/msedgedev/2015/09/30/asynchronous-code-gets-easier-with-es2016-async-function-support-in-chakra-and-microsoft-edge/), would require setting up promises before usage. 
 
+## Modules
+ES6 Modules are supported in ChakraCore. However, the host needs to specify how to resolve a module specifier since this part is host-specific not runtime-related. JSRT provides experimental APIs to set up ES6 modules. This [PR](https://github.com/Microsoft/ChakraCore/pull/1254) gives you an overview of the related APIs and an example implementation (see WScriptJsrt.cpp) in the ch test host. Better documentation will be provided in the future.
+
 ## Experimental Features
 Experimental JavaScript features that are not yet stable are hidden behind an experimental flag. You can enable these features on a runtime by specifying **JsRuntimeAttributeEnableExperimentalFeatures** flag when **JsCreateRuntime** is called. 
+
+## Basic tasks
+
+This section aims to illustrate how to achieve a few common tasks with JSRT with code samples.
+
+### Expose native functions/objects to JavaScript
+
+The basic idea is to create a native function or (external) object, and expose it to JS by setting it as a property of an object JS is already aware of. For example, let's expose `console.log`, which many JavaScript hosts expose but isn't part of JavaScript.
+
+```cpp
+// a native function for logging
+JsValueRef CALLBACK LogCB(JsValueRef callee, bool isConstructCall, JsValueRef *arguments, unsigned short argumentCount, void *callbackState)
+{
+    for (unsigned int index = 1; index < argumentCount; index++)
+    {
+        if (index > 1)
+        {
+            printf(" ");
+        }
+        JsValueRef stringValue;
+        JsConvertValueToString(arguments[index], &stringValue);
+        char *string = nullptr;
+        size_t length;
+        JsCopyString(stringValue, nullptr, 0, &length);
+        string = (char*)malloc(length + 1);
+        JsCopyString(stringValue, string, length+1, nullptr);
+        printf("%s", string);
+    }
+    printf("\n");
+    return JS_INVALID_REFERENCE;
+}
+
+JsValueRef console, logFunc, global;
+JsPropertyIdRef consolePropId, logPropId;
+const char* logString = "log";
+const char* consoleString = "console";
+// create console object, log function, and set log function as property of console
+JsCreateObject(&console);
+JsCreateFunction(LogCB, nullptr, &logFunc);
+JsCreatePropertyId(logString, strlen(logString), &logPropId);
+JsSetProperty(console, logPropId, logFunc, true);
+// set console as property of global object
+JsGetGlobalObject(&global);
+JsCreatePropertyId(consoleString, strlen(consoleString), &consolePropId);
+JsSetProperty(global, consolePropId, console, true);
+```
+
+Now in JavaScript, you can do:
+
+```js
+console.log('Hello world');
+```
+
+You can also create external objects that host data not directly exposed to JS via `JsCreateExternalObject` or `JsCreateExternalObjectWithPrototype`.
+
+```cpp
+// creates an external object holding an int
+JsValueRef null, extObj;
+JsGetNullValue(&null);
+int data = 0;
+JsCreateExternalObjectWithPrototype(&data, nullptr, null, &extObj);
+```
+
+You can define native methods on the external object and have access to the external data.
+
+```cpp
+// a native method that type casts the external data and adds one.
+JsValueRef CALLBACK addOne(JsValueRef callee, bool isConstructCall, JsValueRef *arguments, unsigned short argumentCount, void *callbackState)
+{
+    void* extData;
+    JsGetExternalData(arguments[0], &extData);
+    int* data = (int*)(extData);
+    *data += 1;
+    return JS_INVALID_REFERENCE;
+}
+```
+
+### Call JavaScript functions from native
+
+You can call JavaScript functions by calling `JsRun/JsRunScript`, or alternatively you can get the native reference of your JS function and then use `JsCallFunction` to call it. For example, to call `func` defined in global scope in JS,
+
+```cpp
+JsValueRef func, funcPropId, global, undefined, result;
+JsGetGlobalObject(&global);
+JsGetUndefinedValue(&undefined);
+JsValueRef args[] = { undefined };
+const char* funcString = "func";
+JsCreatePropertyId(funcString, strlen(funcString), &funcPropId);
+JsGetProperty(global, funcPropId, &func);
+// note that args[0] is thisArg of the call; actual args start at index 1
+JsCallFunction(func, args, 1, &result);
+``` 
+
+### Script serialization with lazy source loading  
+
+To support startup and execution efficiency, JSRT APIs provide the capability of pre-parsing, generating syntax trees and caching the bytecode for scripts. It is especially useful for server scenarios where the same script could get executed thousands of times.
+
+The basic idea is to use variants of `JsSerializeScript` to parse and store the bytecode and then use variants of `JsRunSerialized` to parse or run the bytecode. Source is typically not needed for running serialized code, therefore you can also lazy-load the source script using `JsRunSerialized/JsRunSerializedScriptWithCallback`.
+
+```cpp
+// serialize script
+void serializeScript(char* scriptPath, char* script) {
+    JsValueRef scriptSource, bytecodeBuffer;
+    JsCreateExternalArrayBuffer((void*)script, (unsigned int)strlen(script), nullptr, nullptr, &scriptSource);
+    JsSerialize(scriptSource, &bytecodeBuffer, JsParseScriptAttributeNone);
+    JsAddRef(bytecodeBuffer, nullptr);
+    SerializedSourceContext* context = new SerializedSourceContext();
+    context->script = script;
+    context->scriptPath = scriptPath;
+    context->bytecodeBuffer = bytecodeBuffer;
+    bytecodeStore[scriptPath] = context;
+}
+
+// load and run bytecode 
+void runSerializeScript(char* scriptPath) {
+    JsValueRef result;
+    SerializedSourceContext* context = bytecodeStore[scriptPath];
+    JsRunSerialized(
+        context->bytecodeBuffer, 
+        [](JsSourceContext sourceContext, JsValueRef* scriptBuffer, JsParseScriptAttributes* parseAttributes) 
+        {
+            SerializedSourceContext* scontext = reinterpret_cast<SerializedSourceContext*>(sourceContext);
+            if (scontext->script == nullptr) {
+                scontext->script = LoadScript(scontext->scriptPath);
+            }
+            scriptBuffer = scontext->script;
+            *parseAttributes = JsParseScriptAttributeNone;
+            return true;
+        },
+        (JsSourceContext)context,
+        nullptr,
+        &result
+    );
+}
+```
 
 ## Resources
 * [[JavaScript Runtime (JSRT) Reference]]
