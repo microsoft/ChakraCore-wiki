@@ -4,14 +4,12 @@ Serializes a parsed script to a buffer than can be reused.
 CHAKRA_API
        JsSerialize(
         _In_ JsValueRef script,
-        _Out_ BYTE *buffer,
-        _Inout_ unsigned int *bufferSize,
+        _Out_ JsValueRef *buffer,
         _In_ JsParseScriptAttributes parseAttributes);
 ```
 ### Parameters 
-* __script__: The script to serialize.
-* __buffer__: The buffer to put the serialized script into. Can be null.
-* __bufferSize__: On entry, the size of the buffer, in bytes; on exit, the size of the buffer, in bytes, required to hold the serialized script.
+* __script__: The script to serialize
+* __buffer__: ArrayBuffer
 * __parseAttributes__: Encoding for the script
 
 ### Return Value 
