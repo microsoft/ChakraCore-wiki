@@ -1,4 +1,4 @@
-_This is a living document containing ChakraCore team's current priorities as well as release notes for previous releases. Future roadmap last updated 8/18/17._ 
+_This is a living document containing ChakraCore team's current priorities as well as release notes for previous releases. Future roadmap last updated 12/5/17._ 
 
 All the changes done in the public repository flow into Chakra and Microsoft Edge on a regular basis as described in the [Contribution guidelines](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md).
 
@@ -40,7 +40,8 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 * [ ] Enable WebAssembly debugging
 * [x] Complete module implementation (ES6)
 * [x] Complete Shared Memory and Atomics implementation
-
+* [ ] Use [ICU](http://site.icu-project.org/) for Intl implementation on Windows
+ 
 ## Performance - Staying Fast and Lean
 * [x] Optimize obj[propertyString] style references
 * [x] Optimize hasOwnProperties calls within for…in
