@@ -113,3 +113,18 @@ Some details on build script arguments used above:
 * ```--icu=..``` specify the location of ICU library (use `--no-icu` if you don't need unicode support)
 * ```--test-build``` enable command line options and some optimizations
 * ```-j=2``` compile with 2 threads
+
+### Building in XCode ###
+
+Generate an XCode project:
+* Clone the ChakraCore repo and install build dependencies as instructed above
+* Run ```./build.sh --xcode --icu=/usr/local/opt/icu4c/include --debug --static```
+* Open the `CHAKRACORE.xcodeproj` file in the directory printed by the previous command
+
+##### Execute a JavaScript file with ch host #####
+
+* Select `Product -> Scheme -> ch` in the menu
+* Open the  `Product -> Scheme -> Edit Scheme` dialog through the menu
+	* Select `Run` in the dialog sidebar, open the `Arguments` tab and add the path to your JS file in `Arguments Passed On Launch`
+	* Close the dialog
+* Press the `Build and Run` arrow button in the top left of the window
