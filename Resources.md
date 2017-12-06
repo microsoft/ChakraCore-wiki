@@ -2,6 +2,7 @@ This section includes resources such as blog posts and talks. Some of the resour
 
 # Team Blog
 
+* [Introducing new JavaScript optimizations, WebAssembly, SharedArrayBuffer, and Atomics in EdgeHTML 16](https://blogs.windows.com/msedgedev/2017/10/31/optimizations-webassembly-sharedarraybuffer-atomics-edgehtml-16/#r7exCDFcwXXTcKrl.97) (November 2017)
 * [Node-ChakraCore update from Node.js Interactive 2017](https://blogs.windows.com/msedgedev/2017/10/04/node-chakracore-update-node-js-interactive-2017/) (October 2017)
 * [Node-ChakraCore Update: N-API, Node.js on iOS and more](https://blogs.windows.com/msedgedev/2017/07/27/node-chakracore-update-n-api-ios/#DaQB2VMw4tk4vjFb.97) (July 2017)
 * [N-API: Next generation Node.js APIs for native modules](https://medium.com/the-node-js-collection/n-api-next-generation-node-js-apis-for-native-modules-169af5235b06) (May 2017)

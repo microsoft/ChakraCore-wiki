@@ -78,3 +78,7 @@ git commit -m "<message>"
 
 # Force-push your branch to update your Pull Request.
 ```
+
+## Why did the Tab Check fail?
+
+We disallow tab characters in ChakraCore. Please convert your tabs to spaces. We use 4 spaces as a single indent.

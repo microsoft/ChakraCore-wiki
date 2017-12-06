@@ -17,12 +17,12 @@ In practice, unless a host needs to run code in separated environments, a single
 ## Memory management
 JavaScript is a garbage collected language, and thus there are several considerations that must be kept in mind when working with the JSRT APIs from another language.
 
-The main consideration is that the JavaScript garbage collector can only see references to values in two places: its runtime’s heap, and the stack. Thus, a reference to a JavaScript value that is stored inside of another JavaScript value or in a local variable on the stack will always be seen by the garbage collector. But references stored in other locations, such as heaps managed by the host or the system, will not be seen by the garbage collector and may result in premature collection of values that are still in use by the host. If a reference to a JavaScript value will be stored in a location not visible to the garbage collector, the host must manually add and remove references using the JSRT APIs.
+The main consideration is that the JavaScript garbage collector can only see references to values in two places: its runtime’s heap, and the stack. Thus, a reference to a JavaScript value that is stored inside of another JavaScript value or in a local variable on the stack will always be seen by the garbage collector. But references stored in other locations, such as heaps managed by the host or the system, will not be seen by the garbage collector and may result in premature collection of values that are still in use by the host. If a reference to a JavaScript value will be stored in a location not visible to the garbage collector, the host must manually add and remove references using **JsAddRef** and **JsRelease**.
 
 If ChakraCore is hosted in a managed environment, special care needs to be taken as two GCs do not necessarily understand each other. With .NET, any delegate passed to ChakraCore needs to be pinned or else can be prematurely collected by .NET GC. 
 
 ## Exception handling
-When a JavaScript exception occurs during script execution, the containing runtime is put into an exception state. While in an exception state, no code can run and all API calls will fail with the error code **JsErrorInExceptionState** until the host retrieves and clears the exception using the **JsGetAndClearException** API. If the host returns from a JavaScript callback without clearing the runtime from an exception state, then the JavaScript exception will be re-thrown as soon as control passes back to the JavaScript engine. This also enables host callbacks to “throw” a JavaScript exception by setting the runtime into an exception state and then returning from a host callback.
+When a JavaScript exception occurs during script execution, the containing runtime is put into an exception state. While in an exception state, no code can run and all API calls will fail with the error code **JsErrorInExceptionState** until the host retrieves and clears the exception using the **JsGetAndClearException** API, which returns an **exception** object with a **message** property indicating the error message. If the host returns from a JavaScript callback without clearing the runtime from an exception state, then the JavaScript exception will be re-thrown as soon as control passes back to the JavaScript engine. This also enables host callbacks to “throw” a JavaScript exception by setting the runtime into an exception state and then returning from a host callback.
 
 A host is not allowed to let its own internal exceptions to propagate across a host callback—any callback methods must catch all host exceptions before returning control to the runtime.
 
@@ -62,12 +62,10 @@ void runPromiseSample()
     JsValueRef result;
     JsSetPromiseContinuationCallback(PromiseContinuationCallback, &taskQueue);
     JsRunScript(
-        L"//The JavaScript ES6 Promise code goes here" \
-        L"new Promise(" \
-        L" function(resolve, reject) {resolve('basic:success');}" \
-        L").then(function () {return new Promise(" \
-        L" function(resolve, reject) {resolve('second:success')}" \
-        L")});", JS_SOURCE_CONTEXT_NONE, L"", &result);
+	L"//The JavaScript ES6 Promise code goes here\n" \
+	L"new Promise((resolve, reject) => resolve('basic:success'))" \
+	L".then(() => {return 'second:success'});", 
+	JS_SOURCE_CONTEXT_NONE, L"", &result);
 		
     JsValueRef global;
     JsGetGlobalObject(&global);

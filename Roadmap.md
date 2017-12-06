@@ -1,4 +1,4 @@
-_This is a living document containing ChakraCore team's current priorities as well as release notes for previous releases. Future roadmap last updated 8/18/17._ 
+_This is a living document containing ChakraCore team's current priorities as well as release notes for previous releases. Future roadmap last updated 12/5/17._ 
 
 All the changes done in the public repository flow into Chakra and Microsoft Edge on a regular basis as described in the [Contribution guidelines](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md).
 
@@ -40,7 +40,8 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 * [ ] Enable WebAssembly debugging
 * [x] Complete module implementation (ES6)
 * [x] Complete Shared Memory and Atomics implementation
-
+* [ ] Use [ICU](http://site.icu-project.org/) for Intl implementation on Windows
+ 
 ## Performance - Staying Fast and Lean
 * [x] Optimize obj[propertyString] style references
 * [x] Optimize hasOwnProperties calls within for…in
@@ -54,6 +55,12 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 # Release Notes
 
 ## ChakraCore 1.7
+
+### [v1.7.4](https://github.com/Microsoft/ChakraCore/releases/tag/v1.7.4)
+This patch release of ChakraCore 1.7 includes security fixes, performance improvements, and bugfixes.
+
+#### Security
+- Change to address CVE-2017-11791, CVE-2017-11836, CVE-2017-11837, CVE-2017-11838, CVE-2017-11840, CVE-2017-11841, CVE-2017-11843, CVE-2017-11846, CVE-2017-11858, CVE-2017-11861, CVE-2017-11862, CVE-2017-11870, CVE-2017-11871, CVE-2017-11873, CVE-2017-11874, CVE-2017-11866, CVE-2017-11859 [#4226](https://github.com/Microsoft/ChakraCore/pull/4226)
 
 ### [v1.7.3](https://github.com/Microsoft/ChakraCore/releases/tag/v1.7.3)
 This patch release of ChakraCore 1.7 includes security fixes, performance improvements, and bugfixes.

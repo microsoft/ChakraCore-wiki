@@ -125,6 +125,8 @@ References of JSRT typedefs, constants, enumerations and APIs.
 * [[JsInstanceOf]]
 * [[JsIntToNumber]]
 * [[JsIsRuntimeExecutionDisabled]]
+* [[JsLessThan]]
+* [[JsLessThanOrEqual]]
 * [[JsNumberToDouble]]
 * [[JsNumberToInt]]
 * [[JsParse]]
