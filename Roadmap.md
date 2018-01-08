@@ -56,7 +56,7 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 
 ## ChakraCore 1.7
 
-### v1.7.6
+### [v1.7.6](https://github.com/Microsoft/ChakraCore/releases/tag/v1.7.6)
 This patch release of ChakraCore 1.7 includes security fixes, performance improvements, and bugfixes.
 
 #### Security
