@@ -54,6 +54,27 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 
 # Release Notes
 
+## ChakraCore 1.8
+
+### [v1.8.0](https://github.com/Microsoft/ChakraCore/releases/tag/v1.8.0)
+
+ChakraCore 1.8.0 includes more JavaScript and WebAssembly feature updates and performance enhancements. See notable changes below.
+
+- [#3855](https://github.com/Microsoft/ChakraCore/pull/3855) Removed support for building with VS2013
+- Several improvements to regex performance
+- Performance improvements to `Object.assign`, `Object.create` and `Object.hasOwnProperty`
+- Adding support for Arm64
+- [#3553](https://github.com/Microsoft/ChakraCore/pull/3553) Experimental: Introduce "lite" ChakraCore build
+- [#3594](https://github.com/Microsoft/ChakraCore/pull/3594) Byte code size and serialized byte code size optimizations (15-20% serialized byte code size reduction)
+- [#3681](https://github.com/Microsoft/ChakraCore/pull/3681) add inlining support for asm.js/wasm
+- [#3832](https://github.com/Microsoft/ChakraCore/pull/3832) Enable inlining into functions which have try-catch/try-finally
+- [#3846](https://github.com/Microsoft/ChakraCore/pull/3846) Add support for a Recycler-managed "Host Heap" to facilitate tracing of objects which relate to scriptable types
+- [#3931](https://github.com/Microsoft/ChakraCore/pull/3931) Add JSRT API `JsLessThan`
+- [#4077](https://github.com/Microsoft/ChakraCore/pull/4077) Optimized `JSON.stringify` and `JSON.parse`
+- [#4118](https://github.com/Microsoft/ChakraCore/pull/4118) Share types (i.e., allow PathTypeHandlers) for properties with non-standard attributes (non-writable, etc.).
+- [#3875](https://github.com/Microsoft/ChakraCore/pull/3875) jsrt: added JsObject Delete/Get/Has/OwnP../Set Property methods
+- [#4531](https://github.com/Microsoft/ChakraCore/pull/4531) Fix and enable wasm on xplat
+
 ## ChakraCore 1.7
 
 ### [v1.7.6](https://github.com/Microsoft/ChakraCore/releases/tag/v1.7.6)
