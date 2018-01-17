@@ -10,6 +10,7 @@
   * [[Build Status (release/1.6)]]
   * [[Build Status (release/1.7)]]
   * [[Build Status (release/1.8)]]
+  * [[Build Status (release/1.9)]]
   * [[Build Status (intl-icu)]]
   * [[NuGet Packages]]
 * [[ChakraCore Code Structure]] 
