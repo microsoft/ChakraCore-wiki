@@ -4,4 +4,4 @@ A callback called before collection.
 typedef void (CALLBACK *JsBeforeCollectCallback)(_In_opt_ void *callbackState);
 ```
 ### Remarks 
-Use **JsSetBeforeCollectCallback<** to register this callback.
+Use **JsSetRuntimeBeforeCollectCallback<** to register this callback.
