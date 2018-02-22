@@ -1,7 +1,9 @@
 A callback called before collection.
-### Syntax 
+
+### Syntax
 ```
 typedef void (CALLBACK *JsBeforeCollectCallback)(_In_opt_ void *callbackState);
 ```
-### Remarks 
-Use **JsSetRuntimeBeforeCollectCallback<** to register this callback.
+
+### Remarks
+Use **JsSetRuntimeBeforeCollectCallback** to register this callback.
