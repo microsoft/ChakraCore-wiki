@@ -5,7 +5,7 @@ CHAKRA_API
 JsGetModuleHostInfo(
     _In_ JsModuleRecord requestModule,
     _In_ JsModuleHostInfoKind moduleHostInfo,
-    _In_ void* hostInfo);
+    _Outptr_result_maybenull_ void** hostInfo);
 ```
 ### Parameters 
 * __requestModule__: The request module.
