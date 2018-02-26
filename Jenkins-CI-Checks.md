@@ -38,7 +38,7 @@ For more specifics on when and how to trigger specific builds, please see:
 
 # Making changes to the Jenkins CI configuration.
 
-If you want to change or add build configurations into Jenkins CI, you will need to update the [netci.groovy](https://github.com/Microsoft/ChakraCore/blob/master/netci.groovy) file, and create a Pull Request. To verify the configuration change did what you expected, you should ask __@dotnet-bot__ to test the change to the CI, like so:
+If you want to change or add build configurations into Jenkins CI, you will need to update the [netci.groovy](https://github.com/Microsoft/ChakraCore/blob/master/netci.groovy) file, and create a Pull Request to `master-ci`. To verify the configuration change did what you expected, you should ask __@dotnet-bot__ to test the change to the CI, like so:
 
 ```
 @dotnet-bot test ci please
@@ -46,7 +46,9 @@ If you want to change or add build configurations into Jenkins CI, you will need
 
 If there are errors in your script, this check will fail. Once it succeeds, you can then view the configurations via the Details link that appears next to the resulting configuration item, and ensure that your changes to the configuration script did what you intended.
 
-Unfortunately, from the Pull Request itself, there is no way to see whether the project will pass the new build configurations. For that, we will have to merge the change and see what happens on the subsequent builds. If failures occur, we may revert your change and reopen your Pull Request and ask you to correct the issues. If new builds are being run for the first time and that scenario was not already specifically supported, those builds may fail. The responsibility for fixing test failures may fall on you or the original developers of those tests depending on the nature of the issue.
+Unfortunately, from the Pull Request itself, there is no way to see whether the project will pass the new build configurations. For that, you will have to ask a ChakraCore project member to manually run your new job. They will look at the list of generated jobs, find the new one(s), and run them using the HEAD commit of your PR branch. If the new job(s) pass, then the PR can be re-targeted to `master` and merged there.
+
+For that, we will have to merge the change and see what happens on the subsequent builds. If failures after merging to `master` occur, we may revert your change, but should be rare. The responsibility for fixing test failures may fall on you or the original developers of those tests depending on the nature of the issue.
 
 Pull Requests and Issues regarding the Jenkins CI configuration will be tagged as [Continuous Integration](https://github.com/Microsoft/ChakraCore/labels/Continuous%20Integration) so that we know those issues require special attention. It is strongly recommended that you open an issue to discuss desired CI changes before you submit a Pull Request, as these types of issues will almost always require discussion and coordination with other changes.
 
