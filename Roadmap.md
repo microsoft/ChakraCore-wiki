@@ -1,4 +1,4 @@
-_This is a living document containing ChakraCore team's current priorities as well as release notes for previous releases. Future roadmap last updated 12/5/17._ 
+_This is a living document containing ChakraCore team's current priorities as well as release notes for previous releases. Future roadmap last updated 2/26/18._ 
 
 All the changes done in the public repository flow into Chakra and Microsoft Edge on a regular basis as described in the [Contribution guidelines](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md).
 
@@ -8,46 +8,44 @@ All the changes done in the public repository flow into Chakra and Microsoft Edg
 
 The following is a summary of the ChakraCore team's backlog for the next 6 months. Some completed items (either in a release or master branch) are included to provide the context and progress of the work.
 
+## Language Innovation & Standards
+* [x] Complete module implementation (ES6)
+* [x] Complete Shared Memory and Atomics implementation
+* [ ] Migrate JS Intl APIs to use ICU/CLDR on Windows
+* [ ] ES2018+ features
+  * [x] Implement promise.prototype.finally
+  * [ ] Implement async generators & iterators
+  * [ ] Implement object rest and spread
+  * [ ] Implement new RegEx APIs
+  * [ ] Implement new Intl APIs
+* [ ] WebAssembly
+  * [x] Enable WebAssembly MVP on by default
+  * [ ] Enable post-MVP WebAssembly features
+
+## Performance - Staying Fast and Lean
+* [x] Optimize Object.assign/create
+* [x] Optimize JSON.stringify/parse
+* [x] Optimize ES6 for..of
+  * [x] Enable inlining for try/catch/finally
+* [ ] Improve performance for real-world sites
+* [ ] Improve performance for ES2015+ features
+* [ ] Reduce script parsing time
+* [ ] Reduce GC fragmentation
+* [ ] More type sharing
+
 ## Enhancing Host & Platform Support 
 * **Node.js**
-  * [x] Update [Node.js+ChakraCore](https://github.com/nodejs/node-chakracore) to include [ChakraCore 1.4](https://github.com/Microsoft/ChakraCore/tree/release/1.4)
   * [x] Enable Node-ChakraCore on Mac and Linux.
   * [x] Support Chrome Debug Protocol in Node-ChakraCore.
   * [x] Enable Time Travel Debugging over Chrome Debug Protocol using VSCode
   * [x] Support N-API
+  * [ ] Maintain [Node-ChakraCore](https://github.com/nodejs/node-chakracore) releases
   * [ ] Improve Node-ChakraCore performance based on benchmarks and real-world scenarios
-
-* **Cross-platform**
-  * [x] Enable ChakraCore interpreter on Linux/OSX
-  * [x] Enable JIT on Linux/OSX
-  * [x] Enable concurrent GC on Linux/OSX
-  * [x] Enable partial GC on Linux/OSX
-  * [ ] Enable Intl on Linux/OSX
-  * [ ] Match Windows-ChakraCore on test262
-  * [x] Ensure Linux/OSX perf is fully on par with Windows
 
 * **Embedding**
   * [ ] Provide better debugging experience for ChakraCore embedders
     * [ ] Factor CrDP debugging shim in NodeChakraCore as a library to help enable debugging in applications embedding ChakraCore
   * [ ] Enable profiling
-
-## Language Innovation & Standards
-* [x] Support WebAssembly MVP
-  * [x] Support MVP features behind experimental flag
-  * [x] Enable MVP on by default
-* [ ] Enable post-MVP WebAssembly features
-  * [ ] Threads
-* [ ] Enable WebAssembly debugging
-* [x] Complete module implementation (ES6)
-* [x] Complete Shared Memory and Atomics implementation
-* [ ] Use [ICU](http://site.icu-project.org/) for Intl implementation on Windows
- 
-## Performance - Staying Fast and Lean
-* [x] Optimize obj[propertyString] style references
-* [x] Optimize hasOwnProperties calls within for…in
-* [x] Optimize Array.isArray
-* [x] Optimize try/finally
-* [ ] Optimize code generation for string[index] uses
 
 ## Engineering Improvements
 * [ ] Enable easier authoring of JavaScript built-ins in JavaScript.
