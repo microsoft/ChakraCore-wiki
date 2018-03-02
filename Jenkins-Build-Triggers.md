@@ -150,19 +150,18 @@ Run individual builds:
 Run the full set (use either one of the following):
 
 ```
-@dotnet-bot test dev12 tests please
 @dotnet-bot test legacy tests please
 ```
 
 Run individual builds:
 
 ```
-@dotnet-bot test Windows 7 daily_dev12_x64_debug please
-@dotnet-bot test Windows 7 daily_dev12_x64_release please
-@dotnet-bot test Windows 7 daily_dev12_x64_test please
-@dotnet-bot test Windows 7 daily_dev12_x86_debug please
-@dotnet-bot test Windows 7 daily_dev12_x86_release please
-@dotnet-bot test Windows 7 daily_dev12_x86_test please
+@dotnet-bot test Windows 7 daily_legacy_x64_debug please
+@dotnet-bot test Windows 7 daily_legacy_x64_release please
+@dotnet-bot test Windows 7 daily_legacy_x64_test please
+@dotnet-bot test Windows 7 daily_legacy_x86_debug please
+@dotnet-bot test Windows 7 daily_legacy_x86_release please
+@dotnet-bot test Windows 7 daily_legacy_x86_test please
 ```
 
 # Testing Jenkins CI Script Changes
