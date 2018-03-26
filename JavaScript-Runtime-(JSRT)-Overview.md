@@ -14,6 +14,8 @@ Runtimes represent a single thread of execution. Only one runtime can be active 
 
 In practice, unless a host needs to run code in separated environments, a single execution context can be used. Similarly, unless a host needs to run multiple pieces of code concurrently, a single runtime is sufficient.
 
+Contexts are collectible by GC, as long as they are not set as the current context on the runtime or have a positive reference count (more times calling **JsAddRef** than **JsRelease**).
+
 ## Memory management
 JavaScript is a garbage collected language, and thus there are several considerations that must be kept in mind when working with the JSRT APIs from another language.
 
