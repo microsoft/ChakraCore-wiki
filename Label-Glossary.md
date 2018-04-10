@@ -74,7 +74,7 @@ Description of the GitHub labels used by ChakraCore
 
 ### [**External Contributor**](https://github.com/Microsoft/ChakraCore/labels/External%20Contributor)
 
-- Pull Request is from an External Contributor and should be assigned to a team member.
+- Pull Request is from an External Contributor (i.e. someone outside the Chakra team) and should be adopted by a Chakra team member.
 
 ### [**Fixed**](https://github.com/Microsoft/ChakraCore/labels/Fixed)
 
