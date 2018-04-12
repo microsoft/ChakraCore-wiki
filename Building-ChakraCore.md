@@ -47,23 +47,27 @@ msbuild ... /p:RuntimeLib=static_library ...
 
 ### Windows + ICU (Experimental) ###
 
-ChakraCore on Windows has experimental integration with ICU on x64. This can be turned on using either a custom build of ICU that we call Chakra.ICU, or by providing your own build of ICU.
+ChakraCore on Windows has experimental integration with ICU on x86 and x64. You can choose to download and compile ICU using our helper scripts, provide your own ICU installation, or use the ICU SDK installed alongside the version 16299 or later of the Windows Kit. For any of these options, you will need to provide the `ChakraICU` parameter to `msbuild`, either on the command line (`/p:ChakraICU=value`) or through an environment variable (`set ChakraICU=value`). The possible values are discussed below.
 
-#### Chakra.ICU ####
+#### Use Chakra helper scripts (Chakra.ICU) ####
 
 To get started with Chakra.ICU, run `python tools\configure_icu.py <version>` from the ChakraCore root directory, where `<version>` is a version of ICU, like 57.1 or 60.2. You can run `python tools\configure_icu.py --help` to see all available configuration options. Running this script will download ICU to `%ChakraCoreRootDirectory%\deps\Chakra.ICU\icu` (by default) and will generate `%ChakraCoreRootDirectory%\deps\Chakra.ICU\Chakra.ICU.props`, which contains all of the files and source information for the given version of ICU in a MSBuild-compatible format.
 
-To actually build ChakraCore with Chakra.ICU, you need to pass the ChakraICU parameter, either through the command line (`msbuild ... /p:ChakraICU=<value>`) or through an environment variable (`set ChakraICU=<value>`). The supported values are `static` and `shared`; `static` links ICU statically into ChakraCore.dll, and `shared` creates `Chakra.ICU.Common.dll`, `Chakra.ICU.i18n.dll`, and `Chakra.ICU.Data.dll`. If you choose `shared`, you will need to redistribute the Chakra.ICU DLLs alongside ChakraCore.dll and the rest of your application.
+To build the version of ICU that you just downloaded, you can set `ChakraICU` to `static` or `shared`; `static` links ICU statically into ChakraCore.dll, and `shared` creates `Chakra.ICU.Common.dll`, `Chakra.ICU.i18n.dll`, and `Chakra.ICU.Data.dll`. If you choose `shared`, you will need to redistribute the Chakra.ICU DLLs alongside ChakraCore.dll and the rest of your application.
 
 _note_: When building with `shared`, you will recieve an MSBuild warning about mismatched target names. This is an unfortunate side effect of how both Chakra.ICU and ICU's own default build system works. This will eventually be fixed with the resolution of [#4755](https://github.com/Microsoft/ChakraCore/issues/4755).
 
 _note_: This will use the default data file provided with the ICU source code download, located at `%ICURoot%\source\data\in\icudtXXl.dat`. If you want to customize the data file, you will need to provide your own ICU as described below, replace the default data file, or modify the build files.
 
+#### Using the ICU SDK included with the Windows Kit ####
+
+**Warning**: By enabling this option, you are limiting the range of operating systems that the produced ChakraCore.dll can run on. Normally, ChakraCore.dll can be redistributed back to Windows 7 machines with no modifications. When you enable Windows Kit ICU, the resulting ChakraCore.dll will only be able to run on Windows 10 version 15063 (RS2) or later.
+
+To instruct ChakraCore to use the Windows Kit ICU, set `ChakraICU` to `windows`.
+
 #### Bring your own ICU ####
 
-Chakra also supports bringing your own ICU, in case you are already using it elsewhere in your application. To use this configuration, pass `UseICU=true`, `IcuVersionMajor=<number>`, `IcuIncludeDirectories=<folder(s)>`, and `IcuAdditionalDependencies=<libs>` to MSBuild using either the command line or environment variable methods described above. The directory/directories passed to `IcuIncludeDirectories` must have all of the icuuc and icuin headers located within a `unicode` subfolder -- that is, if you pass `C:\ICU\`, then it is expected that headers like `uloc.h`, `udat.h`, etc are located in `C:\ICU\unicode\`.
-
-_note_: If you find yourself in the extremely niche position of wanting to use the ICU installed with the Windows Kit (as the Chakra team does internally), you will need to modify build files as that is not presently supported by the ChakraCore build system. By default, using the ICU included with the Windows Kit means that the resulting build of ChakraCore will only run on Windows 10 RS2 (build 15063) or later. If you want the resulting build of ChakraCore to run on older versions of Windows, you will need to build Chakra.ICU in the `shared` configuration and then copy those DLLs, as described in PR [4737](https://github.com/Microsoft/ChakraCore/pull/4737).
+Chakra also supports bringing your own ICU, in case you are already using it elsewhere in your application. To use this configuration, set `ChakraICU` to `external`, and pass `IcuVersionMajor=<number>`, `IcuIncludeDirectories=<folder(s)>`, and `IcuLibraryDependencies=<libs>` to MSBuild using either the command line or environment variable methods described above. The directory/directories passed to `IcuIncludeDirectories` must have all of the icuuc and icuin headers located within a `unicode` subfolder -- that is, if you pass `C:\ICU\`, then it is expected that headers like `uloc.h`, `udat.h`, etc are located in `C:\ICU\unicode\`.
 
 ## Linux ##
 
