@@ -30,6 +30,7 @@ This section includes resources such as blog posts and talks. Some of the resour
 
 # Talks
 
+* [Chakra: from Script to Optimized Code](https://www.microsoft.com/en-us/research/video/chakra-script-optimized-code/) (March 2018)
 * [JavaScript that Scales with ChakraCore and TypeScript](https://channel9.msdn.com/Events/WebPlatformSummit/Microsoft-Edge-Web-Summit-2017/ES06) (September 2017)
 * [What's new in ChakraCore](https://channel9.msdn.com/Events/Build/2017/P4103) (May 2017)
 * [A Lap Around @ChakraCore](https://channel9.msdn.com/Events/WebPlatformSummit/edgesummit2016/ES1609) (April 2016)
