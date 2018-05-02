@@ -10,7 +10,7 @@ STDAPI_(JsErrorCode)
 ```
 ### Parameters 
 * __function__: The function to invoke.
-* __arguments__: A JsValueRef array of arguments to the call (the first argument should be _thisArg_).
+* __arguments__: A JsValueRef array of arguments to the call. `arguments[0]` is `thisArg` or `undefined` if the function is to be called plainly.
 * __argumentCount__: The number of arguments being passed in to the function.
 * __result__: The value returned from the function invocation, if any.
 
