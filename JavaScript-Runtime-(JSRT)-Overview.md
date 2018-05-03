@@ -179,7 +179,7 @@ JsValueRef args[] = { undefined };
 const char* funcString = "func";
 JsCreatePropertyId(funcString, strlen(funcString), &funcPropId);
 JsGetProperty(global, funcPropId, &func);
-// note that args[0] is thisArg of the call; actual args start at index 1
+// note that args[0] is thisArg or undefined if the function is to be called plainly.; actual args start at index 1
 JsCallFunction(func, args, 1, &result);
 ``` 
 
