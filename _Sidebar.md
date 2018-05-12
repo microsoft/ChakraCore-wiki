@@ -23,6 +23,8 @@
 * [[Embedding ChakraCore]]
   * [[JavaScript Runtime (JSRT) Overview]]
   * [[JavaScript Runtime (JSRT) Reference]]
+* Testing ChakraCore
+  * [[ch cli]]
 * [[Getting ChakraCore binaries]]
 * [[Label Glossary]]
 * [[Resources]]
