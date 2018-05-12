@@ -29,5 +29,5 @@ world
 
 * `WScript.LoadScriptFile` Loads a JS script from the file system. It takes relative paths to CWD.
 
-For a complete and current list of available APIs, take a look at the [WScriptJsrt:Initialize function](https://github.com/Microsoft/
-Core/blob/master/bin/ch/WScriptJsrt.cpp)
+For a complete and current list of available APIs, take a look at the
+[WScriptJsrt::Initialize function](https://github.com/Microsoft/Core/blob/master/bin/ch/WScriptJsrt.cpp)
