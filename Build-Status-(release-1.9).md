@@ -184,23 +184,4 @@ Once a day, we run all of our usual build configurations with JIT excluded from 
 
 ## Legacy Builds
 
-Once a day, we run builds of some configurations using Windows 7 (Windows Server 2008 R2) and VS 2013.
-
-|                   | __Debug__ | __Test__ | __Release__ |
-|:-----------------:|:---------------:|:--------------:|:-----------------:|
-| __Windows (x64)__ | [![dd12x64dbg][dd12x64dbgicon]][dd12x64dbglink] | [![dd12x64test][dd12x64testicon]][dd12x64testlink] | [![dd12x64release][dd12x64relicon]][dd12x64rellink] |
-| __Windows (x86)__ | [![dd12x86dbg][dd12x86dbgicon]][dd12x86dbglink] | [![dd12x86test][dd12x86testicon]][dd12x86testlink] | [![dd12x86release][dd12x86relicon]][dd12x86rellink] |
-
-[dd12x64dbgicon]: https://ci2.dot.net/job/Microsoft_ChakraCore/job/release_1.9/job/daily_dev12_x64_debug/badge/icon
-[dd12x64dbglink]: https://ci2.dot.net/job/Microsoft_ChakraCore/job/release_1.9/job/daily_dev12_x64_debug/
-[dd12x64testicon]: https://ci2.dot.net/job/Microsoft_ChakraCore/job/release_1.9/job/daily_dev12_x64_test/badge/icon
-[dd12x64testlink]: https://ci2.dot.net/job/Microsoft_ChakraCore/job/release_1.9/job/daily_dev12_x64_test/
-[dd12x64relicon]: https://ci2.dot.net/job/Microsoft_ChakraCore/job/release_1.9/job/daily_dev12_x64_release/badge/icon
-[dd12x64rellink]: https://ci2.dot.net/job/Microsoft_ChakraCore/job/release_1.9/job/daily_dev12_x64_release/
-
-[dd12x86dbgicon]: https://ci2.dot.net/job/Microsoft_ChakraCore/job/release_1.9/job/daily_dev12_x86_debug/badge/icon
-[dd12x86dbglink]: https://ci2.dot.net/job/Microsoft_ChakraCore/job/release_1.9/job/daily_dev12_x86_debug/
-[dd12x86testicon]: https://ci2.dot.net/job/Microsoft_ChakraCore/job/release_1.9/job/daily_dev12_x86_test/badge/icon
-[dd12x86testlink]: https://ci2.dot.net/job/Microsoft_ChakraCore/job/release_1.9/job/daily_dev12_x86_test/
-[dd12x86relicon]: https://ci2.dot.net/job/Microsoft_ChakraCore/job/release_1.9/job/daily_dev12_x86_release/badge/icon
-[dd12x86rellink]: https://ci2.dot.net/job/Microsoft_ChakraCore/job/release_1.9/job/daily_dev12_x86_release/
+This branch does not have legacy build coverage.
