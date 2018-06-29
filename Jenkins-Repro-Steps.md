@@ -1,4 +1,4 @@
-* When Jenkins builds or tests fail it is helpful to be able to reproduce the errors locally.
+When Jenkins builds or tests fail it is helpful to be able to reproduce the errors locally.
 
 It is possible to run builds and tests locally using the same scripts that the Jenkins checks use.
 To run these commands, please follow the instructions below.

@@ -3,7 +3,7 @@ Currently showing the Build Status page for the `master` branch. You can also vi
 
 # Rolling Builds
 
-For every commit we build and test of all of our build configurations on Windows 10 with VS 2017 (Dev 15.7).
+For every commit we build and test of all of our build configurations on Windows 10 <sup>[**]</sup> with VS 2017 (Dev 15.7).
 
 |                                           | __Debug__ | __Test__ | __Release__ |
 |:-----------------------------------------:|:---------:|:--------:|:-----------:|
@@ -16,6 +16,7 @@ For every commit we build and test of all of our build configurations on Windows
 | __OS X 10.9 (x64)<sup>[a]</sup>__         | [![osx_a_debug][osx_a_dbgicon]][osx_a_dbglink] | [![osx_a_test][osx_a_testicon]][osx_a_testlink] | [![osx_a_release][osx_a_relicon]][osx_a_rellink] |
 | __OS X 10.9 (x64)<sup>[s][n]</sup>__      | * | [![osx_sn_test][osx_sn_testicon]][osx_sn_testlink] | * |
 
+* <sup>[**]</sup> ARM builds are still running on Windows 8.1 due to an SDK issue on the Windows 10 CI machines.
 * <sup>[a]</sup> Static (as applies to Linux / OSX)
 * <sup>[s]</sup> Shared (as applies to Linux / OSX)
 * <sup>[n]</sup> NoJIT: Compiled without JIT support
@@ -115,7 +116,7 @@ Once a day, we run all the same builds as the Rolling Builds above, but we run a
 [dslowarmrelicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/daily_slow_arm_release/badge/icon
 [dslowarmrellink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/daily_slow_arm_release/
 
-<!-- The jobs below are duplicates of the rolling build jobs, which run all of the same (slow) tests -->
+<!-- The jobs below are duplicates of the rolling build jobs, which run all of the same (slow) tests, duplicated in this table for convenience -->
 
 [dslow_linux_a_dbgicon]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/static_ubuntu_linux_debug/badge/icon
 [dslow_linux_a_dbglink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/static_ubuntu_linux_debug/
