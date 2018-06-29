@@ -3,7 +3,7 @@ Currently showing the Build Status page for the `master` branch. You can also vi
 
 # Rolling Builds
 
-For every commit we build and test of all of our build configurations on Windows 10 with VS 2015.
+For every commit we build and test of all of our build configurations on Windows 10 with VS 2017 (Dev 15.7).
 
 |                                           | __Debug__ | __Test__ | __Release__ |
 |:-----------------------------------------:|:---------:|:--------:|:-----------:|
@@ -221,9 +221,9 @@ Once a day, we run builds on the same machine configurations in the ChakraCore-L
 
 ## Legacy Builds
 
-### Windows 8.1 Blue with VS 2013
+### Windows 8.1 Blue with VS 2015
 
-Once a day, we run builds of some configurations using Windows 8.1 Blue (Windows Server 2012 R2) with VS 2013.
+Once a day, we run builds of some configurations using Windows 8.1 Blue (Windows Server 2012 R2) with VS 2015 (Dev 14).
 
 |                   | __Debug__ | __Test__ | __Release__ |
 |:-----------------:|:---------:|:--------:|:-----------:|
@@ -245,9 +245,9 @@ Once a day, we run builds of some configurations using Windows 8.1 Blue (Windows
 [dlegacy8x86rellink]: https://ci.dot.net/job/Microsoft_ChakraCore/job/master/job/daily_legacy8_x86_release/
 
 
-### Windows 7 with VS 2013
+### Windows 7 with VS 2015
 
-Once a day, we run builds of some configurations using Windows 7 (Windows Server 2008 R2) with VS 2013.
+Once a day, we run builds of some configurations using Windows 7 (Windows Server 2008 R2) with VS 2015 (Dev 14).
 
 |                   | __Debug__ | __Test__ | __Release__ |
 |:-----------------:|:---------:|:--------:|:-----------:|
