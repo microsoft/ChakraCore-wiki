@@ -52,6 +52,49 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 
 # Release Notes
 
+## ChakraCore 1.10
+
+### [v1.10.0](https://github.com/Microsoft/ChakraCore/releases/tag/v1.10.0)
+
+ChakraCore 1.10.0 includes more JavaScript and WebAssembly feature updates, performance enhancements, and JSRT APIs. See notable changes below.
+
+Also shout-out to @rhuanjl, @fatcerberous, OSS-Fuzz, and Google Project Zero for their contributions during this release!
+
+#### Language
+- Improved support for Intl/ICU (see [use ICU on Windows](https://github.com/Microsoft/ChakraCore/wiki/Building-ChakraCore#windows--icu-experimental))
+- Implement Intl.NumberFormat.prototype.formatToParts [#5105](https://github.com/Microsoft/ChakraCore/pull/5105)
+- Implement Intl.PluralRules [#4940](https://github.com/Microsoft/ChakraCore/pull/4940)
+- Implement Promise.prototype.finally [#3520](https://github.com/Microsoft/ChakraCore/pull/3520)
+- Demote Dynamic Import support to behind a flag [f7bcf68cf](https://github.com/Microsoft/ChakraCore/commit/f7bcf68cfde698574581978a0984d1b1aba05a8b)
+
+#### WebAssembly
+- Enable sign extension operators on by default [#5136](https://github.com/Microsoft/ChakraCore/pull/5136)
+- Implement non-trapping float to int conversions [#5129](https://github.com/Microsoft/ChakraCore/pull/5129) [#5014](https://github.com/Microsoft/ChakraCore/pull/5014)
+- Implement atomic load/store [#4470](https://github.com/Microsoft/ChakraCore/pull/4470)
+- Implement WebAssembly SIMD support behind experimental flag [#4200](https://github.com/Microsoft/ChakraCore/pull/4200)
+- Implement WebAssembly Shared Memory (only available with SharedArrayBuffer on) [#4762](https://github.com/Microsoft/ChakraCore/pull/4762)
+
+#### Performance
+- Improved type-sharing for objects with getters/setters [#4283](https://github.com/Microsoft/ChakraCore/pull/4283) and for function objects [#4748](https://github.com/Microsoft/ChakraCore/pull/4748) [#4818](https://github.com/Microsoft/ChakraCore/pull/4818)
+- Enable inlining for callback functions [#5081](https://github.com/Microsoft/ChakraCore/pull/5081)
+- Improved performance for Array.prototype.filter [#5137](https://github.com/Microsoft/ChakraCore/pull/5137), Object.assign [#4907](https://github.com/Microsoft/ChakraCore/pull/4907) [#4852](https://github.com/Microsoft/ChakraCore/pull/4852) [#4817](https://github.com/Microsoft/ChakraCore/pull/4817), Map/Set [#4816](https://github.com/Microsoft/ChakraCore/pull/4816), and JSON.Stringify [#4907](https://github.com/Microsoft/ChakraCore/pull/4907) [#4831](https://github.com/Microsoft/ChakraCore/pull/4831)
+- Improved optimizations for property access in loops [#5110](https://github.com/Microsoft/ChakraCore/pull/5110)
+- Optimizations to minimize performance impact from Spectre mitigations 
+
+#### JSRT
+- Add JsGetPromiseState and JsGetPromiseResult [#5138](https://github.com/Microsoft/ChakraCore/pull/5138) [#5131](https://github.com/Microsoft/ChakraCore/pull/5131)
+- Add JsGetProxyProperties [#4806](https://github.com/Microsoft/ChakraCore/pull/4806)
+- Add JsRuntimeAttributeDisableExecutablePageAllocation attribute [#4797](https://github.com/Microsoft/ChakraCore/pull/4797)
+- Add JsGetModuleNamespace [#4707](https://github.com/Microsoft/ChakraCore/pull/4707)
+- Add JsSetHostPromiseRejectionTracker to process unhandled promise rejections [#4608](https://github.com/Microsoft/ChakraCore/pull/4608)
+- Add JsCreateEnhancedFunction for native callbacks with `new.target` [#4529](https://github.com/Microsoft/ChakraCore/pull/4529)
+- Add JsCreateExternalObjectWithPrototype [#4267](https://github.com/Microsoft/ChakraCore/pull/4267)
+- Add Symbol support in JsObject[Has/Get/Set/....] APIs [#4209](https://github.com/Microsoft/ChakraCore/pull/4209)
+
+#### Diagnostics
+- Enable support for ETW events on xplat via LTTng [#4314](https://github.com/Microsoft/ChakraCore/pull/4314)
+
+
 ## ChakraCore 1.8
 
 ### [v1.8.5](https://github.com/Microsoft/ChakraCore/releases/tag/v1.8.5)
