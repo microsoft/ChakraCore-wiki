@@ -1,11 +1,11 @@
-* When Jenkins builds or tests fail it is helpful to be able to reproduce the errors locally.
+When Jenkins builds or tests fail it is helpful to be able to reproduce the errors locally.
 
 It is possible to run builds and tests locally using the same scripts that the Jenkins checks use.
 To run these commands, please follow the instructions below.
 
 Keep in mind that certain builds will have system requirements that make it impossible
 to run the builds directly on your system configurations
-(e.g. Legacy Windows builds which require Windows 7 and/or VS 2013;
+(e.g. Legacy Windows builds which require Windows 7, Windows 8.1 and/or VS 2015;
 and Linux builds which require a Linux system or VM).
 Requirements are detailed below.
 
@@ -116,25 +116,31 @@ When testing a fix please request:
 
 ## Legacy Daily Builds (Windows-only)
 
-_Note: **These tests are designed to run under VS 2013 + Windows 7.**
-In most cases, failures are related to running under msbuild 12.0 so you can most likely
-reproduce failures using msbuild 12.0 without needing to run on Windows 7. If you still cannot repro,
-you might consider setting up a Windows 7 VM to repro._
+_Note: **These tests are designed to run under VS 2015 + Windows 7 or Windows 8.1.**
+In most cases, failures are related to building with msbuild 14.0 (VS 2015) so you can most likely
+reproduce failures using VS 2015 without needing to run on an older OS. If you still cannot repro,
+you might consider setting up a Windows 7 or Windows 8.1 VM to repro._
 
 Repro with these commands:
 
 ```
-jenkins\buildone.cmd x64 debug msbuild12
+jenkins\buildone.cmd x64 debug msbuild14
 jenkins\testone.cmd x64 debug -win7 -includeSlow
+jenkins\testone.cmd x64 debug -winBlue -includeSlow
 ```
 
-When testing a fix please request the following:
+When testing a fix please request the appropriate run from the following:
 
 ```
-@dotnet-bot test dev12 tests please
+@dotnet-bot test legacy7 tests please
+@dotnet-bot test legacy8 tests please
 ```
 
-(You can also replace `test dev12 tests` with `test legacy tests` if you prefer -- they are equivalent.)
+Or run all tests with the following:
+
+```
+@dotnet-bot test legacy tests please
+```
 
 # Footnotes
 
@@ -172,8 +178,8 @@ with `-t` (corresponding with `--test-build` in `build.sh`).
 See [Building ChakraCore](https://github.com/Microsoft/ChakraCore/wiki/Building-ChakraCore)
 for specific details on the platforms and build configurations we support and requirements to build them.
 
-* **Windows:** We will primarily support Windows 8.1+ with VS 2015.
-We currently support systems with Windows 7 or VS 2013 as Legacy configurations.
+* **Windows:** We will primarily support Windows 10 with VS 2017.
+We currently support systems with Windows 7, Windows 8.1, and/or VS 2015 as Legacy configurations.
 * **Linux:** We will support Ubuntu 16.04 LTS with Clang 3.8+.
 * **OS X:** We will support OS X with Clang 3.8+.
 
@@ -187,6 +193,7 @@ For purposes of shorthand the following terms are considered more or less equiva
 
 Compatibility testing notes:
 
-* All of our compatibility is either targeted at Windows 7 SP1 or Windows 8.1+ (which includes Windows 10).
-* Windows 7 SP1 is actually tested on Windows Server 2008 R2 (which, for our purposes, is an equivalent Server OS).
-* Windows 8.1+ is actually tested on Windows Server 2012 R2 (which, for our purposes, is an equivalent Server OS).
+* All of our compatibility is either targeted at Windows 7 SP1, Windows 8.1, or Windows 10.
+* Windows 10 is tested on an Windows 10 RS4 client OS.
+* Windows 8.1 compatibility is tested on Windows Server 2012 R2 (which, for our purposes, is an equivalent Server OS).
+* Windows 7 SP1 compatiblity is tested on Windows Server 2008 R2 (which, for our purposes, is an equivalent Server OS).
