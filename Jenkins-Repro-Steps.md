@@ -116,10 +116,10 @@ When testing a fix please request:
 
 ## Legacy Daily Builds (Windows-only)
 
-_Note: **These tests are designed to run under VS 2015 + Windows 7 or Windows 8.1**
-In most cases, failures are related to running under msbuild 12.0 so you can most likely
-reproduce failures using msbuild 12.0 without needing to run on Windows 7. If you still cannot repro,
-you might consider setting up a Windows 7 VM to repro._
+_Note: **These tests are designed to run under VS 2015 + Windows 7 or Windows 8.1.**
+In most cases, failures are related to building with msbuild 14.0 (VS 2015) so you can most likely
+reproduce failures using VS 2015 without needing to run on an older OS. If you still cannot repro,
+you might consider setting up a Windows 7 or Windows 8.1 VM to repro._
 
 Repro with these commands:
 
