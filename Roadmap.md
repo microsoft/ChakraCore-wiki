@@ -58,7 +58,7 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 
 ChakraCore 1.10.0 includes more JavaScript and WebAssembly feature updates, performance enhancements, and JSRT APIs. See notable changes below.
 
-Also shout-out to @rhuanjl, @fatcerberous, OSS-Fuzz, and Google Project Zero for their contributions during this release!
+Also shout-out to @rhuanjl, @fatcerberus, OSS-Fuzz, and Google Project Zero for their contributions during this release!
 
 #### Language
 - Improved support for Intl/ICU (see [use ICU on Windows](https://github.com/Microsoft/ChakraCore/wiki/Building-ChakraCore#windows--icu-experimental))
