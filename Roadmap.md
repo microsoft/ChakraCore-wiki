@@ -54,6 +54,13 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 
 ## ChakraCore 1.10
 
+### [v1.10.1](https://github.com/Microsoft/ChakraCore/releases/tag/v1.10.1)
+This patch release of ChakraCore 1.10 includes security fixes, performance improvements, and bugfixes.
+
+#### Security
+- Changes to address CVE-2018-8275, CVE-2018-8276, CVE-2018-8279, CVE-2018-8280, CVE-2018-8283, CVE-2018-8286, CVE-2018-8287, CVE-2018-8288, CVE-2018-8290, CVE-2018-8291, CVE-2018-8294, CVE-2018-8298 [#5444](https://github.com/Microsoft/ChakraCore/pull/5444)
+
+
 ### [v1.10.0](https://github.com/Microsoft/ChakraCore/releases/tag/v1.10.0)
 
 ChakraCore 1.10.0 includes more JavaScript and WebAssembly feature updates, performance enhancements, and JSRT APIs. See notable changes below.
