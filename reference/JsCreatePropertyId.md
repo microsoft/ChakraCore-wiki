@@ -8,7 +8,7 @@ CHAKRA_API
         _Out_ JsPropertyIdRef *propertyId);
 ```
 ### Parameters 
-* __name__: The name of the property ID to get or create. The name may consist of only digits. The string is expected to be ASCII / utf8 encoded.
+* __name__: The name of the property ID to get or create. The string is expected to be ASCII / utf8 encoded. The name can be any JavaScript property identifier, including all digits.
 * __length__: Length of the name in bytes
 * __propertyId__: The property ID in this runtime for the given name
 
