@@ -20,6 +20,8 @@
   * [[Jenkins Build Triggers]]
   * [[Jenkins Repro Steps]]
   * [[External Issues]]
+* Engineering Notes
+  * [[String Internals]]
 * [[Embedding ChakraCore]]
   * [[JavaScript Runtime (JSRT) Overview]]
   * [[JavaScript Runtime (JSRT) Reference]]
