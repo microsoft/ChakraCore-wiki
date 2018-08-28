@@ -3,6 +3,7 @@
 * [[Architecture Overview]]
 * [[Building ChakraCore]]
   * [[Build Status]] (master)
+  * [[Build Status (release/1.11)]]
   * [[Build Status (release/1.10)]]
   * [[Build Status (release/1.9)]]
   * [[Build Status (release/1.8)]]
