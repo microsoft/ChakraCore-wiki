@@ -52,6 +52,13 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 
 # Release Notes
 
+## ChakraCore 1.11
+
+### [v1.11.0](https://github.com/Microsoft/ChakraCore/releases/tag/v1.11.0)
+ChakraCore 1.11.0 includes bug fixes, including a reliability fix relating to ETW tracing [#5632](https://github.com/Microsoft/ChakraCore/pull/5632)
+
+
+
 ## ChakraCore 1.10
 
 ### [v1.10.2](https://github.com/Microsoft/ChakraCore/releases/tag/v1.10.2)
