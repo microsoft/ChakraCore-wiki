@@ -1,5 +1,7 @@
 Currently showing the Build Status page for the `release/1.8` branch. You can also view the build status for other branches by clicking the links in the sidebar.
 
+**Note:** OS X builds will appear to be broken on this branch due to a machine configuration issue related to support for Intl with ICU. This configuration issue was fixed in the CI for future branches.
+
 # Rolling Builds
 
 For every commit we build and test of all of our build configurations on Windows 8.1 (Windows Server 2012 R2) using VS 2015.
