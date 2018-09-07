@@ -97,7 +97,7 @@ Also shout-out to @rhuanjl, @fatcerberus, OSS-Fuzz, and Google Project Zero for 
 #### Performance
 - Improved type-sharing for objects with getters/setters [#4283](https://github.com/Microsoft/ChakraCore/pull/4283) and for function objects [#4748](https://github.com/Microsoft/ChakraCore/pull/4748) [#4818](https://github.com/Microsoft/ChakraCore/pull/4818)
 - Enable inlining for callback functions [#5081](https://github.com/Microsoft/ChakraCore/pull/5081)
-- Improved performance for Array.prototype.filter [#5137](https://github.com/Microsoft/ChakraCore/pull/5137), Object.assign [#4907](https://github.com/Microsoft/ChakraCore/pull/4907) [#4852](https://github.com/Microsoft/ChakraCore/pull/4852) [#4817](https://github.com/Microsoft/ChakraCore/pull/4817), Map/Set [#4816](https://github.com/Microsoft/ChakraCore/pull/4816), and JSON.Stringify [#4907](https://github.com/Microsoft/ChakraCore/pull/4907) [#4831](https://github.com/Microsoft/ChakraCore/pull/4831)
+- Improved performance for Array.prototype.filter [#5137](https://github.com/Microsoft/ChakraCore/pull/5137), Object.assign [#4852](https://github.com/Microsoft/ChakraCore/pull/4852) [#4817](https://github.com/Microsoft/ChakraCore/pull/4817), Map/Set [#4816](https://github.com/Microsoft/ChakraCore/pull/4816), and JSON.Stringify [#4907](https://github.com/Microsoft/ChakraCore/pull/4907) [#4831](https://github.com/Microsoft/ChakraCore/pull/4831)
 - Improved optimizations for property access in loops [#5110](https://github.com/Microsoft/ChakraCore/pull/5110)
 - Optimizations to minimize performance impact from Spectre mitigations 
 
