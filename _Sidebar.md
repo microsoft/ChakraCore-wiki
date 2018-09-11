@@ -28,6 +28,7 @@
   * [[JavaScript Runtime (JSRT) Reference]]
 * Testing ChakraCore
   * [ChakraCore CLI (`ch`)](https://github.com/Microsoft/ChakraCore/wiki/ch-cli)
+  * [[Creating unit tests with UnitTestFramework]]
 * [[Getting ChakraCore binaries]]
 * [[Label Glossary]]
 * [[Resources]]
