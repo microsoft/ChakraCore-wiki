@@ -18,7 +18,7 @@ const tests = [
         name: "TODO: Enter a descriptive name for your first test",
         body: function () {
             // TODO implement your test case here, for example:
-            // assert.areEqual(expression1, expression2, "explanation of what this assertion was testing");
+            // assert.areEqual(expected, actual, "explanation of what this assertion was testing");
             // NOTE: See comments in test/UnitTestFramework/UnitTestFramework.js for more info about what assertions you can use
         }
     },
