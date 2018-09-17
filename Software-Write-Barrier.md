@@ -81,7 +81,7 @@ Other than the plugin, there's runtime flags to help check if there's missing ba
 - You can also additionally add -KeepRecyclerTrackData, which saves more tracking info to help the debugging.
 But to be noticed both -VerifyBarrierBit and -RecyclerVerifyMark can report false positives.
 
-If would like to test this with windows, run "jenkens\buildone.cmd x64 debug swb"
+If would like to test this with windows, run "jenkins\buildone.cmd x64 debug swb"
 to build the bits. Build binaries will be under Build\VcBuild.SWB\.
 
 E.g.,
