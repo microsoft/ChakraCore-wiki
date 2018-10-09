@@ -31,7 +31,7 @@ enum JsErrorCode : unsigned int
 * __JsErrorPropertyNotSymbol__: A hosting API that operates on symbol property ids but was called with a non-symbol property id. The error code is returned by JsGetSymbolFromPropertyId if the function is called with non-symbol property id.
 * __JsErrorPropertyNotString__: A hosting API that operates on string property ids but was called with a non-string property id. The error code is returned by existing JsGetPropertyNamefromId if the function is called with non-string property id.
 * __JsErrorInvalidContext__: Module evaluation is called in wrong context.
-* __JsInvalidModuleHostInfoKind__: Module evaluation is called in wrong context.
+* __JsInvalidModuleHostInfoKind__: The Module HostInfoKind provided was invalid.
 * __JsErrorModuleParsed__: Module was parsed already when JsParseModuleSource is called.
 * __JsNoWeakRefRequired__: Argument passed to JsCreateWeakReference is a primitive that is not managed by the GC. No weak reference is required, the value will never be collected.
 * __JsErrorPromisePending__: The `Promise` object is still in the pending state.
