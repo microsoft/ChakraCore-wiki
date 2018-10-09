@@ -2,7 +2,7 @@ We ask that PRs, in most cases, should be a single commit based on a reasonably 
 (though not necessarily the latest) from the target branch, with no merge commits.
 
 
-# Getting starting and creating a PR
+# Getting started and creating a PR
 
 Following the usual Git convention, the following examples assume the remote referring to your fork [username/ChakraCore](https://github.com/username/ChakraCore), which you cloned from, is named `origin`, and [Microsoft/ChakraCore](https://github.com/Microsoft/ChakraCore) is named `upstream`.
 
