@@ -1,4 +1,4 @@
-Tells the runtime to do any idle processing it need to do. 
+Tells the runtime to do any idle processing it needs to do.
 ### Syntax 
 ```
 STDAPI_(JsErrorCode)

@@ -7,7 +7,7 @@ STDAPI_(JsErrorCode)
     _Out_opt_ unsigned int *count);
 ```
 ### Parameters 
-* __ref__: The object to add a reference to.
+* __ref__: The object to remove the reference from.
 * __count__: The object's new reference count (can pass in null).
 
 ### Return Value 
