@@ -38,7 +38,7 @@ as follows:
 
     git checkout master
     git fetch --all
-    git merge --ff wiki/master
+    git merge --ff-only wiki/master
     git push repo master
     git push user master  # optional, but recommended to keep your user clone in sync
 
@@ -46,7 +46,8 @@ If `wiki` and `repo` have become out of sync and you need to merge them:
 
     git checkout master  # tracking the last time you pushed repo to wiki
     git fetch --all
-    git merge --ff repo/master  # sync to latest repo (keep these changes visible in --first-parent history)
+    git merge --ff-only repo/master  # sync to latest repo
+    # Merging wiki/master into repo/master will keep repo/master changes visible in --first-parent history
     git merge wiki/master  # merge the wiki changes into the repo
     
     # push all remotes to keep things in sync
