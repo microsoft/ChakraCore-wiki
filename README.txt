@@ -14,7 +14,8 @@ Small changes are often made by the Wiki maintainers directly via the Wiki
 interface, and those changes are not automatically mirrored in this repo.
 
 Due to low volume of changes, this repo (the ChakraCore-wiki repo) is manually
-kept in sync with the Wiki at https://github.com/Microsoft/ChakraCore/wiki.
+(rather than automatically) kept in sync with the Wiki at
+https://github.com/Microsoft/ChakraCore/wiki.
 
 It is recommended to configure your remotes as follows to reduce ambiguity:
 
