@@ -8,7 +8,7 @@ Note: Please do not rename this file from README.txt to README.md.
 README.txt will not show up in the Wiki view, but README.md will.
 
 
-# ChakraCore Maintainers' Workflow
+# ChakraCore-wiki Maintainers' Workflow
 
 Small changes are often made by the Wiki maintainers directly via the Wiki
 interface, and those changes are not automatically mirrored in this repo.
