@@ -19,19 +19,36 @@ https://github.com/Microsoft/ChakraCore/wiki.
 
 It is recommended to configure your remotes as follows to reduce ambiguity:
 
-    git remote add repo https://<username>:<token>@github.com/Microsoft/ChakraCore-wiki.git
     git remote add wiki https://<username>:<token>@github.com/Microsoft/ChakraCore.wiki.git
-    git remote add user https://<username>:<token>@github.com/<username>/ChakraCore.wiki.git
+    git remote add repo https://<username>:<token>@github.com/Microsoft/ChakraCore-wiki.git
+    git remote add user https://<username>:<token>@github.com/<username>/ChakraCore-wiki.git
 
 The `wiki` remote is updated when maintainers manually make changes through the
 GitHub Wiki interface.
 
 The `repo` remote is updated when commits are made directly to this repo.
 
-To avoid merge conflicts, before making changes via this repo or merging any
-pull requests, please manually sync changes from the `wiki` remote as follows:
+The `user` remote is the remote to which you will push branches when you want to
+make PRs against the `repo` remote. You can also bypass PRs and push directly to
+the `wiki` remote, since there is no automation around or checks on the wiki.
+
+To avoid merge conflicts, when possible, before making changes via this repo or
+merging any pull requests, please manually sync changes from the `wiki` remote
+as follows:
 
     git checkout master
     git fetch --all
     git merge --ff wiki/master
     git push repo master
+    git push user master  # optional, but recommended to keep your user clone in sync
+
+If `wiki` and `repo` have become out of sync and you need to merge them:
+
+    git checkout master  # tracking the last time you pushed repo to wiki
+    git merge --ff repo/master  # sync to latest repo (keep these changes visible in --first-parent history)
+    git merge wiki/master  # merge the wiki changes into the repo
+    
+    # push all remotes to keep things in sync
+    git push repo master
+    git push wiki master
+    git push user master  # optional, but recommended
