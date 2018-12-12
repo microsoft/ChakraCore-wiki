@@ -45,6 +45,7 @@ as follows:
 If `wiki` and `repo` have become out of sync and you need to merge them:
 
     git checkout master  # tracking the last time you pushed repo to wiki
+    git fetch --all
     git merge --ff repo/master  # sync to latest repo (keep these changes visible in --first-parent history)
     git merge wiki/master  # merge the wiki changes into the repo
     
