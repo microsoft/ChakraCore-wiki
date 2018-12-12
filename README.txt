@@ -21,6 +21,7 @@ It is recommended to configure your remotes as follows to reduce ambiguity:
 
     git remote add repo https://<username>:<token>@github.com/Microsoft/ChakraCore-wiki.git
     git remote add wiki https://<username>:<token>@github.com/Microsoft/ChakraCore.wiki.git
+    git remote add user https://<username>:<token>@github.com/<username>/ChakraCore.wiki.git
 
 The `wiki` remote is updated when maintainers manually make changes through the
 GitHub Wiki interface.
