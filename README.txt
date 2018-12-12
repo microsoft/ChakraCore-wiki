@@ -4,6 +4,9 @@ If you are adding a page, please note that the title of the page is determined b
 the file name. Hyphens in the file names will become spaces in the titles of the
 pages. Refer to existing files as examples of the naming convention.
 
+Note: Please do not rename this file from README.txt to README.md.
+README.txt will not show up in the Wiki view, but README.md will.
+
 
 # ChakraCore Maintainers' Workflow
 
@@ -30,6 +33,3 @@ pull requests, please manually sync changes from the `wiki` remote as follows:
     git fetch --all
     git merge --ff wiki/master
     git push repo master
-
-Note: Please do not rename this file from README.txt to README.md.
-README.txt will not show up in the Wiki view, but README.md will.
