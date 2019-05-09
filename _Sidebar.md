@@ -13,6 +13,7 @@
   * [[Jenkins Build Triggers]]
   * [[Jenkins Repro Steps]]
   * [[External Issues]]
+  * [[Rebasing PRs]]
 * Engineering Notes
   * [[String Internals]]
 * [[Embedding ChakraCore]]
