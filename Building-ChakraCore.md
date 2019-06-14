@@ -3,7 +3,7 @@ Visit [[Getting ChakraCore binaries]] if you would simply like to download pre-c
 ## Windows ##
 
 You can build ChakraCore on Windows 7 SP1 or above, and Windows Server 2008 R2
-or above, with either Visual Studio 2015 or 2017, as long as C++ support is
+or above, with either Visual Studio 2015, 2017 or 2019, as long as C++ support is
 installed[*](#build_for_arm).
 
 Refer to the [Linux](#linux) and [OS X](#os-x) sections for building instructions on these platforms.
@@ -37,13 +37,18 @@ ChakraCore on Windows supports 3 configurations:
 
 ### Deployment ###
 
-If you use ChakraCore you will need to deploy ```ChakraCore.dll``` with your application. You may also need to redistribute MSVC runtime libraries because ChakraCore.dll has runtime dependency on MSVC libraries by default. For more information see [Redistributing Visual C++ Files](https://msdn.microsoft.com/en-us/library/ms235299.aspx).
-* Note if you build with Visual Studio 2015: There are some new requirements due to universal CRT changes. See [Introducing the Universal CRT](http://blogs.msdn.com/b/vcblog/archive/2015/03/03/introducing-the-universal-crt.aspx).
-
-Alternatively, you can build ChakraCore without MSVC runtime dependency. Pass an additional parameter to msbuild so that ChakraCore links to MSVC libraries statically:
+If you use ChakraCore you will need to deploy ```ChakraCore.dll``` with your application. By default, ChakraCore is built without MSVC runtime dependency. In this case, ChakraCore links to MSVC libraries statically. The default behavior is the same as running a msbuild with an ```RuntimeLib``` parameter that has a value equal to ```static_library```:
 ```
 msbuild ... /p:RuntimeLib=static_library ...
 ```
+
+If you want to get a smaller ```ChakraCore.dll``` assembly on output, then you can build it with runtime dependency on MSVC libraries by setting the ```RuntimeLib``` parameter to a value other than ```static_library```:
+```
+msbuild ... /p:RuntimeLib=dynamic_library ...
+```
+
+In this case, you will also need to redistribute MSVC runtime libraries. For more information see [Redistributing Visual C++ Files](https://docs.microsoft.com/en-us/cpp/windows/redistributing-visual-cpp-files).
+* Note if you build with Visual Studio 2015: There are some new requirements due to universal CRT changes. See [Introducing the Universal CRT](https://devblogs.microsoft.com/cppblog/introducing-the-universal-crt/).
 
 ### Windows + ICU (Experimental) ###
 
