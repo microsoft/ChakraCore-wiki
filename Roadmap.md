@@ -1,12 +1,14 @@
-_This is a living document containing ChakraCore team's current priorities as well as release notes for previous releases. Future roadmap last updated 2/26/18._ 
+_The Microsoft Edge team no longer maintains the ChakraCore repository. The past ChakraCore release **downloads on this page will only be available until May 31, 2024**. If you need copies of these releases please download prior to that date. It will not be possible for the ChakraCore team to provide copies of these releases after the the cut-off date. last updated 4/30/2024._ 
 
-All the changes done in the public repository flow into Chakra and Microsoft Edge on a regular basis as described in the [Contribution guidelines](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md).
+[Obsolete] All the changes done in the public repository flow into Chakra and Microsoft Edge on a regular basis as described in the [Contribution guidelines](https://github.com/Microsoft/ChakraCore/blob/master/CONTRIBUTING.md).
 
 (Scroll to [Release Notes](#release-notes))
 
 # Future
 
-The following is a summary of the ChakraCore team's backlog for the next 6 months. Some completed items (either in a release or master branch) are included to provide the context and progress of the work.
+The Microsoft Edge team does not maintain this repository anymore. 
+
+[Obsolete] The following is a summary of the ChakraCore team's backlog for the next 6 months. Some completed items (either in a release or master branch) are included to provide the context and progress of the work.
 
 ## Language Innovation & Standards
 * [x] Complete module implementation (ES6)
@@ -51,6 +53,7 @@ The following is a summary of the ChakraCore team's backlog for the next 6 month
 * [ ] Enable easier authoring of JavaScript built-ins in JavaScript.
 
 # Release Notes
+_The Microsoft Edge team no longer maintains the ChakraCore repository. The past ChakraCore release **downloads on this page will only be available until May 31, 2024**. If you need copies of these releases please download prior to that date. It will not be possible for the ChakraCore team to provide copies of these releases after the the cut-off date._ 
 
 ## ChakraCore 1.11
 
